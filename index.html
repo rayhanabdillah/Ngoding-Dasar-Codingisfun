@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Belajar Coding</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="bgg.png">
+  <link rel="icon" href="bgg.png">
+
+    <!-- Bootstrap CSS (jika belum ada) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<!-- Vendor CSS Files -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons.css" rel="stylesheet">
+  <link href="aos.css" rel="stylesheet">
+  <link href="glightbox.min.css" rel="stylesheet">
+  <link href="swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Invent
+  * Template URL: https://bootstrapmade.com/invent-bootstrap-business-template/
+  * Updated: May 12 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+  body {
+  transition: background-color 0.3s, color 0.3s;
+}
+/* Jika menu responsif kamu berupa .navmenu */
+body.dark-mode .navmenu {
+  background-color: #1a1a1a !important;
+}
+body.dark-mode .navmenu {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode .navmenu a {
+  color: #fff !important;
+}
+
+body.dark-mode .navmenu a {
+  color: #fff !important;
+}
+
+/* Kalau menu responsif-nya pakai .mobile-nav */
+body.dark-mode .mobile-nav {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode .mobile-nav a {
+  color: #fff !important;
+}
+
+
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+
+  }
+  /* Default (mode terang) - ikon warna hitam */
+#dark-mode-icon {
+  color: #000;
+  transition: color 0.3s;
+}
+
+/* Saat body punya class .dark-mode, ikon jadi putih */
+body.dark-mode #dark-mode-icon {
+  color: #fff;
+}
+
+.dark-mode .feature-box {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444; /* opsional, jika ada border putih sebelumnya */
+}
+
+.dark-mode .feature-title,
+.dark-mode .feature-text,
+.dark-mode .feature-icon i {
+  color: #ffffff !important;
+}
+
+  .dark-mode .header,
+  .dark-mode .navmenu,
+  .dark-mode .dropdown ul {
+    background-color: #1e1e1e !important;
+  }
+  .dark-mode .sitename,
+.dark-mode .hero-title,
+.dark-mode .hero-description,
+.dark-mode .badge-text {
+  color: #ffffff !important;
+}
+.dark-mode section#materi {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+.dark-mode section#about {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+.dark-mode section#about h3 {
+  color: #ffffff !important;
+}
+.dark-mode section#materi h2 {
+  color: #ffffff !important;
+}
+
+
+.dark-mode .service-item {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border-color: #444;
+}
+
+.dark-mode .service-item h3,
+.dark-mode .service-item p,
+.dark-mode .service-link {
+  color: #ffffff;
+}
+
+.dark-mode .service-link i {
+  color: #ffd700;
+}
+
+
+  .dark-mode a {
+    color: #ffffff;
+  }
+
+  .dark-mode .navmenu ul li a.active,
+  .dark-mode .navmenu ul li a:hover {
+    color: #ffd700;
+  }
+
+  .dark-mode .dropdown ul li a {
+    color: #ddd;
+  }
+  /* Mode Gelap untuk Section How We Work */
+.dark-mode section#how-we-work {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode #how-we-work .section-title h2,
+.dark-mode #how-we-work .section-title p {
+  color: #ffffff;
+}
+
+/* Process Items */
+.dark-mode #how-we-work .process-item .content {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/* Step Number */
+.dark-mode #how-we-work .step-number {
+  color: #ffcc00; /* opsional: agar angka step lebih mencolok */
+}
+
+/* Icon dan Judul */
+.dark-mode #how-we-work .step-icon i,
+.dark-mode #how-we-work .step-content h3 {
+  color: #ffffff;
+}
+
+/* Paragraf dalam step */
+.dark-mode #how-we-work .step-content p {
+  color: #cccccc;
+}
+/* DARK MODE: Call to Action 2 */
+.dark-mode section#call-to-action-2 {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Judul & Deskripsi */
+.dark-mode #call-to-action-2 h2,
+.dark-mode #call-to-action-2 .lead {
+  color: #ffffff;
+}
+
+/* Ikon dan Teks Fitur */
+.dark-mode #call-to-action-2 .feature-item i {
+  color: #00c853; /* hijau terang, bisa diganti sesuai tema */
+}
+
+.dark-mode #call-to-action-2 .feature-item span {
+  color: #dddddd;
+}
+
+/* Tombol */
+.dark-mode #call-to-action-2 .btn.btn-primary {
+  background-color: #00bfa5;
+  border-color: #00bfa5;
+}
+
+.dark-mode #call-to-action-2 .btn.btn-primary:hover {
+  background-color: #009688;
+  border-color: #009688;
+}
+
+.dark-mode #call-to-action-2 .btn.btn-outline-primary {
+  color: #00bfa5;
+  border-color: #00bfa5;
+}
+
+.dark-mode #call-to-action-2 .btn.btn-outline-primary:hover {
+  background-color: #00bfa5;
+  color: #ffffff;
+}
+/* DARK MODE: Portfolio Section */
+.dark-mode section#portfolio {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Judul & Deskripsi */
+.dark-mode #portfolio .section-title h2,
+.dark-mode #portfolio .section-title p {
+  color: #ffffff;
+}
+
+/* Filter Buttons */
+.dark-mode .portfolio-filters li {
+  color: #dddddd;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+.dark-mode .portfolio-filters .filter-active {
+  background-color: #00bfa5;
+  color: #ffffff;
+  border-color: #00bfa5;
+}
+
+/* Kartu Portfolio */
+.dark-mode .portfolio-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  color: #ffffff;
+}
+
+/* Konten di dalam kartu */
+.dark-mode .portfolio-content h3,
+.dark-mode .portfolio-content p,
+.dark-mode .portfolio-content .category {
+  color: #ffffff;
+}
+
+/* Overlay saat hover */
+.dark-mode .portfolio-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* lebih gelap untuk dark mode */
+}
+
+.dark-mode .portfolio-actions a {
+  color: #ffffff;
+  background-color: #00bfa5;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.dark-mode .portfolio-actions a:hover {
+  background-color: #009688;
+}
+/* DARK MODE: Donasi Section */
+.dark-mode section#donasi {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Judul dan deskripsi */
+.dark-mode #donasi .section-title h2,
+.dark-mode #donasi .section-title p {
+  color: #ffffff;
+}
+
+/* Kartu donasi */
+.dark-mode .pricing-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Judul kartu */
+.dark-mode .pricing-card h3 {
+  color: #ffffff;
+}
+
+/* Deskripsi dan teks */
+.dark-mode .pricing-card .description {
+  color: #dddddd;
+}
+
+/* Tombol donasi */
+.dark-mode .pricing-card .btn-primary {
+  background-color: #00bfa5;
+  border-color: #00bfa5;
+  color: #ffffff;
+}
+
+.dark-mode .pricing-card .btn-primary:hover {
+  background-color: #009688;
+  border-color: #009688;
+}
+/* --------------------- */
+/* DARK MODE: Testimonials */
+/* --------------------- */
+.dark-mode section#testimonials {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode #testimonials .section-title h2,
+.dark-mode #testimonials .section-title p {
+  color: #ffffff;
+}
+
+.dark-mode .testimonial-card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.dark-mode .testimonial-card p {
+  color: #dddddd;
+}
+
+.dark-mode .testimonial-card .rating i {
+  color: #ffc107;
+}
+
+.dark-mode .testimonial-card .profile-info h3,
+.dark-mode .testimonial-card .profile-info h4 {
+  color: #ffffff;
+}
+
+/* ------------------ */
+/* DARK MODE: Komentar */
+/* ------------------ */
+.dark-mode section#komentar {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode #komentar .section-title h2,
+.dark-mode #komentar .section-title p {
+  color: #ffffff;
+}
+
+.dark-mode #komentar .form-control,
+.dark-mode #komentar .input-group-text,
+.dark-mode #komentar textarea,
+.dark-mode #komentar select {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+.dark-mode #komentar .form-control::placeholder,
+.dark-mode #komentar textarea::placeholder {
+  color: #bbbbbb;
+}
+
+.dark-mode #komentar .form-check-label i {
+  color: #ffc107;
+}
+
+.dark-mode #komentar .btn,
+.dark-mode #komentar button {
+  background-color: #00bfa5;
+  color: #ffffff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+.dark-mode #komentar .btn:hover,
+.dark-mode #komentar button:hover {
+  background-color: #009688;
+}
+
+/* Loading / message box */
+.dark-mode .loading,
+.dark-mode .sent-message,
+.dark-mode .error-message {
+  color: #ffffff;
+}
+
+/* ------------------ */
+/* DARK MODE: Footer  */
+/* ------------------ */
+.dark-mode footer.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-top: 1px solid #333;
+}
+
+.dark-mode .footer .logo span.sitename {
+  color: #ffffff;
+}
+
+.dark-mode .footer p,
+.dark-mode .footer a,
+.dark-mode .footer ul li a {
+  color: #dddddd;
+}
+
+.dark-mode .footer h4 {
+  color: #ffffff;
+}
+
+.dark-mode .footer a:hover {
+  color: #00bfa5;
+  text-decoration: underline;
+}
+
+.dark-mode .footer .social-links a {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .footer .social-links a:hover {
+  background-color: #00bfa5;
+  color: #ffffff;
+}
+
+.dark-mode .footer .credits a {
+  color: #00bfa5;
+}
+
+.dark-mode .footer .credits a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright section */
+.dark-mode .footer .copyright {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 30px;
+  color: #bbbbbb;
+}
+
+/* DARK MODE: Menu responsif */
+.dark-mode .navmenu {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .navmenu ul li a {
+  color: #ffffff !important;
+}
+
+.dark-mode .navmenu ul li a.active,
+.dark-mode .navmenu ul li a:hover {
+  color: #ffd700 !important;
+}
+.dark-mode .navmenu .dropdown ul {
+  background-color: #2a2a2a !important;
+}
+
+.dark-mode .navmenu .dropdown ul li a {
+  color: #ffffff !important;
+}
+/* Warna icon menjadi putih saat dark mode */
+body.dark-mode .badge-wrapper .icon-circle i {
+  color: #ffffff !important;
+}
+.testimonial-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-color: #4a90e2; /* Warna border saat hover */
+}
+body.dark-mode .testimonial-card {
+  background-color: #1f1f1f;
+  border-color: #333;
+  color: #f1f1f1;
+}
+
+
+</style>
+
+
+<body class="index-page">
+
+  <header id="header"  class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Coding Is Fun</h1><span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#materi">Materi</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#portfolio">Aplikasi</a></li>
+          <li class="dropdown"><a ><span>Latihan Interaktif</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="latihan.html">HTML</a></li>
+              <li><a href="latihan.html">CSS</a></li>
+              <li><a href="latihan.html">JavaScript</a></li>
+              <li><a href="latihan.html">PHP</a></li>
+              <li><a href="latihan.html">LARAVEL</a></li>
+              <li><a href="latihan.html">PYTHON</a></li>
+            </ul>
+          </li>
+          <li><a href="#komentar">Komentar</a></li>
+          <li><button id="dark-mode-toggle" class="btn btn-sm btn-outline-dark ms-2">
+  <i id="dark-mode-icon" class="bi bi-moon-fill"></i>
+</button>
+</li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="badge-wrapper mb-3">
+              <div class="d-inline-flex align-items-center rounded-pill border border-accent-light">
+                <div class="icon-circle me-2">
+                  <i class="bi bi-bell"></i>
+                </div>
+                <span class="badge-text me-3">Setiap baris kode adalah langkah menuju masa depanmu.</span>
+              </div>
+            </div>
+
+            <h1 class="hero-title mb-4"><i class="fas fa-lightbulb"></i>
+ Belajar Coding dari Dasar Hingga Bisa!</h1>
+
+            <p class="hero-description mb-4">Mulai perjalanan codingmu dari nol. Website ini dirancang untuk pemula yang ingin belajar HTML, CSS, JavaScript, dan banyak lagi semua dengan langkah sederhana dan latihan interaktif.</p>
+
+            <div class="cta-wrapper">
+              <a href="#materi" class="btn btn-primary">Lihat Materi</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img src="bg.png" alt="Business Growth" class="img-fluid" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div class="row feature-boxes">
+  <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+    <div class="feature-box">
+      <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+        <i class="bi bi-1-circle"></i>
+      </div>
+      <div class="feature-content">
+        <h3 class="feature-title">Mulai dari Dasar</h3>
+        <p class="feature-text">Pelajari HTML, CSS, dan dasar-dasar pemrograman secara bertahap. Cocok untuk kamu yang belum pernah ngoding sebelumnya.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+    <div class="feature-box">
+      <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+        <i class="bi bi-2-circle"></i>
+      </div>
+      <div class="feature-content">
+        <h3 class="feature-title">Latihan Interaktif</h3>
+        <p class="feature-text">Setiap materi dilengkapi dengan latihan langsung untuk membantu kamu memahami konsep dan logika pemrograman.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+    <div class="feature-box">
+      <div class="feature-icon me-sm-4 mb-3 mb-sm-0">
+        <i class="bi bi-3-circle"></i>
+      </div>
+      <div class="feature-content">
+        <h3 class="feature-title">Tes & Proyek Mini</h3>
+        <p class="feature-text">Uji kemampuanmu lewat soal latihan dan proyek kecil seperti membuat halaman web sederhana dan form dinamis.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <section id="materi" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Mau belajar apa hari ini?</h2>
+        <p>Temukan tutorial berdasarkan minatmu.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center g-5">
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="service-content">
+                <h3>HTML</h3>
+               <p>Pelajari dasar-dasar HTML, bahasa dasar untuk membangun halaman web. Cocok untuk pemula yang ingin mulai dunia coding dari awal tanpa bingung!</p>
+                <a href="dasarhtml.html" class="service-link">
+                  <span>Pelajari Lebih Lanjut</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="service-item">
+              <div class="service-icon">
+                  <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="service-content">
+                <h3>CSS</h3>
+                <p>Pelajari cara mempercantik tampilan website dengan CSS. Mulai dari mengubah warna, font, hingga membuat layout yang rapih dan responsif.</p>
+                <a href="dasarcss1.html" class="service-link">
+                  <span>Pelajari Lebih Lanjut</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                <i class="fab fa-php"></i>
+              </div>
+              <div class="service-content">
+                <h3>PHP</h3>
+                <p>Pelajari PHP untuk membuat website yang dinamis dan interaktif. Mulai dari menampilkan data hingga menghubungkan ke database, semua bisa kamu kuasai secara bertahap.</p>
+                <a href="dasarphp1.html" class="service-link">
+                  <span>Pelajari Lebih Lanjut</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="service-item">
+              <div class="service-icon">
+                  <i class="fab fa-js-square"></i>
+              </div>
+              <div class="service-content">
+                <h3>JavaScript</h3>
+                <p>Pelajari JavaScript untuk membuat website menjadi hidup dan interaktif. Dari tombol yang bisa diklik hingga animasi menarik, semua bisa kamu buat dengan JavaScript.</p>
+                <a href="dasarjs1.html" class="service-link">
+                  <span>Pelajari Lebih Lanjut</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                 <i class="bi bi-layers"></i>
+              </div>
+              <div class="service-content">
+                <h3>Laravel</h3>
+                <p>Pelajari Laravel, framework PHP yang memudahkan kamu membangun aplikasi web modern, aman, dan efisien dengan kode yang rapi dan mudah dipahami.</p>
+                <a href="dasarlaravel1.html" class="service-link">
+                  <span>Pelajari Lebih Lanjut</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="service-item">
+              <div class="service-icon">
+                  <i class="fab fa-python"></i>
+              </div>
+              <div class="service-content">
+                <h3>Python</h3>
+                <p>Pelajari Python, bahasa pemrograman yang mudah dibaca dan cocok untuk pemula. Digunakan untuk membuat website, aplikasi, hingga kecerdasan buatan.</p>
+                <a href="dasarpython1.html" class="service-link">
+                  <span>Pelajari Lebih Lanjut</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p class="who-we-are">Tentang Kami</p>
+<h3>Belajar Coding Lebih Mudah, Terarah, dan Menyenangkan</h3>
+<p class="fst-italic">
+Kami adalah platform belajar coding untuk pemula yang ingin memulai perjalanan di dunia teknologi. Dengan materi yang terstruktur dan mudah dipahami, kami bantu kamu dari nol hingga bisa membuat website dan aplikasi sendiri.
+</p>
+
+            <ul>
+  <li><i class="bi bi-check-circle"></i> <span>Materi disusun dari dasar hingga lanjutan, cocok untuk pemula.</span></li>
+  <li><i class="bi bi-check-circle"></i> <span>Belajar HTML, CSS, JavaScript, PHP, Laravel, hingga Python.</span></li>
+  <li><i class="bi bi-check-circle"></i> <span>Dilengkapi latihan langsung, proyek mini, dan panduan step-by-step.</span></li>
+</ul>
+
+           <a href="latihan.html" class="read-more"><span>
+Latihan Interaktif</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+             <div class="col-lg-6">
+  <video class="img-fluid" autoplay muted loop  style="border-radius: 10px;">
+    <source src="vidio.mp4" type="video/mp4">
+    Browser Anda tidak mendukung tag video.
+  </video>
+</div>
+
+             
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+ <section id="game" class="how-we-work section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Game Pelajaran</h2>
+    <p>Mainkan game seru sambil belajar dan menguji logika serta kreativitasmu.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="steps-5">
+      <div class="process-container">
+
+        <!-- Game 1 -->
+        <div class="process-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="content">
+            <span class="step-number">01</span>
+            <div class="card-body">
+              <div class="step-icon">
+                <i class="bi bi-controller"></i>
+              </div>
+              <div class="step-content">
+                <h3>Tebak Angka</h3>
+                <p>Coba tebak angka yang dipilih komputer! Cocok untuk melatih logika dan instingmu.</p>
+                <a href="tebakangka.html" class="btn btn-primary mt-3">Mainkan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game 2 -->
+        <div class="process-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="content">
+            <span class="step-number">02</span>
+            <div class="card-body">
+              <div class="step-icon">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <div class="step-content">
+                <h3>Quiz Cepat</h3>
+                <p>Jawab pertanyaan pilihan ganda dengan waktu terbatas. Tantang pengetahuanmu!</p>
+                <a href="kuiscepat.html" class="btn btn-primary mt-3">Mainkan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game 3 -->
+        <div class="process-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="content">
+            <span class="step-number">03</span>
+            <div class="card-body">
+              <div class="step-icon">
+                <i class="bi bi-puzzle"></i>
+              </div>
+              <div class="step-content">
+                <h3>Susun Kata</h3>
+                <p>Acak huruf, susun menjadi kata yang benar. Tes kreativitas dan kecepatan berpikirmu!</p>
+                <a href="susunkata.html" class="btn btn-primary mt-3">Mainkan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game 4 -->
+        <div class="process-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="content">
+            <span class="step-number">04</span>
+            <div class="card-body">
+              <div class="step-icon">
+                <i class="bi bi-mouse2"></i>
+              </div>
+              <div class="step-content">
+                <h3>Click Mania</h3>
+                <p>Klik sebanyak mungkin dalam waktu tertentu. Uji kecepatan tanganmu!</p>
+                <a href="clikmania.html" class="btn btn-primary mt-3">Mainkan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section><!-- /Game Hiburan Section -->
+
+
+
+  
+   
+
+    <!-- Call To Action 2 Section -->
+   <section id="call-to-action-2" class="call-to-action-2 section light-background">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+        <div class="cta-image-wrapper">
+          <img src="cta-4.webp" alt="Donasi Coding Pemula" class="img-fluid rounded-4">
+          <div class="cta-pattern"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+        <div class="cta-content">
+          <h2>Bantu Teman Belajar dengan Donasi</h2>
+          <p class="lead">Website ini dibuat untuk membantu teman-teman yang ingin belajar coding dari nol secara gratis. Dukunganmu akan sangat berarti untuk menjaga website ini tetap berjalan dan terus berkembang.</p>
+
+          <div class="cta-features">
+            <div class="feature-item" data-aos="zoom-in" data-aos-delay="400">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Membantu pemula mengakses materi tanpa biaya</span>
+            </div>
+            <div class="feature-item" data-aos="zoom-in" data-aos-delay="450">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Menambah latihan dan fitur interaktif</span>
+            </div>
+            <div class="feature-item" data-aos="zoom-in" data-aos-delay="500">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Dukunganmu menjaga semangat belajar bersama</span>
+            </div>
+          </div>
+
+          <div class="cta-action mt-5">
+            <a href="#donasi" class="btn btn-primary btn-lg me-3">Donasi Sekarang</a>
+            <a href="#about" class="btn btn-outline-primary btn-lg">Tentang Kami</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Call To Action 2 Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+  <h2>Aplikasi yang Dibutuhkan</h2>
+  <p>Berikut adalah daftar aplikasi penting yang perlu kamu install untuk mulai ngoding.</p>
+</div>
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+           <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+  <!-- VS Code -->
+  <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="vcsoce.jpeg" class="img-fluid" alt="VS Code" loading="lazy">
+        <div class="portfolio-overlay">
+          <div class="portfolio-actions">
+            <a href="vcsoce.jpeg" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+            <a href="https://code.visualstudio.com/" class="details-link" target="_blank"><i class="bi bi-download"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-content">
+        <span class="category">Code Editor</span>
+        <h3>Visual Studio Code</h3>
+        <p>Editor serbaguna yang ringan dan cocok untuk Python, PHP, dan Laravel.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- XAMPP -->
+  <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="xampp.jpeg" class="img-fluid" alt="XAMPP" loading="lazy">
+        <div class="portfolio-overlay">
+          <div class="portfolio-actions">
+            <a href="xampp.jpeg" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+            <a href="https://www.apachefriends.org/index.html" class="details-link" target="_blank"><i class="bi bi-download"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-content">
+        <span class="category">Web Server</span>
+        <h3>XAMPP</h3>
+        <p>Paket server lokal yang memudahkan menjalankan proyek PHP Native dan Laravel.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Composer -->
+  <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="composer.jpeg" class="img-fluid" alt="Composer" loading="lazy">
+        <div class="portfolio-overlay">
+          <div class="portfolio-actions">
+            <a href="composer.jpeg" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+            <a href="https://getcomposer.org/" class="details-link" target="_blank"><i class="bi bi-download"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-content">
+        <span class="category">Dependency Manager</span>
+        <h3>Composer</h3>
+        <p>Pengelola library PHP dan Laravel yang wajib untuk instalasi package otomatis.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Python -->
+  <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+    <div class="portfolio-card">
+      <div class="portfolio-image">
+        <img src="python.jpeg" class="img-fluid" alt="Python" loading="lazy">
+        <div class="portfolio-overlay">
+          <div class="portfolio-actions">
+            <a href="python.jpeg" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+            <a href="https://www.python.org/" class="details-link" target="_blank"><i class="bi bi-download"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-content">
+        <span class="category">Bahasa Pemrograman</span>
+        <h3>Python</h3>
+        <p>Bahasa pemrograman serbaguna untuk web, data science, dan automasi.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Pricing Section -->
+    <section id="donasi" class="pricing section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Donasi</h2>
+    <p>Dukungan kamu akan membantu pengembangan website belajar coding gratis untuk semua.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row g-4 justify-content-center">
+
+      <!-- GoPay -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-card">
+          <h3>GoPay</h3>
+          <div class="price mb-3">
+            <img src="gopay.jpeg" alt="Donasi via GoPay" class="img-fluid rounded-3">
+          </div>
+          <p class="description">Scan QR di atas atau klik tombol di bawah untuk melakukan donasi lewat GoPay.</p>
+          <a href="https://gopay.co.id/app/scanqr?deeplink_source=request_money" target="_blank" class="btn btn-primary">
+  Donasi via GoPay
+  <i class="bi bi-arrow-right"></i>
+</a>
+
+        </div>
+      </div>
+
+      <!-- DANA -->
+    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-card">
+          <h3>DANA</h3>
+          <div class="price mb-3">
+            <img src="dana.jpeg" alt="Donasi via GoPay" class="img-fluid rounded-3">
+          </div>
+          <p class="description">Scan QR di atas atau klik tombol di bawah untuk melakukan donasi lewat DANA.</p>
+          <a href="https://link.dana.id/minta?full_url=https://qr.dana.id/v1/281012012022051285446184" target="_blank" class="btn btn-primary">
+  Donasi via DANA
+  <i class="bi bi-arrow-right"></i>
+</a>
+
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+
+</section><!-- /Donasi Section -->
+   
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Berkomentar</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 800,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": 1,
+              "spaceBetween": 30,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "768": {
+                  "slidesPerView": 2
+                },
+                "1200": {
+                  "slidesPerView": 3
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+           <div class="swiper-slide">
+  <div class="testimonial-card">
+    <div class="testimonial-content">
+      <p>
+        Website ini sangat bermanfaat bagi saya dan banyak orang lainnya yang ingin belajar secara gratis. Kontennya informatif dan mudah dipahami. Yuk, bantu dukung pengembangan website ini dengan berdonasi seikhlasnya!
+      </p>
+    </div>
+    <div class="testimonial-profile">
+      <div class="rating">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+      </div>
+      <div class="profile-info">
+        <div>
+          <h3>Andi Rahman</h3>
+          <h4>Mahasiswa</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <p>
+  Platform ini benar-benar luar biasa. Desainnya bersih, materi coding-nya terstruktur, dan sangat cocok untuk pemula yang ingin berkembang di dunia teknologi. Sangat saya rekomendasikan!
+</p>
+
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <div>
+                      <h3>Lisa</h3>
+                      <h4>SMK</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                 <p>
+  Saya sangat senang dengan adanya update materi baru secara rutin. Ini menunjukkan bahwa tim pengembang sangat peduli dengan perkembangan teknologi terbaru dan kebutuhan para pelajar. Setiap materi yang ditambahkan selalu relevan dan mudah diikuti.
+</p>
+
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <div>
+                      <h3>M.Ridwan</h3>
+                      <h4>SMK</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                 <p>
+  Sangat menginspirasi! Website ini terus berkembang dan memberikan materi berkualitas secara gratis. Saya senang bisa berkontribusi lewat donasi untuk mendukung pembaruan materi dan semangat berbagi ilmu. Ayo bantu bersama!
+</p>
+
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <div>
+                      <h3>David</h3>
+                      <h4>Mahasiswa</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                 <p>
+  Tolong update materi baru ya, saya sangat semangat untuk belajar! Website ini sangat membantu saya memahami dasar-dasar coding, dan saya ingin terus berkembang bersama konten-konten terbaru dari kalian. Terima kasih sudah berbagi ilmu!
+</p>
+
+                </div>
+                <div class="testimonial-profile">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="profile-info">
+                    <div>
+                      <h3>Radit</h3>
+                      <h4>SMK</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="komentar" class="contact section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Berikan Komentar</h2>
+    <p>Berikan komentar, dukungan, dan semangat Anda untuk pengembangan website ini. Kami sangat menghargai feedback Anda!</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="form-wrapper" data-aos="fade-up" data-aos-delay="400">
+          <form method="post" role="form" class="php-email-form">
+
+            <div class="row">
+              <!-- Nama -->
+              <div class="col-md-6 form-group">
+                 <div class="input-group">
+    <span class="input-group-text"><i class="bi bi-person"></i></span>
+    <input type="text" id="nama" name="nama" required class="form-control" placeholder="Nama Anda" required>
+  </div>
+              </div>
+
+              <!-- Pilihan Asal Pendidikan -->
+              <div class="col-md-6 form-group">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-building"></i></span>
+                  <select name="asal" class="form-control" required>
+                    <option value="">Asal Pendidikan</option>
+                    <option value="SMP">SMP</option>
+                    <option value="SMK">SMK</option>
+                    <option value="Mahasiswa">Mahasiswa</option>
+                    <option value="Orang Umum">Orang Umum</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating Bintang -->
+           <div class="form-group mt-3">
+  <label class="mb-2 fw-bold">Rating:</label><br>
+
+  <!-- Bintang 1 -->
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="bintang[]" value="1" id="bintang1">
+    <label class="form-check-label" for="bintang1">
+      <i class="bi bi-star-fill text-warning"></i>
+    </label>
+  </div>
+
+  <!-- Bintang 2 -->
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="bintang[]" value="2" id="bintang2">
+    <label class="form-check-label" for="bintang2">
+      <i class="bi bi-star-fill text-warning"></i>
+    </label>
+  </div>
+
+  <!-- Bintang 3 -->
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="bintang[]" value="3" id="bintang3">
+    <label class="form-check-label" for="bintang3">
+      <i class="bi bi-star-fill text-warning"></i>
+    </label>
+  </div>
+
+  <!-- Bintang 4 -->
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="bintang[]" value="4" id="bintang4">
+    <label class="form-check-label" for="bintang4">
+      <i class="bi bi-star-fill text-warning"></i>
+    </label>
+  </div>
+
+  <!-- Bintang 5 -->
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="bintang[]" value="5" id="bintang5">
+    <label class="form-check-label" for="bintang5">
+      <i class="bi bi-star-fill text-warning"></i>
+    </label>
+  </div>
+</div>
+
+
+            <!-- Komentar -->
+            <div class="form-group mt-3">
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
+                <textarea class="form-control" name="komentar" rows="5" placeholder="Tulis komentar Anda di sini..." required></textarea>
+              </div>
+            </div>
+
+            <!-- Notifikasi -->
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Komentar Anda telah dikirim. Terima kasih!</div>
+            </div>
+
+            <!-- Tombol Kirim -->
+            <div class="text-center">
+              <button type="button" id="kirimKomentar">Kirim Komentar</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /Komentar Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+      
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Coding Is Fun</strong>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Desain OLeh <a href="index.html">Coding IS Fun</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="validate.js"></script>
+  <script src="aos.js"></script>
+  <script src="glightbox.min.js"></script>
+  <script src="imagesloaded.pkgd.min.js"></script>
+  <script src="isotope.pkgd.min.js"></script>
+  <script src="swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+
+<script>
+  document.getElementById("kirimKomentar").addEventListener("click", function () {
+    const nama = document.querySelector('input[name="nama"]').value.trim();
+    const asal = document.querySelector('select[name="asal"]').value;
+    const komentar = document.querySelector('textarea[name="komentar"]').value.trim();
+    const bintang = document.querySelectorAll('input[name="bintang[]"]:checked');
+
+    if (nama === "" || asal === "" || komentar === "" || bintang.length === 0) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Data belum lengkap!',
+        text: 'Silakan lengkapi semua field termasuk pilih minimal 1 bintang.',
+        confirmButtonColor: '#f39c12',
+        background: '#fffbe6'
+      });
+    } else {
+      Swal.fire({
+        icon: 'success',
+        title: 'Komentar Berhasil Dikirim!',
+        text: 'Terima kasih atas dukungan dan semangat Anda.',
+        confirmButtonColor: '#3085d6'
+      }).then(() => {
+        document.querySelector("index.html").submit(); // submit form jika semua valid
+      });
+    }
+  });
+</script>
+<script>
+  const toggle = document.getElementById("dark-mode-toggle");
+  const icon = document.getElementById("dark-mode-icon");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Ganti ikon
+    if (document.body.classList.contains("dark-mode")) {
+      icon.classList.replace("bi-moon-fill", "bi-sun-fill");
+    } else {
+      icon.classList.replace("bi-sun-fill", "bi-moon-fill");
+    }
+  });
+</script>
+
+
+
+</body>
+
+</html>

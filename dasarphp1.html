@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Belajar Coding</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="bgg.png">
+  <link rel="icon" href="bgg.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Bootstrap CSS (jika belum ada) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<!-- Vendor CSS Files -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons.css" rel="stylesheet">
+  <link href="aos.css" rel="stylesheet">
+  <link href="glightbox.min.css" rel="stylesheet">
+  <link href="swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Invent
+  * Template URL: https://bootstrapmade.com/invent-bootstrap-business-template/
+  * Updated: May 12 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode .bg-light pre,
+.dark-mode .bg-light code {
+  color: black;
+ /* opsional: buat latar belakang gelap juga */
+}
+/* Navbar & Menu */
+body.dark-mode .navmenu,
+body.dark-mode .mobile-nav,
+.dark-mode .header,
+.dark-mode .navmenu,
+.dark-mode .dropdown ul {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .navmenu ul li a,
+.dark-mode .mobile-nav a {
+  color: #ffffff !important;
+}
+
+.dark-mode .navmenu ul li a.active,
+.dark-mode .navmenu ul li a:hover {
+  color: #ffd700 !important;
+}
+
+.dark-mode .navmenu .dropdown ul {
+  background-color: #2a2a2a !important;
+}
+
+.dark-mode .navmenu .dropdown ul li a {
+  color: #ffffff !important;
+}
+
+/* Icon mode gelap */
+#dark-mode-icon {
+  color: #000;
+  transition: color 0.3s;
+}
+
+body.dark-mode #dark-mode-icon {
+  color: #fff;
+}
+
+/* Hero dan section */
+.dark-mode section#hero h1,
+.dark-mode section#hero p,
+.dark-mode section#materi,
+.dark-mode section#about,
+.dark-mode section#materi h2,
+.dark-mode section#about h3,
+.dark-mode .sitename,
+.dark-mode .hero-title,
+.dark-mode .hero-description,
+.dark-mode .badge-text {
+  color: #ffffff !important;
+}
+
+.dark-mode section#materi,
+.dark-mode section#about {
+  background-color: #1a1a1a;
+}
+
+/* Feature box */
+.dark-mode .feature-box {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444;
+}
+
+.dark-mode .feature-title,
+.dark-mode .feature-text,
+.dark-mode .feature-icon i {
+  color: #ffffff !important;
+}
+
+/* How We Work */
+.dark-mode section#how-we-work {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode #how-we-work .section-title h2,
+.dark-mode #how-we-work .section-title p,
+.dark-mode #how-we-work .step-icon i,
+.dark-mode #how-we-work .step-content h3 {
+  color: #ffffff;
+}
+
+.dark-mode #how-we-work .step-number {
+  color: #ffcc00;
+}
+
+.dark-mode #how-we-work .step-content p {
+  color: #cccccc;
+}
+
+.dark-mode #how-we-work .process-item .content {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/* Call to Action 2 */
+.dark-mode section#call-to-action-2 {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode section#hero h3{
+  color: white;
+}
+.dark-mode section#hero h4{
+  color: white;
+}
+
+.dark-mode #call-to-action-2 h2,
+.dark-mode #call-to-action-2 .lead,
+.dark-mode #call-to-action-2 .feature-item span {
+  color: #ffffff;
+}
+
+.dark-mode #call-to-action-2 .feature-item i {
+  color: #00c853;
+}
+
+/* Footer */
+.dark-mode footer.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-top: 1px solid #333;
+}
+
+.dark-mode .footer .logo span.sitename,
+.dark-mode .footer p,
+.dark-mode .footer a,
+.dark-mode .footer ul li a,
+.dark-mode .footer h4 {
+  color: #dddddd;
+}
+
+.dark-mode .footer a:hover {
+  color: #00bfa5;
+  text-decoration: underline;
+}
+
+.dark-mode .footer .social-links a {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .footer .social-links a:hover {
+  background-color: #00bfa5;
+  color: #ffffff;
+}
+
+.dark-mode .footer .credits a {
+  color: #00bfa5;
+}
+
+.dark-mode .footer .credits a:hover {
+  text-decoration: underline;
+}
+
+.dark-mode .footer .copyright {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 30px;
+  color: #bbbbbb;
+}
+
+/* Badge icon */
+body.dark-mode .badge-wrapper .icon-circle i {
+  color: #ffffff !important;
+}
+
+/* Komentar feedback & alert */
+.dark-mode .loading,
+.dark-mode .sent-message,
+.dark-mode .error-message {
+  color: #ffffff;
+}
+
+/* RCB Button */
+.rcb {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.rcb:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+/* List Group (Materi) */
+.list-group-item {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #eef4fc;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 1.6rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Mode terang */
+body:not(.dark-mode) .list-group-item {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body:not(.dark-mode) .list-group-item:hover {
+  background-color: #e2e6ea;
+  color: #000;
+}
+
+/* Mode gelap */
+body.dark-mode .list-group-item {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  border-color: #333;
+}
+
+body.dark-mode .list-group-item:hover {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+.custom-content {
+  background-color: #ffffff;
+  color: #212529;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+body.dark-mode .custom-content {
+  background-color: #1f1f1f !important;
+  color: #f1f1f1 !important;
+}
+
+  img.zoomable {
+    cursor: zoom-in;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+  }
+
+  img.zoomable:hover {
+    transform: scale(1.02);
+  }
+/* Warna biru saat dark mode */
+body.dark-mode .btn-outline-secondary {
+  color: #0d6efd !important;         /* Warna biru Bootstrap */
+  border-color: #0d6efd !important;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+.highlight {
+  background-color: #ffff99; /* kuning stabilo */
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+</style>
+
+
+<body class="index-page">
+
+  <header id="header"  class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html#materi" class="btn btn-sm btn-outline-secondary d-flex align-items-center logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <i class="bi bi-arrow-left me-1"></i><span>Kembali</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <button id="dark-mode-toggle" class="btn btn-sm btn-outline-dark">
+      <i id="dark-mode-icon" class="bi bi-moon-fill"></i>
+    </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Judul Hero -->
+<div class="row align-items-center mb-4">
+  <div class="col-12 d-flex flex-wrap align-items-center justify-content-between gap-2">
+    <!-- Kiri: Tombol Kembali -->
+  
+    <!-- Kanan: Tombol Mode Gelap -->
+    
+
+    <!-- Judul (diletakkan di bawah jika layar kecil) -->
+    <h1 class="fw-bold mb-0 w-100 mt-2" style="font-size: 2.4rem;">
+      Pengenalan Bahasa Pemrograman php
+    </h1>
+  </div>
+</div>
+    <!-- Kotak Latihan -->
+     <hr class="mb-4">
+
+    <!-- Daftar Materi HTML -->
+<div class="list-group shadow-sm p-4 rounded custom-content">
+  <p>Selamat datang di tutorial pembelajaran PHP untuk pemula.</p>
+  <p>Banyak pemula sering merasa bingung dan bertanya-tanya:</p>
+  <p>“Bagaimana cara membuat website menggunakan PHP?”</p>
+  <p>“Apa saja perangkat yang dibutuhkan untuk melakukan pemrograman PHP?”</p>
+  <p>“Mengapa kita perlu mempelajari PHP?”</p>
+  <p>Dan masih banyak pertanyaan lainnya seputar topik ini.</p>
+  <p>Pada tutorial ini, kita akan mempelajarinya secara bertahap hingga benar-benar memahami.</p>
+  <p>Mulai dari sejarah awal munculnya PHP hingga pengenalan konsep dasar pemrograman PHP.</p>
+  <p>Apakah Anda siap?</p>
+  <p>Pastikan untuk membaca hingga selesai.</p>
+  <p>Mari kita mulai.</p>
+
+  <hr class="my-4">
+
+  <!-- Asal usul kemunculan PHP -->
+  <h3 class="mb-3">Sejarah Singkat Kemunculan PHP</h3>
+  <p>Pada awal perkembangannya, website bersifat statis, hanya dibangun dengan HTML dan sedikit sentuhan CSS.</p>
+  <p>Teknologi web pada masa itu memang belum secanggih sekarang.</p>
+  <p>Saat seseorang mengakses website, sebenarnya mereka hanya membuka file HTML yang disimpan di server.</p>
+
+  <div class="clearfix my-4">
+    <a href="php1.avif" target="_blank">
+      <img src="php1.avif" alt="Dasar HTML" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+    </a>
+    <p>
+      Untuk memperindah tampilan, digunakan <strong>CSS</strong>, sedangkan untuk menambahkan interaktivitas pada halaman web digunakan <strong>JavaScript</strong>.
+    </p>
+  </div>
+
+  <p>Permasalahan saat itu adalah:</p>
+  <p>Karena website bersifat statis, tidak ada cara untuk mengetahui siapa saja yang mengakses dan berapa jumlah pengunjung.</p>
+  <p>Oleh karena itu, pada tahun 1993, Rasmus Lerdorf mengembangkan bahasa pemrograman PHP.</p>
+  <p>Pada awalnya, PHP digunakan secara pribadi oleh Rasmus, dan kemudian dirilis secara publik pada tahun 1995.</p>
+  <p>Awalnya, PHP merupakan singkatan dari:</p>
+  <p>PHP = Personal Home Page.</p>
+  <p>Namun seiring waktu, makna singkatan tersebut berubah menjadi:</p>
+  <p>PHP = PHP: Hypertext Preprocessor.</p>
+
+  <h3>Apa Itu PHP?</h3>
+  <p>PHP adalah bahasa pemrograman berjenis scripting yang dijalankan di sisi server. PHP dikembangkan dengan bahasa C, sehingga sintaksnya cukup mirip dengan bahasa C.</p>
+  <p>Jika Anda sudah mempelajari bahasa C sebelumnya, maka akan lebih mudah memahami sintaks PHP.</p>
+
+  <h3>Perangkat yang Dibutuhkan untuk Pemrograman PHP</h3>
+  <p>Ada empat perangkat utama yang perlu disiapkan untuk mulai belajar PHP:</p>
+  <ul>
+    <li>PHP Interpreter – untuk menjalankan kode PHP di server</li>
+    <li>Text Editor – untuk menulis kode program PHP</li>
+    <li>Web Server – layanan untuk mengeksekusi kode PHP</li>
+    <li>Web Browser – untuk menampilkan hasil dari eksekusi kode PHP</li>
+  </ul>
+
+  <h3>Alur Pengembangan Program PHP</h3>
+  <p>Proses pengembangan program PHP dimulai dengan menulis kode program, lalu menjalankannya pada server lokal atau server hosting.</p>
+  <p>Perhatikan ilustrasi berikut:</p>
+
+  <div class="mb-4">
+    <a href="php2.png" target="_blank">
+      <img src="php2.png" alt="Editor HTML" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+    </a>
+    <p>Seorang programmer menulis kode PHP, kemudian mengunggahnya ke server agar dapat diakses oleh pengguna melalui browser.</p>
+  </div>
+
+  <p>Ketika pengguna membuka website, mereka akan menerima output berupa HTML yang dihasilkan dari proses eksekusi kode PHP di server.</p>
+
+  <div class="mb-4">
+    <a href="php3.avif" target="_blank">
+      <img src="php3.avif" alt="Web Browser" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+    </a>
+    <p>Pertanyaannya, apakah kita harus memiliki server untuk memulai pemrograman PHP?</p>
+  </div>
+
+  <p>Benar, kita memerlukan server untuk menjalankan PHP. Namun, tidak harus menggunakan server hosting berbayar pada tahap awal.</p>
+  <p>Kita bisa membuat server lokal (localhost) di komputer pribadi. Bahkan PHP sudah menyediakan fitur built-in server untuk keperluan pengembangan.</p>
+  <p>Server hosting hanya dibutuhkan ketika aplikasi sudah siap untuk dipublikasikan ke internet.</p>
+  <p>Sampai di sini, apakah sudah jelas?</p>
+  <p>Semoga Anda dapat memahaminya dengan baik.</p>
+  <br>
+  <h3><span class="highlight"> Persiapan Pemrograman PHP di Linux</span></h3>
+  <hr class="mb-4">
+   <p>Setelah mempelajari konsep dasar pemrograman PHP, kini saatnya kita menyiapkan berbagai perangkat pendukung untuk melakukan pemrograman PHP di sistem operasi Linux.</p>
+  <p>Apa saja perangkat yang dibutuhkan?</p>
+  <ul>
+    <li>Text Editor</li>
+    <li>Web Browser</li>
+    <li>PHP Interpreter</li>
+    <li>Web Server Apache</li>
+    <li>MySQL (opsional)</li>
+    <li>phpMyAdmin (opsional)</li>
+  </ul>
+  <p>Jumlahnya memang cukup banyak, namun tidak semuanya wajib diinstal di awal.</p>
+  <p>Apabila Anda hanya ingin mempelajari dasar-dasar PHP, cukup menyiapkan empat komponen pertama saja.</p>
+  <p>MySQL dan phpMyAdmin diperlukan jika Anda ingin mengembangkan proyek yang memerlukan basis data. Anda dapat menginstalnya nanti sesuai kebutuhan.</p>
+  <p>Pada tutorial ini, kita akan melakukan instalasi secara manual satu per satu, seperti layaknya membangun server baru.</p>
+  <p>Namun, jika Anda ingin proses yang lebih praktis, Anda dapat menggunakan paket lengkap seperti <strong>XAMPP</strong>.</p>
+
+  <hr class="my-4">
+  <h3>1. Text Editor</h3>
+  <p>Text editor digunakan untuk menulis kode program PHP.</p>
+  <p>Di Linux tersedia berbagai pilihan text editor seperti Gedit, Geany, Atom, Sublime, CodeLite, dan sebagainya.</p>
+  <p>Silakan pilih editor yang paling nyaman digunakan. Penulis sendiri merekomendasikan <strong>Visual Studio Code</strong> karena fitur-fiturnya lengkap dan mudah digunakan.</p>
+
+  <div class="clearfix my-4">
+    <a href="php4.png" target="_blank">
+      <img src="php4.png" alt="Editor PHP" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+    </a>
+  </div>
+
+  <h3>2. Web Browser</h3>
+  <p>Web browser merupakan perangkat lunak yang umumnya sudah tersedia di setiap sistem operasi.</p>
+  <p>Beberapa pilihan browser populer di Linux antara lain: Google Chrome, Mozilla Firefox, dan Opera.</p>
+  <p>Gunakan browser yang paling Anda sukai. Penulis menyarankan menggunakan versi terbaru dari Chrome atau Firefox karena keduanya paling banyak digunakan oleh pengguna web saat ini.</p>
+
+  <div class="mb-4">
+    <a href="dasar2.png" target="_blank">
+      <img src="dasar2.png" alt="Web Browser" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+    </a>
+  </div>
+
+  <h3>3. PHP Interpreter</h3>
+  <p>Agar kode PHP dapat dijalankan, diperlukan interpreter yang akan menerjemahkan dan mengeksekusi perintah-perintah PHP.</p>
+  <p>Versi terbaru PHP saat ini adalah <strong>PHP 8.1</strong>, sehingga disarankan untuk menggunakan versi tersebut.</p>
+  <p>Penggunaan versi lama seperti PHP 7 sudah dianggap tidak direkomendasikan.</p>
+
+  <p>Untuk pengguna Ubuntu atau distro turunan Debian, gunakan perintah berikut untuk menginstal PHP:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>sudo apt install php</code></pre>
+  </div>
+  <p>Setelah muncul konfirmasi, ketik <code>y</code> untuk melanjutkan proses instalasi.</p>
+
+  <div class="mb-4">
+    <a href="php5.png" target="_blank">
+      <img src="php5.png" alt="Instalasi PHP" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+    </a>
+  </div>
+
+  <p>Untuk pengguna Fedora atau distro berbasis RedHat, gunakan perintah berikut:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>sudo dnf install php</code></pre>
+  </div>
+  <p>Setelah muncul konfirmasi, ketik <code>y</code> untuk melanjutkan proses instalasi.</p>
+
+  <div class="mb-4">
+    <a href="php6.avif" target="_blank">
+      <img src="php6.avif" alt="Instalasi PHP Fedora" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+    </a>
+  </div>
+
+  <p>Setelah PHP terinstal, disarankan juga untuk menginstal beberapa pustaka tambahan yang sering digunakan:</p>
+
+  <p><strong>Untuk Ubuntu:</strong></p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>sudo apt install libapache2-mod-php php-mysql php-common</code></pre>
+  </div>
+
+  <p><strong>Untuk Fedora:</strong></p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>sudo dnf install libapache2-mod-php php-mysql php-common</code></pre>
+  </div>
+
+  <p><strong>Keterangan:</strong></p>
+  <ul>
+    <li><code>libapache2-mod-php</code> diperlukan agar Apache dapat menjalankan file PHP.</li>
+    <li><code>php-common</code> berisi pustaka-pustaka umum PHP.</li>
+    <li><code>php-mysql</code> digunakan untuk menghubungkan PHP dengan MySQL.</li>
+  </ul>
+
+  <p>Untuk memastikan bahwa PHP telah terinstal dengan benar, gunakan perintah berikut:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php -v</code></pre>
+  </div>
+  <p>Atau gunakan perintah alternatif:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php --version</code></pre>
+  </div>
+
+  <p>Jika berhasil, Anda akan melihat informasi versi PHP seperti pada gambar berikut:</p>
+  <div class="mb-4">
+    <a href="assets/img/php7.avif" target="_blank">
+      <img src="assets/img/php7.avif" alt="Versi PHP" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+    </a>
+  </div>
+  <br>
+  <h3><span class="highlight">Struktur Dasar Sintaks PHP</span></h3><!--komen-->
+  <hr class="mb-4">
+    <p>
+    PHP (Hypertext Preprocessor) adalah bahasa pemrograman sisi server yang digunakan untuk membangun situs web dinamis. Dalam menulis kode PHP, penting untuk memahami struktur dasar sintaks agar kode dapat berjalan dengan baik.
+  </p>
+
+  <h5>1. Tag Pembuka dan Penutup PHP</h5>
+  <p>
+    Setiap kode PHP harus ditulis di dalam tag <code>&lt;?php ... ?&gt;</code>. Tag ini memberi tahu server bahwa bagian tersebut adalah kode PHP.
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+// Ini adalah komentar
+echo "Halo, dunia!";
+?&gt;</code></pre>
+  </div>
+
+  <h5>2. Penulisan Statement</h5>
+  <p>
+    Setiap statement (pernyataan) dalam PHP diakhiri dengan tanda titik koma <code>;</code>.
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+echo "Belajar PHP itu mudah!";
+echo "Ayo semangat belajar!";
+?&gt;</code></pre>
+  </div>
+
+  <h5>3. Komentar di PHP</h5>
+  <p>
+    Komentar digunakan untuk memberikan keterangan dalam kode. PHP mendukung dua jenis komentar:
+  </p>
+  <ul>
+    <li><code>// Komentar satu baris</code></li>
+    <li><code># Komentar satu baris (alternatif)</code></li>
+    <li><code>/* Komentar banyak baris */</code></li>
+  </ul>
+
+  <h5>4. Menampilkan Output</h5>
+  <p>
+    Untuk mencetak teks ke browser, kita bisa menggunakan <code>echo</code> atau <code>print</code>.
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+echo "Selamat datang di website saya!";
+print "Belajar PHP itu seru!";
+?&gt;</code></pre>
+  </div>
+
+  <h5>5. Contoh Struktur Dasar Lengkap</h5>
+  <p>
+    Berikut contoh struktur dasar file PHP:
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Belajar PHP&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;?php
+echo "Halo, ini adalah file PHP pertama saya!";
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Ringkasan</h5>
+  <ul>
+    <li>Gunakan tag <code>&lt;?php ... ?&gt;</code> untuk menulis kode PHP.</li>
+    <li>Akhiri setiap perintah dengan <code>;</code>.</li>
+    <li>Gunakan <code>echo</code> atau <code>print</code> untuk menampilkan output.</li>
+    <li>Gunakan komentar untuk memberi catatan dalam kode.</li>
+  </ul>
+<br>
+<h3><mark>Memahami Struktur Sintaks PHP</mark></h3>
+  <hr class="mb-4">
+    <p>
+    PHP (Hypertext Preprocessor) adalah bahasa pemrograman sisi server yang digunakan untuk membangun situs web dinamis. Dalam menulis kode PHP, penting untuk memahami struktur dasar sintaks agar kode dapat berjalan dengan baik.
+  </p>
+
+  <h5>1. Tag Pembuka dan Penutup PHP</h5>
+  <p>
+    Setiap kode PHP harus ditulis di dalam tag <code>&lt;?php ... ?&gt;</code>. Tag ini memberi tahu server bahwa bagian tersebut adalah kode PHP.
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+// Ini adalah komentar
+echo "Halo, dunia!";
+?&gt;</code></pre>
+  </div>
+
+  <h5>2. Penulisan Statement</h5>
+  <p>
+    Setiap statement (pernyataan) dalam PHP diakhiri dengan tanda titik koma <code>;</code>.
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+echo "Belajar PHP itu mudah!";
+echo "Ayo semangat belajar!";
+?&gt;</code></pre>
+  </div>
+
+  <h5>3. Komentar di PHP</h5>
+  <p>
+    Komentar digunakan untuk memberikan keterangan dalam kode. PHP mendukung dua jenis komentar:
+  </p>
+  <ul>
+    <li><code>// Komentar satu baris</code></li>
+    <li><code># Komentar satu baris (alternatif)</code></li>
+    <li><code>/* Komentar banyak baris */</code></li>
+  </ul>
+
+  <h5>4. Menampilkan Output</h5>
+  <p>
+    Untuk mencetak teks ke browser, kita bisa menggunakan <code>echo</code> atau <code>print</code>.
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+echo "Selamat datang di website saya!";
+print "Belajar PHP itu seru!";
+?&gt;</code></pre>
+  </div>
+
+  <h5>5. Contoh Struktur Dasar Lengkap</h5>
+  <p>
+    Berikut contoh struktur dasar file PHP:
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Belajar PHP&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;?php
+echo "Halo, ini adalah file PHP pertama saya!";
+?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Ringkasan</h5>
+  <ul>
+    <li>Gunakan tag <code>&lt;?php ... ?&gt;</code> untuk menulis kode PHP.</li>
+    <li>Akhiri setiap perintah dengan <code>;</code>.</li>
+    <li>Gunakan <code>echo</code> atau <code>print</code> untuk menampilkan output.</li>
+    <li>Gunakan komentar untuk memberi catatan dalam kode.</li>
+  </ul>
+  <br>
+  <h3><mark>Fungsi Untuk Mencetak Text</mark></h3>
+  <hr class="mb-4">
+    <p>
+    Fungsi mencetak di PHP digunakan untuk menampilkan teks ke browser. Metode utama: <strong>echo</strong>, <strong>print</strong>, <strong>printf()</strong>, <strong>print_r()</strong>, dan <strong>var_dump()</strong>.
+  </p>
+
+  <h5>1. echo</h5>
+  <p>
+    Untuk mencetak banyak teks. Tidak mengembalikan nilai.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+echo "Halo!";
+echo "&lt;br&gt;";
+echo "Ini ", "beberapa ", "string.";
+?&gt;</code></pre>
+  </div>
+
+  <h5>2. print</h5>
+  <p>
+    Mencetak satu string. Mengembalikan nilai 1.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+print "Ini print.";
+$nilai = print " Hasil: ";
+echo $nilai;
+?&gt;</code></pre>
+  </div>
+
+  <h5>3. printf()</h5>
+  <p>
+    Cetak dengan format. Gunakan placeholder.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$nama = "Rayhan";
+$umur = 20;
+printf("Nama: %s, Umur: %d", $nama, $umur);
+?&gt;</code></pre>
+  </div>
+
+  <h5>4. print_r()</h5>
+  <p>
+    Cetak isi array/objek. Cocok untuk melihat data.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$data = ["apel", "jeruk"];
+print_r($data);
+?&gt;</code></pre>
+  </div>
+
+  <h5>5. var_dump()</h5>
+  <p>
+    Cetak tipe dan nilai variabel. Untuk debugging.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$angka = 10;
+$teks = "PHP";
+var_dump($angka);
+var_dump($teks);
+?&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Ringkasan</h5>
+  <ul>
+    <li><code>echo</code> – cepat, banyak string.</li>
+    <li><code>print</code> – satu string, kembalikan 1.</li>
+    <li><code>printf()</code> – format output.</li>
+    <li><code>print_r()</code> – tampilkan array/objek.</li>
+    <li><code>var_dump()</code> – detail tipe & isi.</li>
+  </ul>
+
+  <br>
+  <h3><mark>Variabel dan Tipe Data</mark></h3>
+  <h3 class="mb-4"></h3>
+    <p>
+    Variabel menyimpan data. Di PHP, diawali dengan simbol <code>$</code>. Tipe data utama: <strong>string</strong>, <strong>integer</strong>, <strong>float</strong>, <strong>boolean</strong>, <strong>array</strong>, dan <strong>object</strong>.
+  </p>
+
+  <h5>1. String</h5>
+  <p>
+    Berisi teks, diapit tanda kutip.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$nama = "Rayhan";
+echo "Halo, nama saya $nama";
+?&gt;</code></pre>
+  </div>
+
+  <h5>2. Integer</h5>
+  <p>
+    Bilangan bulat tanpa desimal.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$umur = 20;
+echo "Umur: $umur tahun";
+?&gt;</code></pre>
+  </div>
+
+  <h5>3. Float (Desimal)</h5>
+  <p>
+    Bilangan dengan koma (desimal).
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$berat = 55.5;
+echo "Berat badan: $berat kg";
+?&gt;</code></pre>
+  </div>
+
+  <h5>4. Boolean</h5>
+  <p>
+    Bernilai <code>true</code> atau <code>false</code>.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$isLogin = true;
+var_dump($isLogin);
+?&gt;</code></pre>
+  </div>
+
+  <h5>5. Array</h5>
+  <p>
+    Menyimpan banyak nilai dalam satu variabel.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$hobi = ["Coding", "Game", "Makan"];
+print_r($hobi);
+?&gt;</code></pre>
+  </div>
+
+  <h5>6. Mengetahui Tipe Variabel</h5>
+  <p>
+    Gunakan <code>var_dump()</code> untuk melihat tipe data.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$nama = "Rayhan";
+$umur = 21;
+var_dump($nama);
+var_dump($umur);
+?&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Ringkasan</h5>
+  <ul>
+    <li>Gunakan <code>$</code> untuk membuat variabel.</li>
+    <li>Tipe data penting: string, int, float, bool, array.</li>
+    <li><code>var_dump()</code> = cek isi + tipe variabel.</li>
+  </ul>
+  <br>
+  <h3><mark>Konstanta?</mark></h3>
+  <hr class="mb-4">
+    <p>
+    Dalam pemrograman PHP, <strong>konstanta</strong> adalah sebuah nama (identifier) untuk menyimpan nilai yang tidak bisa diubah selama eksekusi program. Berbeda dengan variabel yang nilainya bisa berubah, konstanta bersifat tetap dan biasanya digunakan untuk menyimpan informasi penting seperti konfigurasi aplikasi, nilai tetap (misal: pajak, nilai maksimum, dsb), dan lainnya.
+  </p>
+
+  <p>
+    Konstanta didefinisikan menggunakan fungsi <code>define()</code> atau menggunakan kata kunci <code>const</code>. Setelah didefinisikan, kita tidak bisa mengubah nilainya atau mendefinisikan ulang dengan nama yang sama. Penulisan nama konstanta biasanya menggunakan huruf kapital agar mudah dibedakan dengan variabel biasa.
+  </p>
+
+  <h5>1. Membuat Konstanta dengan <code>define()</code></h5>
+  <p>
+    Fungsi <code>define(nama, nilai)</code> digunakan untuk mendefinisikan konstanta. Nama konstanta tidak menggunakan tanda <code>$</code>.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+define("SITE_NAME", "BelajarPHP.com");
+echo "Selamat datang di " . SITE_NAME;
+?&gt;</code></pre>
+  </div>
+
+  <h5>2. Konstanta Bersifat Global</h5>
+  <p>
+    Konstanta bisa diakses dari manapun, baik di dalam fungsi, class, maupun file lain (selama include/require). Hal ini membuat konstanta sangat berguna untuk menyimpan nilai global.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+define("APP_VERSION", "1.0");
+
+function tampilkanVersi() {
+  echo "Versi aplikasi: " . APP_VERSION;
+}
+
+tampilkanVersi();
+?&gt;</code></pre>
+  </div>
+
+  <h5>3. Membuat Konstanta dengan <code>const</code></h5>
+  <p>
+    Selain menggunakan <code>define()</code>, konstanta juga bisa dideklarasikan dengan kata kunci <code>const</code>, tetapi hanya di luar blok fungsi (dalam ruang lingkup global atau dalam class).
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+const PI = 3.14;
+echo "Nilai PI adalah " . PI;
+?&gt;</code></pre>
+  </div>
+
+  <h5>4. Konstanta dalam Class</h5>
+  <p>
+    Konstanta juga bisa dibuat dalam class menggunakan <code>const</code>. Aksesnya menggunakan tanda titik dua ganda <code>::</code>.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+class App {
+  const AUTHOR = "Rayhan Dev";
+}
+
+echo "Author: " . App::AUTHOR;
+?&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Kesimpulan</h5>
+  <ul>
+    <li>Gunakan <code>define()</code> atau <code>const</code> untuk membuat konstanta.</li>
+    <li>Nilai konstanta tidak bisa diubah setelah didefinisikan.</li>
+    <li>Konstanta tidak memakai tanda <code>$</code>.</li>
+    <li>Cocok untuk nilai global atau tetap yang digunakan berulang-ulang.</li>
+  </ul>
+  <br>
+  <h3><mark>Operator di PHP</mark></h3>
+  <hr class="mb-4">
+    <p>
+    Dalam PHP, <strong>operator</strong> adalah simbol khusus yang digunakan untuk melakukan operasi terhadap satu atau lebih nilai (operand). Operator digunakan untuk melakukan berbagai perhitungan, perbandingan, penggabungan, penugasan, dan operasi logika. Pemahaman operator sangat penting dalam menulis logika program yang efisien dan dinamis.
+  </p>
+
+  <p>
+    PHP menyediakan beberapa jenis operator, di antaranya: operator aritmatika, operator penugasan, operator perbandingan, operator logika, dan lainnya. Setiap operator memiliki fungsinya masing-masing tergantung konteks penggunaan.
+  </p>
+
+  <h5>1. Operator Aritmatika</h5>
+  <p>
+    Digunakan untuk melakukan operasi matematika seperti penjumlahan, pengurangan, perkalian, pembagian, dan sisa bagi.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$a = 10;
+$b = 3;
+
+echo "Penjumlahan: " . ($a + $b) . "&lt;br&gt;";
+echo "Pengurangan: " . ($a - $b) . "&lt;br&gt;";
+echo "Perkalian: " . ($a * $b) . "&lt;br&gt;";
+echo "Pembagian: " . ($a / $b) . "&lt;br&gt;";
+echo "Sisa Bagi: " . ($a % $b);
+?&gt;</code></pre>
+  </div>
+
+  <h5>2. Operator Penugasan</h5>
+  <p>
+    Digunakan untuk menetapkan nilai ke variabel. Contohnya <code>=</code>, <code>+=</code>, <code>-=</code>, dll.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$x = 5;
+$x += 10; // sama dengan $x = $x + 10
+
+echo "Hasil penugasan += : " . $x;
+?&gt;</code></pre>
+  </div>
+
+  <h5>3. Operator Perbandingan</h5>
+  <p>
+    Digunakan untuk membandingkan dua nilai dan menghasilkan nilai boolean (true/false).
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$a = 10;
+$b = 20;
+
+var_dump($a == $b);  // false
+var_dump($a != $b);  // true
+var_dump($a &lt; $b);   // true
+var_dump($a &gt;= $b);  // false
+?&gt;</code></pre>
+  </div>
+
+  <h5>4. Operator Logika</h5>
+  <p>
+    Digunakan untuk menggabungkan dua ekspresi logika. Umumnya digunakan dalam pernyataan <code>if</code>.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$username = "admin";
+$password = "123";
+
+if ($username == "admin" &amp;&amp; $password == "123") {
+  echo "Login berhasil";
+} else {
+  echo "Login gagal";
+}
+?&gt;</code></pre>
+  </div>
+
+  <h5>5. Operator String</h5>
+  <p>
+    PHP menggunakan operator <code>.</code> untuk menggabungkan string (concatenation).
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+$nama_depan = "Rayhan";
+$nama_belakang = "Abdillah";
+
+echo "Nama lengkap: " . $nama_depan . " " . $nama_belakang;
+?&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Kesimpulan</h5>
+  <ul>
+    <li>Operator membantu dalam melakukan perhitungan dan pengambilan keputusan dalam program.</li>
+    <li>Ada banyak jenis operator di PHP seperti aritmatika, penugasan, perbandingan, logika, dan string.</li>
+    <li>Pemilihan operator yang tepat membuat kode lebih ringkas dan mudah dipahami.</li>
+    <li>Pahami konteks penggunaan setiap operator agar tidak terjadi kesalahan logika.</li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</section><!-- /Hero Section -->
+<div class="mt-5 p-4 bg-light rounded shadow-sm text-center">
+  <h3 class="fw-bold mb-2">Beri Dukungan untuk Update Materi Selanjutnya</h3>
+  <p class="mb-3 text-muted">
+    Jika Anda merasa materi ini bermanfaat, bantu kami untuk terus mengembangkan konten pembelajaran yang berkualitas. Dukungan seikhlasnya dari Anda sangat berarti bagi kelangsungan proyek ini.
+  </p>
+  <a href="index.html#donasi" class="btn btn-warning px-4 py-2">
+    <i class="bi bi-cash-coin me-2"></i> Donasi Sekarang
+  </a>
+</div>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+      
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Coding Is Fun</strong>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Desain OLeh <a href="index.html">Coding IS Fun</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="validate.js"></script>
+  <script src="aos.js"></script>
+  <script src="glightbox.min.js"></script>
+  <script src="imagesloaded.pkgd.min.js"></script>
+  <script src="isotope.pkgd.min.js"></script>
+  <script src="swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+<script>
+function copyKode(button) {
+  const kode = button.nextElementSibling.innerText;
+  navigator.clipboard.writeText(kode).then(() => {
+    button.innerHTML = '<i class="bi bi-check2-circle"></i> Disalin!';
+    setTimeout(() => {
+      button.innerHTML = '<i class="bi bi-clipboard"></i> Salin';
+    }, 1500);
+  });
+}
+</script>
+
+
+<script>
+  document.getElementById("kirimKomentar").addEventListener("click", function () {
+    const nama = document.querySelector('input[name="nama"]').value.trim();
+    const asal = document.querySelector('select[name="asal"]').value;
+    const komentar = document.querySelector('textarea[name="komentar"]').value.trim();
+    const bintang = document.querySelectorAll('input[name="bintang[]"]:checked');
+
+    if (nama === "" || asal === "" || komentar === "" || bintang.length === 0) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Data belum lengkap!',
+        text: 'Silakan lengkapi semua field termasuk pilih minimal 1 bintang.',
+        confirmButtonColor: '#f39c12',
+        background: '#fffbe6'
+      });
+    } else {
+      Swal.fire({
+        icon: 'success',
+        title: 'Komentar Berhasil Dikirim!',
+        text: 'Terima kasih atas dukungan dan semangat Anda.',
+        confirmButtonColor: '#3085d6'
+      }).then(() => {
+        document.querySelector(".php-email-form").submit(); // submit form jika semua valid
+      });
+    }
+  });
+</script>
+<script>
+  const toggle = document.getElementById("dark-mode-toggle");
+  const icon = document.getElementById("dark-mode-icon");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Ganti ikon
+    if (document.body.classList.contains("dark-mode")) {
+      icon.classList.replace("bi-moon-fill", "bi-sun-fill");
+    } else {
+      icon.classList.replace("bi-sun-fill", "bi-moon-fill");
+    }
+  });
+</script>
+
+
+
+</body>
+
+</html>

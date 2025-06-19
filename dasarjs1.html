@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Belajar Coding</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="bgg.png">
+  <link rel="icon" href="bgg.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Bootstrap CSS (jika belum ada) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<!-- Vendor CSS Files -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons.css" rel="stylesheet">
+  <link href="aos.css" rel="stylesheet">
+  <link href="glightbox.min.css" rel="stylesheet">
+  <link href="swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Invent
+  * Template URL: https://bootstrapmade.com/invent-bootstrap-business-template/
+  * Updated: May 12 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode .bg-light pre,
+.dark-mode .bg-light code {
+  color: black;
+ /* opsional: buat latar belakang gelap juga */
+}
+/* Navbar & Menu */
+body.dark-mode .navmenu,
+body.dark-mode .mobile-nav,
+.dark-mode .header,
+.dark-mode .navmenu,
+.dark-mode .dropdown ul {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .navmenu ul li a,
+.dark-mode .mobile-nav a {
+  color: #ffffff !important;
+}
+
+.dark-mode .navmenu ul li a.active,
+.dark-mode .navmenu ul li a:hover {
+  color: #ffd700 !important;
+}
+
+.dark-mode .navmenu .dropdown ul {
+  background-color: #2a2a2a !important;
+}
+
+.dark-mode .navmenu .dropdown ul li a {
+  color: #ffffff !important;
+}
+
+/* Icon mode gelap */
+#dark-mode-icon {
+  color: #000;
+  transition: color 0.3s;
+}
+
+body.dark-mode #dark-mode-icon {
+  color: #fff;
+}
+
+/* Hero dan section */
+.dark-mode section#hero h1,
+.dark-mode section#hero p,
+.dark-mode section#materi,
+.dark-mode section#about,
+.dark-mode section#materi h2,
+.dark-mode section#about h3,
+.dark-mode .sitename,
+.dark-mode .hero-title,
+.dark-mode .hero-description,
+.dark-mode .badge-text {
+  color: #ffffff !important;
+}
+
+.dark-mode section#materi,
+.dark-mode section#about {
+  background-color: #1a1a1a;
+}
+
+/* Feature box */
+.dark-mode .feature-box {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444;
+}
+
+.dark-mode .feature-title,
+.dark-mode .feature-text,
+.dark-mode .feature-icon i {
+  color: #ffffff !important;
+}
+
+/* How We Work */
+.dark-mode section#how-we-work {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode #how-we-work .section-title h2,
+.dark-mode #how-we-work .section-title p,
+.dark-mode #how-we-work .step-icon i,
+.dark-mode #how-we-work .step-content h3 {
+  color: #ffffff;
+}
+
+.dark-mode #how-we-work .step-number {
+  color: #ffcc00;
+}
+
+.dark-mode #how-we-work .step-content p {
+  color: #cccccc;
+}
+
+.dark-mode #how-we-work .process-item .content {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/* Call to Action 2 */
+.dark-mode section#call-to-action-2 {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode section#hero h3{
+  color: white;
+}
+.dark-mode section#hero h4{
+  color: white;
+}
+
+.dark-mode #call-to-action-2 h2,
+.dark-mode #call-to-action-2 .lead,
+.dark-mode #call-to-action-2 .feature-item span {
+  color: #ffffff;
+}
+
+.dark-mode #call-to-action-2 .feature-item i {
+  color: #00c853;
+}
+
+/* Footer */
+.dark-mode footer.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-top: 1px solid #333;
+}
+
+.dark-mode .footer .logo span.sitename,
+.dark-mode .footer p,
+.dark-mode .footer a,
+.dark-mode .footer ul li a,
+.dark-mode .footer h4 {
+  color: #dddddd;
+}
+
+.dark-mode .footer a:hover {
+  color: #00bfa5;
+  text-decoration: underline;
+}
+
+.dark-mode .footer .social-links a {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .footer .social-links a:hover {
+  background-color: #00bfa5;
+  color: #ffffff;
+}
+
+.dark-mode .footer .credits a {
+  color: #00bfa5;
+}
+
+.dark-mode .footer .credits a:hover {
+  text-decoration: underline;
+}
+
+.dark-mode .footer .copyright {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 30px;
+  color: #bbbbbb;
+}
+
+/* Badge icon */
+body.dark-mode .badge-wrapper .icon-circle i {
+  color: #ffffff !important;
+}
+
+/* Komentar feedback & alert */
+.dark-mode .loading,
+.dark-mode .sent-message,
+.dark-mode .error-message {
+  color: #ffffff;
+}
+
+/* RCB Button */
+.rcb {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.rcb:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+/* List Group (Materi) */
+.list-group-item {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #eef4fc;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 1.6rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Mode terang */
+body:not(.dark-mode) .list-group-item {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body:not(.dark-mode) .list-group-item:hover {
+  background-color: #e2e6ea;
+  color: #000;
+}
+
+/* Mode gelap */
+body.dark-mode .list-group-item {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  border-color: #333;
+}
+
+body.dark-mode .list-group-item:hover {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+.custom-content {
+  background-color: #ffffff;
+  color: #212529;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+body.dark-mode .custom-content {
+  background-color: #1f1f1f !important;
+  color: #f1f1f1 !important;
+}
+
+  img.zoomable {
+    cursor: zoom-in;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+  }
+
+  img.zoomable:hover {
+    transform: scale(1.02);
+  }
+/* Warna biru saat dark mode */
+body.dark-mode .btn-outline-secondary {
+  color: #0d6efd !important;         /* Warna biru Bootstrap */
+  border-color: #0d6efd !important;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+.highlight {
+  background-color: #ffff99; /* kuning stabilo */
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+</style>
+
+
+<body class="index-page">
+
+  <header id="header"  class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html#materi" class="btn btn-sm btn-outline-secondary d-flex align-items-center logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <i class="bi bi-arrow-left me-1"></i><span>Kembali</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <button id="dark-mode-toggle" class="btn btn-sm btn-outline-dark">
+      <i id="dark-mode-icon" class="bi bi-moon-fill"></i>
+    </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Judul Hero -->
+<div class="row align-items-center mb-4">
+  <div class="col-12 d-flex flex-wrap align-items-center justify-content-between gap-2">
+    <!-- Kiri: Tombol Kembali -->
+  
+    <!-- Kanan: Tombol Mode Gelap -->
+    
+
+    <!-- Judul (diletakkan di bawah jika layar kecil) -->
+    <h1 class="fw-bold mb-0 w-100 mt-2" style="font-size: 2.4rem;">
+      Mengenal JavaScript
+    </h1>
+  </div>
+</div>
+    <!-- Kotak Latihan -->
+     <hr class="mb-4">
+
+    <!-- Daftar Materi HTML -->
+<div class="list-group shadow-sm p-4 rounded custom-content">
+	  <p>
+    <strong>JavaScript</strong> adalah bahasa pemrograman tingkat tinggi yang berjalan di sisi klien (browser) dan digunakan untuk membuat halaman web menjadi lebih interaktif, dinamis, dan responsif. JavaScript bisa digunakan untuk memanipulasi elemen HTML, menangani event pengguna (seperti klik dan input), hingga berinteraksi dengan server menggunakan teknologi seperti AJAX.
+  </p>
+
+  <p>
+    Tidak seperti HTML dan CSS yang bersifat statis, JavaScript memungkinkan halaman web memiliki perilaku seperti membuka/menutup menu, validasi form tanpa refresh, slideshow otomatis, animasi, bahkan bisa digunakan untuk membangun aplikasi kompleks seperti game atau aplikasi SPA (Single Page Application).
+  </p>
+
+  <h5>1. Menambahkan JavaScript di HTML</h5>
+  <p>
+    JavaScript dapat ditulis langsung dalam tag <code>&lt;script&gt;</code> di dalam file HTML atau dalam file terpisah (eksternal).
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Belajar JavaScript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;h2&gt;Klik Tombol&lt;/h2&gt;
+  &lt;button onclick="sapaUser()"&gt;Klik Saya&lt;/button&gt;
+
+  &lt;script&gt;
+    function sapaUser() {
+      alert("Halo, selamat datang di JavaScript!");
+    }
+  &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <h5>2. Menampilkan Teks dengan <code>alert</code></h5>
+  <p>
+    Fungsi <code>alert()</code> digunakan untuk menampilkan pesan pop-up kepada pengguna.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+alert("Selamat datang di dunia JavaScript!");
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>3. Variabel dan Tipe Data</h5>
+  <p>
+    Variabel di JavaScript digunakan untuk menyimpan data. Kita bisa menggunakan <code>let</code>, <code>const</code>, atau <code>var</code> (versi lama).
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let nama = "Rayhan";
+let umur = 20;
+let aktif = true;
+
+console.log(nama);
+console.log(umur);
+console.log(aktif);
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>4. Manipulasi HTML dengan JavaScript</h5>
+  <p>
+    JavaScript bisa mengubah isi elemen HTML dengan menggunakan <code>document.getElementById()</code> atau selector lain.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+  &lt;p id="teks"&gt;Teks lama&lt;/p&gt;
+  &lt;button onclick="ubahTeks()"&gt;Ubah Teks&lt;/button&gt;
+
+  &lt;script&gt;
+    function ubahTeks() {
+      document.getElementById("teks").innerHTML = "Teks telah diubah!";
+    }
+  &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <h5>5. Menangani Event</h5>
+  <p>
+    JavaScript dapat mendeteksi dan merespons berbagai event pengguna, seperti klik tombol, ketikan keyboard, dan lain-lain.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;input type="text" onkeyup="tampilkan(this.value)" placeholder="Ketik sesuatu..."&gt;
+&lt;p id="hasil"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+  function tampilkan(teks) {
+    document.getElementById("hasil").innerHTML = "Kamu mengetik: " + teks;
+  }
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Kesimpulan</h5>
+  <ul>
+    <li>JavaScript adalah bahasa pemrograman utama untuk membuat web interaktif.</li>
+    <li>Dapat digunakan untuk menampilkan pesan, memproses input, mengubah isi halaman, dan menangani event pengguna.</li>
+    <li>Kode JavaScript bisa ditulis langsung dalam file HTML atau dipisah dalam file eksternal.</li>
+    <li>Dasar yang harus dipahami meliputi: alert, variabel, fungsi, event, dan manipulasi DOM.</li>
+  </ul>
+  <br>
+  <h3><mark>Fungsi Output di JavaScript</mark></h3>
+   <p>
+    Dalam JavaScript, terdapat beberapa cara untuk menampilkan output atau hasil program ke pengguna. Cara ini tergantung pada jenis interaksi yang diinginkan — apakah hanya ingin menampilkan teks biasa, debug di konsol, atau menampilkan kotak dialog.
+    Fungsi output ini sangat penting untuk memberi informasi, hasil kalkulasi, atau untuk keperluan debugging saat proses pengembangan program.
+  </p>
+
+  <h5>1. Menggunakan <code>document.write()</code></h5>
+  <p>
+    Fungsi <code>document.write()</code> digunakan untuk langsung menulis teks ke dalam dokumen HTML. Biasanya digunakan untuk keperluan demo, tetapi tidak disarankan pada aplikasi nyata karena dapat menimpa seluruh konten halaman jika dipanggil setelah halaman dimuat.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+document.write("Halo, ini output dari document.write()");
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>2. Menggunakan <code>alert()</code></h5>
+  <p>
+    Fungsi <code>alert()</code> menampilkan kotak dialog sederhana dengan pesan teks. Ini sering digunakan untuk memberikan informasi atau peringatan kepada pengguna.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+alert("Halo, ini pesan dari alert!");
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>3. Menggunakan <code>console.log()</code></h5>
+  <p>
+    <code>console.log()</code> digunakan untuk menampilkan output ke konsol browser (biasanya dibuka lewat Developer Tools). Fungsi ini sangat berguna untuk debugging saat mengembangkan aplikasi.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let nama = "Rayhan";
+console.log("Nama saya adalah " + nama);
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>4. Menggunakan <code>innerHTML</code></h5>
+  <p>
+    Cara ini digunakan untuk menampilkan teks ke dalam elemen HTML yang ada, misalnya paragraf, div, atau span. Output ini akan terlihat langsung di halaman web, bukan di dialog atau konsol.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;p id="output"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("output").innerHTML = "Ini ditampilkan dengan innerHTML";
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Kesimpulan</h5>
+  <ul>
+    <li><code>document.write()</code>: Menulis langsung ke halaman, tidak disarankan setelah halaman dimuat.</li>
+    <li><code>alert()</code>: Menampilkan kotak dialog pop-up untuk pengguna.</li>
+    <li><code>console.log()</code>: Menampilkan output di konsol browser, ideal untuk debugging.</li>
+    <li><code>innerHTML</code>: Menampilkan output ke dalam elemen HTML, cocok untuk tampilan web interaktif.</li>
+  </ul>
+  <br>
+  <h3><mark>Variabel dan Tipe Data </mark></h3>
+  <p>
+    Dalam JavaScript, <strong>variabel</strong> digunakan untuk menyimpan data atau nilai yang dapat digunakan kembali di dalam program. Variabel bisa menyimpan berbagai jenis tipe data, seperti angka, teks, boolean, objek, array, dan lainnya. Untuk mendeklarasikan variabel, kita bisa menggunakan <code>var</code>, <code>let</code>, atau <code>const</code>.
+  </p>
+
+  <p>
+    Sementara itu, <strong>tipe data</strong> menunjukkan jenis nilai yang disimpan dalam variabel tersebut. Pemahaman tentang tipe data sangat penting agar kode berjalan dengan benar dan efisien.
+  </p>
+
+  <h5>1. Deklarasi Variabel</h5>
+  <p>
+    Kita bisa menggunakan <code>let</code> atau <code>const</code> untuk membuat variabel modern. <code>let</code> digunakan untuk variabel yang nilainya bisa diubah, sedangkan <code>const</code> untuk variabel tetap.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+// menggunakan let
+let nama = "Rayhan";
+let umur = 20;
+
+// menggunakan const
+const negara = "Indonesia";
+
+console.log(nama);
+console.log(umur);
+console.log(negara);
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>2. Tipe Data: String</h5>
+  <p>
+    <strong>String</strong> digunakan untuk menyimpan teks. Ditulis dengan tanda kutip tunggal atau ganda.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let namaLengkap = "Rayhan Abdillah";
+console.log(namaLengkap);
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>3. Tipe Data: Number</h5>
+  <p>
+    <strong>Number</strong> mencakup semua jenis angka, baik bilangan bulat maupun desimal.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let usia = 25;
+let tinggi = 175.5;
+console.log(usia, tinggi);
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>4. Tipe Data: Boolean</h5>
+  <p>
+    <strong>Boolean</strong> hanya memiliki dua nilai: <code>true</code> (benar) dan <code>false</code> (salah). Biasanya digunakan dalam logika program.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let sudahLogin = true;
+let punyaAkun = false;
+console.log(sudahLogin, punyaAkun);
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>5. Tipe Data: Array</h5>
+  <p>
+    <strong>Array</strong> digunakan untuk menyimpan banyak nilai dalam satu variabel.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let warna = ["merah", "hijau", "biru"];
+console.log(warna[0]); // merah
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>6. Tipe Data: Object</h5>
+  <p>
+    <strong>Object</strong> menyimpan data dalam bentuk pasangan key dan value. Digunakan untuk merepresentasikan data kompleks.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let user = {
+  nama: "Rayhan",
+  umur: 20,
+  isLogin: true
+};
+
+console.log(user.nama);
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Kesimpulan</h5>
+  <ul>
+    <li>Gunakan <code>let</code> untuk variabel yang bisa berubah, dan <code>const</code> untuk nilai tetap.</li>
+    <li>Tipe data JavaScript meliputi: string, number, boolean, array, dan object.</li>
+    <li>Pilih tipe data yang sesuai untuk menyimpan dan mengelola data secara efisien.</li>
+  </ul>
+  <br>
+  <h1><mark>Jendela Dialog Untuk Input</mark></h1>
+  <hr class="mb-4">
+    <p>
+    JavaScript menyediakan fitur jendela dialog bawaan untuk berinteraksi dengan pengguna melalui antarmuka yang sederhana. Salah satunya adalah <strong>prompt()</strong> yang digunakan untuk meminta input dari pengguna.
+    Jendela ini muncul sebagai pop-up dan menunggu pengguna mengetik nilai lalu menekan OK atau Cancel.
+  </p>
+
+  <h5>1. Menggunakan <code>prompt()</code> untuk Input</h5>
+  <p>
+    Fungsi <code>prompt()</code> akan menampilkan kotak dialog dengan kolom input dan teks instruksi. Nilai yang dimasukkan oleh pengguna akan disimpan ke dalam variabel.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let nama = prompt("Masukkan nama kamu:");
+console.log("Halo, " + nama);
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>2. Meminta Input dan Menampilkan ke Layar</h5>
+  <p>
+    Input yang diambil dari <code>prompt()</code> bisa digunakan untuk menampilkan data ke halaman HTML, bukan hanya ke console.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let umur = prompt("Berapa umur kamu?");
+document.write("Umur kamu adalah: " + umur + " tahun");
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>3. Validasi Input Sederhana</h5>
+  <p>
+    Kamu bisa menambahkan logika sederhana untuk mengecek apakah pengguna mengisi data atau tidak (null jika Cancel ditekan).
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let kota = prompt("Masukkan nama kota:");
+if (kota !== null && kota !== "") {
+  alert("Kamu tinggal di " + kota);
+} else {
+  alert("Input dibatalkan atau kosong.");
+}
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Kesimpulan</h5>
+  <ul>
+    <li><code>prompt()</code> digunakan untuk mengambil input dari pengguna melalui kotak dialog.</li>
+    <li>Nilai input disimpan dalam variabel dan bisa diproses atau ditampilkan ke halaman.</li>
+    <li>Pastikan input dicek apakah kosong atau dibatalkan sebelum digunakan lebih lanjut.</li>
+  </ul>
+  <br>
+  <h3><mark>Operator</mark></h3>
+  <hr class="mb-4">
+    <p>
+    Operator dalam JavaScript digunakan untuk melakukan operasi terhadap nilai atau variabel. Operator membantu kamu dalam perhitungan, perbandingan, logika, penugasan, dan manipulasi data lainnya.
+    Pemahaman tentang operator sangat penting untuk membuat program yang dinamis dan responsif.
+  </p>
+
+  <h5>1. Operator Aritmatika</h5>
+  <p>
+    Operator aritmatika digunakan untuk operasi matematika dasar seperti penjumlahan, pengurangan, dan sebagainya.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let a = 10;
+let b = 3;
+document.write("Tambah: " + (a + b) + "&lt;br&gt;");
+document.write("Kurang: " + (a - b) + "&lt;br&gt;");
+document.write("Kali: " + (a * b) + "&lt;br&gt;");
+document.write("Bagi: " + (a / b) + "&lt;br&gt;");
+document.write("Modulus: " + (a % b));
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>2. Operator Perbandingan</h5>
+  <p>
+    Operator ini digunakan untuk membandingkan dua nilai, hasilnya berupa <code>true</code> atau <code>false</code>.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let x = 5;
+let y = "5";
+console.log(x == y);   // true (nilai sama, tipe tidak dicek)
+console.log(x === y);  // false (nilai dan tipe harus sama)
+console.log(x != y);   // false
+console.log(x !== y);  // true
+console.log(x &gt; 3);    // true
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>3. Operator Logika</h5>
+  <p>
+    Digunakan untuk menggabungkan ekspresi logika. Cocok digunakan dalam pengambilan keputusan (kondisi).
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let umur = 20;
+let punyaSIM = true;
+
+if (umur &gt;= 17 &amp;&amp; punyaSIM) {
+  console.log("Boleh mengemudi");
+} else {
+  console.log("Tidak boleh mengemudi");
+}
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5>4. Operator Penugasan</h5>
+  <p>
+    Operator penugasan digunakan untuk memberikan atau memodifikasi nilai pada variabel.
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;script&gt;
+let nilai = 10;
+nilai += 5;  // sama dengan nilai = nilai + 5
+console.log(nilai);  // 15
+nilai *= 2;
+console.log(nilai);  // 30
+&lt;/script&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Kesimpulan</h5>
+  <ul>
+    <li><strong>Aritmatika</strong>: digunakan untuk operasi hitung seperti +, -, *, /, %.</li>
+    <li><strong>Perbandingan</strong>: membandingkan dua nilai, hasilnya boolean.</li>
+    <li><strong>Logika</strong>: digunakan dalam kondisi (<code>&amp;&amp;</code>, <code>||</code>, <code>!</code>).</li>
+    <li><strong>Penugasan</strong>: untuk memberi dan mengubah nilai variabel.</li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</section><!-- /Hero Section -->
+<div class="mt-5 p-4 bg-light rounded shadow-sm text-center">
+  <h3 class="fw-bold mb-2">Beri Dukungan untuk Update Materi Selanjutnya</h3>
+  <p class="mb-3 text-muted">
+    Jika Anda merasa materi ini bermanfaat, bantu kami untuk terus mengembangkan konten pembelajaran yang berkualitas. Dukungan seikhlasnya dari Anda sangat berarti bagi kelangsungan proyek ini.
+  </p>
+  <a href="index.html#donasi" class="btn btn-warning px-4 py-2">
+    <i class="bi bi-cash-coin me-2"></i> Donasi Sekarang
+  </a>
+</div>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+      
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Coding Is Fun</strong>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Desain OLeh <a href="index.html">Coding IS Fun</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="validate.js"></script>
+  <script src="aos.js"></script>
+  <script src="glightbox.min.js"></script>
+  <script src="imagesloaded.pkgd.min.js"></script>
+  <script src="isotope.pkgd.min.js"></script>
+  <script src="swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+
+<script>
+function copyKode(button) {
+  const kode = button.nextElementSibling.innerText;
+  navigator.clipboard.writeText(kode).then(() => {
+    button.innerHTML = '<i class="bi bi-check2-circle"></i> Disalin!';
+    setTimeout(() => {
+      button.innerHTML = '<i class="bi bi-clipboard"></i> Salin';
+    }, 1500);
+  });
+}
+</script>
+
+
+<script>
+  document.getElementById("kirimKomentar").addEventListener("click", function () {
+    const nama = document.querySelector('input[name="nama"]').value.trim();
+    const asal = document.querySelector('select[name="asal"]').value;
+    const komentar = document.querySelector('textarea[name="komentar"]').value.trim();
+    const bintang = document.querySelectorAll('input[name="bintang[]"]:checked');
+
+    if (nama === "" || asal === "" || komentar === "" || bintang.length === 0) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Data belum lengkap!',
+        text: 'Silakan lengkapi semua field termasuk pilih minimal 1 bintang.',
+        confirmButtonColor: '#f39c12',
+        background: '#fffbe6'
+      });
+    } else {
+      Swal.fire({
+        icon: 'success',
+        title: 'Komentar Berhasil Dikirim!',
+        text: 'Terima kasih atas dukungan dan semangat Anda.',
+        confirmButtonColor: '#3085d6'
+      }).then(() => {
+        document.querySelector(".php-email-form").submit(); // submit form jika semua valid
+      });
+    }
+  });
+</script>
+<script>
+  const toggle = document.getElementById("dark-mode-toggle");
+  const icon = document.getElementById("dark-mode-icon");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Ganti ikon
+    if (document.body.classList.contains("dark-mode")) {
+      icon.classList.replace("bi-moon-fill", "bi-sun-fill");
+    } else {
+      icon.classList.replace("bi-sun-fill", "bi-moon-fill");
+    }
+  });
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Belajar Coding</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="bgg.png">
+  <link rel="icon" href="bgg.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Bootstrap CSS (jika belum ada) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons.css" rel="stylesheet">
+  <link href="aos.css" rel="stylesheet">
+  <link href="glightbox.min.css" rel="stylesheet">
+  <link href="swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Invent
+  * Template URL: https://bootstrapmade.com/invent-bootstrap-business-template/
+  * Updated: May 12 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode .bg-light pre,
+.dark-mode .bg-light code {
+  color: black;
+ /* opsional: buat latar belakang gelap juga */
+}
+/* Navbar & Menu */
+body.dark-mode .navmenu,
+body.dark-mode .mobile-nav,
+.dark-mode .header,
+.dark-mode .navmenu,
+.dark-mode .dropdown ul {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .navmenu ul li a,
+.dark-mode .mobile-nav a {
+  color: #ffffff !important;
+}
+
+.dark-mode .navmenu ul li a.active,
+.dark-mode .navmenu ul li a:hover {
+  color: #ffd700 !important;
+}
+
+.dark-mode .navmenu .dropdown ul {
+  background-color: #2a2a2a !important;
+}
+
+.dark-mode .navmenu .dropdown ul li a {
+  color: #ffffff !important;
+}
+
+/* Icon mode gelap */
+#dark-mode-icon {
+  color: #000;
+  transition: color 0.3s;
+}
+
+body.dark-mode #dark-mode-icon {
+  color: #fff;
+}
+
+/* Hero dan section */
+.dark-mode section#hero h1,
+.dark-mode section#hero p,
+.dark-mode section#materi,
+.dark-mode section#about,
+.dark-mode section#materi h2,
+.dark-mode section#about h3,
+.dark-mode .sitename,
+.dark-mode .hero-title,
+.dark-mode .hero-description,
+.dark-mode .badge-text {
+  color: #ffffff !important;
+}
+
+.dark-mode section#materi,
+.dark-mode section#about {
+  background-color: #1a1a1a;
+}
+
+/* Feature box */
+.dark-mode .feature-box {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444;
+}
+
+.dark-mode .feature-title,
+.dark-mode .feature-text,
+.dark-mode .feature-icon i {
+  color: #ffffff !important;
+}
+
+/* How We Work */
+.dark-mode section#how-we-work {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode #how-we-work .section-title h2,
+.dark-mode #how-we-work .section-title p,
+.dark-mode #how-we-work .step-icon i,
+.dark-mode #how-we-work .step-content h3 {
+  color: #ffffff;
+}
+
+.dark-mode #how-we-work .step-number {
+  color: #ffcc00;
+}
+
+.dark-mode #how-we-work .step-content p {
+  color: #cccccc;
+}
+
+.dark-mode #how-we-work .process-item .content {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/* Call to Action 2 */
+.dark-mode section#call-to-action-2 {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode section#hero h3{
+  color: white;
+}
+.dark-mode section#hero h4{
+  color: white;
+}
+
+.dark-mode #call-to-action-2 h2,
+.dark-mode #call-to-action-2 .lead,
+.dark-mode #call-to-action-2 .feature-item span {
+  color: #ffffff;
+}
+
+.dark-mode #call-to-action-2 .feature-item i {
+  color: #00c853;
+}
+
+/* Footer */
+.dark-mode footer.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-top: 1px solid #333;
+}
+
+.dark-mode .footer .logo span.sitename,
+.dark-mode .footer p,
+.dark-mode .footer a,
+.dark-mode .footer ul li a,
+.dark-mode .footer h4 {
+  color: #dddddd;
+}
+
+.dark-mode .footer a:hover {
+  color: #00bfa5;
+  text-decoration: underline;
+}
+
+.dark-mode .footer .social-links a {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .footer .social-links a:hover {
+  background-color: #00bfa5;
+  color: #ffffff;
+}
+
+.dark-mode .footer .credits a {
+  color: #00bfa5;
+}
+
+.dark-mode .footer .credits a:hover {
+  text-decoration: underline;
+}
+
+.dark-mode .footer .copyright {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 30px;
+  color: #bbbbbb;
+}
+
+/* Badge icon */
+body.dark-mode .badge-wrapper .icon-circle i {
+  color: #ffffff !important;
+}
+
+/* Komentar feedback & alert */
+.dark-mode .loading,
+.dark-mode .sent-message,
+.dark-mode .error-message {
+  color: #ffffff;
+}
+
+/* RCB Button */
+.rcb {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.rcb:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+/* List Group (Materi) */
+.list-group-item {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #eef4fc;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 1.6rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Mode terang */
+body:not(.dark-mode) .list-group-item {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body:not(.dark-mode) .list-group-item:hover {
+  background-color: #e2e6ea;
+  color: #000;
+}
+
+/* Mode gelap */
+body.dark-mode .list-group-item {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  border-color: #333;
+}
+
+body.dark-mode .list-group-item:hover {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+.custom-content {
+  background-color: #ffffff;
+  color: #212529;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+body.dark-mode .custom-content {
+  background-color: #1f1f1f !important;
+  color: #f1f1f1 !important;
+}
+
+  img.zoomable {
+    cursor: zoom-in;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+  }
+
+  img.zoomable:hover {
+    transform: scale(1.02);
+  }
+/* Warna biru saat dark mode */
+body.dark-mode .btn-outline-secondary {
+  color: #0d6efd !important;         /* Warna biru Bootstrap */
+  border-color: #0d6efd !important;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+.highlight {
+  background-color: #ffff99; /* kuning stabilo */
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+</style>
+
+
+<body class="index-page">
+
+  <header id="header"  class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html#materi" class="btn btn-sm btn-outline-secondary d-flex align-items-center logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <i class="bi bi-arrow-left me-1"></i><span>Kembali</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+                   <!-- Kanan: Tombol Mode Gelap -->
+    <button id="dark-mode-toggle" class="btn btn-sm btn-outline-dark">
+      <i id="dark-mode-icon" class="bi bi-moon-fill"></i>
+    </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Judul Hero -->
+<div class="row align-items-center mb-4">
+  <div class="col-12 d-flex flex-wrap align-items-center justify-content-between gap-2">
+    <!-- Kiri: Tombol Kembali -->
+  
+
+
+    <!-- Judul (diletakkan di bawah jika layar kecil) -->
+    <h1 class="fw-bold mb-0 w-100 mt-2" style="font-size: 2.4rem;">
+      Pengenalan Dasar CSS
+    </h1>
+  </div>
+</div>
+    <!-- Kotak Latihan -->
+     <hr class="mb-4">
+
+    <!-- Daftar Materi HTML -->
+  <div class="list-group shadow-sm p-4 rounded custom-content">
+
+  <h3>Dasar CSS</h3>
+
+  <p><strong>CSS (Cascading Style Sheets)</strong> adalah bahasa yang digunakan untuk mengatur tampilan dan gaya dari elemen HTML di halaman web.</p>
+
+  <h4>Langkah 1: Menambahkan CSS ke HTML</h4>
+  <p>Ada tiga cara umum untuk menambahkan CSS ke dokumen HTML: inline, internal, dan eksternal:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;p style="color: red;"&gt;Teks ini berwarna merah&lt;/p&gt;</code></pre>
+  </div>
+
+  <p>Contoh di atas menggunakan **inline CSS**, langsung di dalam elemen HTML.</p>
+
+  <h4>Langkah 2: Menggunakan Internal CSS</h4>
+  <p>Internal CSS diletakkan di dalam tag <code>&lt;style&gt;</code> pada bagian <code>&lt;head&gt;</code>:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;style&gt;
+  p {
+    font-size: 18px;
+    color: blue;
+  }
+&lt;/style&gt;</code></pre>
+  </div>
+
+  <h4>Langkah 3: Menggunakan File CSS Eksternal</h4>
+  <p>Gunakan file terpisah dengan ekstensi <code>.css</code> dan hubungkan menggunakan tag <code>&lt;link&gt;</code>:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+  </div>
+
+  <h4>Langkah 4: Selektor Dasar</h4>
+  <p>Selektor digunakan untuk memilih elemen yang ingin diberi gaya:</p>
+
+  <ul>
+    <li><code>p</code>: Memilih semua paragraf</li>
+    <li><code>.kelas</code>: Memilih elemen dengan class tertentu</li>
+    <li><code>#id</code>: Memilih elemen dengan ID tertentu</li>
+  </ul>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>.judul {
+  font-weight: bold;
+  font-size: 24px;
+}</code></pre>
+  </div>
+
+  <h4>Langkah 5: Styling Warna dan Latar</h4>
+  <p>CSS memungkinkan kamu mengatur warna teks, latar belakang, border, dan lainnya:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>body {
+  background-color: #f5f5f5;
+  color: #333;
+}</code></pre>
+  </div>
+
+  <h4>Langkah 6: Mengatur Layout</h4>
+  <p>Kamu bisa menggunakan properti seperti <code>margin</code>, <code>padding</code>, dan <code>display</code> untuk mengatur tata letak elemen:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>.box {
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+}</code></pre>
+  </div>
+
+  <h4>Langkah 7: Menambahkan Gaya ke Gambar dan Tombol</h4>
+  <p>CSS sangat berguna untuk mempercantik gambar dan tombol:</p>
+
+  <strong>Contoh Gaya Gambar:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>img {
+  width: 100%;
+  border-radius: 10px;
+}</code></pre>
+  </div>
+
+  <strong>Contoh Gaya Tombol:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}</code></pre>
+  </div>
+
+  <h4>Tips Tambahan</h4>
+  <ul>
+    <li>Gunakan class untuk gaya yang bisa digunakan berulang.</li>
+    <li>Gunakan developer tools di browser untuk eksperimen langsung.</li>
+    <li>Struktur CSS sebaiknya rapi agar mudah dibaca dan dikelola.</li>
+  </ul>
+
+  <h4>Kesimpulan</h4>
+  <ul>
+    <li>CSS digunakan untuk mempercantik dan mengatur tampilan HTML.</li>
+    <li>Tiga cara penggunaan CSS: inline, internal, dan eksternal.</li>
+    <li>Kamu bisa mengontrol warna, layout, ukuran, border, dan lainnya.</li>
+  </ul>
+<br>
+  <h3><span class="highlight"> Sintaks Dasar CSS</span></h3>
+  <hr class="mb-4">
+   <h3>Sintaks dan Penerapannya</h3>
+
+
+  <p>CSS bekerja dengan memilih elemen HTML tertentu lalu memberikan "aturan gaya" (style rules) untuk mengatur tampilannya. Dengan kata lain, HTML adalah struktur, dan CSS adalah pakaian atau desainnya.</p>
+
+  <h4>Langkah 1: Menambahkan CSS ke HTML</h4>
+  <p>Terdapat tiga cara umum untuk menggunakan CSS di dalam HTML:</p>
+  <ol>
+    <li><strong>Inline CSS</strong> – Menulis style langsung di dalam atribut HTML.</li>
+    <li><strong>Internal CSS</strong> – Menulis style di dalam tag <code>&lt;style&gt;</code> di bagian <code>&lt;head&gt;</code>.</li>
+    <li><strong>Eksternal CSS</strong> – Menulis style di file .css terpisah lalu menghubungkannya dengan HTML.</li>
+  </ol>
+
+  <strong>Contoh Inline CSS:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;p style="color: red;"&gt;Ini paragraf merah&lt;/p&gt;</code></pre>
+  </div>
+  <p>CSS ini hanya berlaku untuk elemen itu saja. Cocok untuk styling sederhana, tapi tidak disarankan untuk proyek besar.</p>
+
+  <strong>Contoh Internal CSS:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;style&gt;
+  h1 {
+    color: green;
+    font-family: Arial;
+  }
+&lt;/style&gt;</code></pre>
+  </div>
+  <p>Internal CSS cocok untuk proyek kecil atau halaman tunggal yang tidak memerlukan banyak file.</p>
+
+  <strong>Contoh Eksternal CSS:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+  </div>
+  <p>Ini adalah cara terbaik dan paling profesional. Style bisa digunakan ulang di banyak halaman hanya dengan satu file .css.</p>
+
+  <h4>Langkah 2: Struktur Dasar Sintaks CSS</h4>
+  <p>Sintaks CSS terdiri dari dua bagian utama:</p>
+  <ul>
+    <li><strong>Selector</strong>: Menentukan elemen mana yang akan diberikan gaya.</li>
+    <li><strong>Declaration Block</strong>: Berisi satu atau lebih aturan styling.</li>
+  </ul>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>p {
+  color: blue;
+  font-size: 16px;
+}</code></pre>
+  </div>
+  <p>Dalam contoh di atas, selector <code>p</code> menunjuk semua paragraf. Di dalamnya ada dua aturan (declaration): warna teks biru dan ukuran font 16 piksel.</p>
+
+  <h4>Langkah 3: Jenis-Jenis Selector</h4>
+  <p>Selector bisa sangat fleksibel. Beberapa jenis selector penting:</p>
+  <ul>
+    <li><strong>Selector tag</strong>: <code>p</code>, <code>h1</code>, <code>div</code></li>
+    <li><strong>Class selector</strong>: Menggunakan titik (.) seperti <code>.menu</code></li>
+    <li><strong>ID selector</strong>: Menggunakan tanda pagar (#) seperti <code>#footer</code></li>
+    <li><strong>Group selector</strong>: Menggabungkan selector seperti <code>h1, h2, h3</code></li>
+    <li><strong>Descendant selector</strong>: Contoh <code>nav ul li</code> berarti li di dalam ul di dalam nav</li>
+  </ul>
+
+  <h4>Langkah 4: Properti Warna, Latar, dan Teks</h4>
+  <p>Properti populer yang sering digunakan:</p>
+  <ul>
+    <li><code>color</code>: Mengubah warna teks</li>
+    <li><code>background-color</code>: Warna latar belakang</li>
+    <li><code>font-size</code>, <code>font-family</code>: Mengatur ukuran dan jenis font</li>
+    <li><code>text-align</code>: Posisi teks (kiri, kanan, tengah)</li>
+  </ul>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>h1 {
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  text-align: center;
+}</code></pre>
+  </div>
+
+  <h4>Langkah 5: Properti Box Model</h4>
+  <p>Semua elemen HTML dianggap sebagai "kotak" dan CSS menyediakan properti untuk mengatur kotak ini:</p>
+  <ul>
+    <li><code>width</code>, <code>height</code>: Ukuran</li>
+    <li><code>margin</code>: Ruang luar elemen</li>
+    <li><code>padding</code>: Ruang dalam elemen</li>
+    <li><code>border</code>: Garis tepi elemen</li>
+  </ul>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>.kotak {
+  width: 300px;
+  padding: 20px;
+  margin: 10px auto;
+  border: 2px solid #3498db;
+}</code></pre>
+  </div>
+
+  <h4>Langkah 6: Display dan Posisi</h4>
+  <p>Untuk mengatur cara elemen ditampilkan dan ditempatkan:</p>
+  <ul>
+    <li><code>display</code>: <code>block</code>, <code>inline</code>, <code>flex</code>, <code>grid</code></li>
+    <li><code>position</code>: <code>static</code>, <code>relative</code>, <code>absolute</code>, <code>fixed</code></li>
+    <li><code>z-index</code>: Untuk layering elemen</li>
+  </ul>
+
+  <h4>Langkah 7: Transisi dan Animasi Dasar</h4>
+  <p>CSS mendukung efek animasi yang sederhana hingga kompleks, misalnya untuk hover:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>a:hover {
+  color: red;
+  transition: color 0.3s ease-in-out;
+}</code></pre>
+  </div>
+
+  <h4>Tips Praktis</h4>
+  <ul>
+    <li>Gunakan nama class yang deskriptif seperti <code>.kartu-produk</code> atau <code>.judul-artikel</code>.</li>
+    <li>Selalu pisahkan CSS ke file eksternal untuk project menengah hingga besar.</li>
+    <li>Manfaatkan developer tools di browser (klik kanan > Inspect) untuk eksperimen cepat.</li>
+  </ul>
+
+  <h4>Kesimpulan</h4>
+  <ul>
+    <li>CSS adalah kunci dalam menciptakan tampilan web yang menarik.</li>
+    <li>Memahami selector dan properti CSS akan membantumu menguasai layout dan desain.</li>
+    <li>Penerapan CSS bisa dilakukan inline, internal, atau eksternal, tergantung kebutuhan.</li>
+    <li>Latihan membuat desain dari nol akan membantu memperkuat logika dan kreativitas desainmu.</li>
+  </ul>
+  <br>
+  <h3><span class="highlight">Cara Menulis CSS di HTML</span></h3>
+   <hr class="mb-4">
+    <h4>1. Inline CSS</h4>
+  <p>
+    Inline CSS dituliskan langsung di dalam elemen HTML menggunakan atribut <code>style</code>. Cara ini cepat dan mudah, tetapi tidak efisien untuk styling dalam jumlah banyak.
+  </p>
+  
+  <strong>Contoh Inline CSS:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;p style="color: red;"&gt;Teks ini berwarna merah&lt;/p&gt;</code></pre>
+  </div>
+
+  <p>
+    Kelebihan dari inline CSS adalah sederhana dan langsung terlihat hasilnya. Namun, jika kamu ingin mengubah gaya yang sama pada banyak elemen, kamu harus menyalin kode yang sama berulang kali, yang membuatnya tidak efisien.
+  </p>
+
+  <h4>2. Internal CSS</h4>
+  <p>
+    Internal CSS ditulis di dalam tag <code>&lt;style&gt;</code> pada bagian <code>&lt;head&gt;</code> dari dokumen HTML. Ini berguna jika kamu ingin memberikan style pada satu halaman HTML saja.
+  </p>
+
+  <strong>Contoh Internal CSS:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;head&gt;
+  &lt;style&gt;
+    h1 {
+      color: blue;
+      font-family: 'Arial', sans-serif;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+  </div>
+
+  <p>
+    Internal CSS cocok digunakan untuk halaman kecil yang tidak memerlukan file eksternal tambahan. Namun, jika kamu memiliki banyak halaman, internal CSS bisa membuat pengelolaan menjadi lebih sulit karena tidak bisa digunakan ulang.
+  </p>
+
+  <h4>3. Eksternal CSS</h4>
+  <p>
+    Eksternal CSS ditulis di file terpisah dengan ekstensi <code>.css</code>. File ini kemudian dihubungkan ke HTML menggunakan tag <code>&lt;link&gt;</code>. Ini adalah cara yang paling direkomendasikan untuk proyek menengah hingga besar.
+  </p>
+
+  <strong>Contoh Link ke Eksternal CSS:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+  </div>
+
+  <p>
+    File CSS eksternal memisahkan konten dan desain, sehingga kode menjadi lebih bersih dan mudah dikelola. Kamu juga bisa menggunakan satu file CSS untuk mengatur gaya banyak halaman sekaligus.
+  </p>
+
+  <h4>Struktur Umum Penulisan CSS</h4>
+  <p>
+    CSS terdiri dari <strong>selector</strong> dan <strong>declaration block</strong>. Selector menunjukkan elemen mana yang akan diatur, sedangkan declaration block berisi properti dan nilainya.
+  </p>
+
+  <strong>Contoh Penulisan CSS:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>p {
+  color: green;
+  font-size: 18px;
+}</code></pre>
+  </div>
+
+  <p>
+    Pada contoh di atas, semua elemen <code>&lt;p&gt;</code> akan memiliki warna teks hijau dan ukuran font 18 piksel.
+  </p>
+
+  <h4>Jenis Selector dalam CSS</h4>
+  <ul>
+    <li><strong>Selector tag</strong> – seperti <code>h1</code>, <code>p</code>, <code>div</code></li>
+    <li><strong>Selector class</strong> – menggunakan titik (.) contoh: <code>.menu</code></li>
+    <li><strong>Selector ID</strong> – menggunakan tanda pagar (#) contoh: <code>#footer</code></li>
+    <li><strong>Group selector</strong> – contoh: <code>h1, h2, h3</code></li>
+    <li><strong>Descendant selector</strong> – contoh: <code>nav ul li</code></li>
+  </ul>
+
+  <h4>Tips Penggunaan CSS di HTML</h4>
+  <ul>
+    <li>Gunakan eksternal CSS untuk project besar agar lebih terstruktur.</li>
+    <li>Gunakan nama class yang bermakna agar mudah dipahami tim.</li>
+    <li>Selalu cek hasilnya di browser menggunakan developer tools (F12).</li>
+    <li>Pelajari properti umum seperti <code>margin</code>, <code>padding</code>, <code>font-size</code>, dan <code>color</code>.</li>
+  </ul>
+
+  <h4>Kesimpulan</h4>
+  <ul>
+    <li>CSS bisa ditulis langsung di HTML dengan 3 cara: inline, internal, dan eksternal.</li>
+    <li>Masing-masing metode punya kelebihan dan cocok digunakan dalam situasi tertentu.</li>
+    <li>Memisahkan CSS ke file eksternal adalah praktik terbaik untuk menjaga kerapihan kode.</li>
+    <li>Dengan menguasai cara menulis CSS yang benar, kamu bisa membuat tampilan website yang menarik dan profesional.</li>
+  </ul>
+  <br>
+  <h3><span class="highlight">Menggunakan Warna di CSS</span></h3>
+  <hr class="mb-4">
+  <h3>Warna di CSS</h3>
+  <p>
+    Warna adalah bagian penting dalam desain web. Warna membantu memperjelas struktur halaman, membedakan elemen, dan menciptakan kesan visual yang menarik. Dalam CSS, kamu bisa mengatur warna teks, latar belakang, garis tepi, dan bahkan efek lainnya menggunakan berbagai format warna.
+  </p>
+
+  <h4>1. Properti CSS Terkait Warna</h4>
+  <p>Berikut properti yang umum digunakan untuk mengatur warna dalam CSS:</p>
+  <ul>
+    <li><code>color</code> – Mengatur warna teks.</li>
+    <li><code>background-color</code> – Mengatur warna latar belakang elemen.</li>
+    <li><code>border-color</code> – Mengatur warna garis tepi (border).</li>
+    <li><code>outline-color</code> – Mengatur warna outline elemen.</li>
+  </ul>
+
+  <h4>2. Format Penulisan Warna dalam CSS</h4>
+  <p>CSS mendukung berbagai cara untuk menulis warna, di antaranya:</p>
+  <ul>
+    <li><strong>Nama warna</strong> – Misalnya: <code>red</code>, <code>blue</code>, <code>green</code>, <code>black</code>, <code>white</code>, dll.</li>
+    <li><strong>Hexadecimal (hex)</strong> – Misalnya: <code>#FF0000</code> untuk merah, <code>#00FF00</code> untuk hijau.</li>
+    <li><strong>RGB</strong> – Misalnya: <code>rgb(255, 0, 0)</code>.</li>
+    <li><strong>RGBA</strong> – Sama seperti RGB, tapi dengan tambahan transparansi. Contoh: <code>rgba(255, 0, 0, 0.5)</code>.</li>
+    <li><strong>HSL</strong> – Warna berdasarkan Hue, Saturation, dan Lightness. Contoh: <code>hsl(0, 100%, 50%)</code>.</li>
+    <li><strong>HSLA</strong> – Sama seperti HSL, dengan tambahan alpha/transparansi. Contoh: <code>hsla(0, 100%, 50%, 0.3)</code>.</li>
+  </ul>
+
+  <strong>Contoh Penggunaan Warna dengan Format Hex:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>h1 {
+  color: #3498db;
+}</code></pre>
+  </div>
+
+  <strong>Contoh Penggunaan Warna dengan RGB:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>p {
+  background-color: rgb(255, 255, 0);
+}</code></pre>
+  </div>
+
+  <strong>Contoh Penggunaan Warna dengan RGBA (Transparan):</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>.kotak {
+  background-color: rgba(255, 0, 0, 0.3);
+}</code></pre>
+  </div>
+
+  <h4>3. Tips Memilih Warna yang Tepat</h4>
+  <ul>
+    <li>Gunakan warna kontras tinggi antara teks dan background agar mudah dibaca.</li>
+    <li>Hindari penggunaan terlalu banyak warna berbeda dalam satu halaman.</li>
+    <li>Pilih skema warna yang konsisten dan mendukung identitas brand/web kamu.</li>
+    <li>Gunakan <a href="https://coolors.co" target="_blank">coolors.co</a> atau <a href="https://colorhunt.co" target="_blank">colorhunt.co</a> untuk mencari kombinasi warna harmonis.</li>
+  </ul>
+
+  <h4>4. Animasi Warna dengan CSS</h4>
+  <p>CSS juga mendukung perubahan warna secara dinamis menggunakan <code>transition</code>:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>a {
+  color: black;
+  transition: color 0.5s ease;
+}
+
+a:hover {
+  color: red;
+}</code></pre>
+  </div>
+
+  <p>
+    Saat kursor diarahkan ke elemen <code>&lt;a&gt;</code>, warna teks akan berubah secara halus menjadi merah.
+  </p>
+
+  <h4>5. Menggunakan Warna di Border dan Box</h4>
+  <p>Warna juga dapat diterapkan pada elemen kotak menggunakan properti seperti:</p>
+  <ul>
+    <li><code>border</code>: Mengatur warna dan gaya garis tepi.</li>
+    <li><code>box-shadow</code>: Membuat bayangan dengan warna tertentu.</li>
+  </ul>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>.kartu {
+  border: 2px solid #2ecc71;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}</code></pre>
+  </div>
+
+  <h4>6. Warna Transparan vs Opacity</h4>
+  <p>
+    Selain menggunakan <code>rgba</code> atau <code>hsla</code> untuk transparansi, kamu juga bisa mengatur elemen menjadi transparan dengan <code>opacity</code>:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>.transparan {
+  background-color: blue;
+  opacity: 0.5;
+}</code></pre>
+  </div>
+
+  <h4>Kesimpulan</h4>
+  <ul>
+    <li>CSS menyediakan berbagai cara untuk mengatur warna menggunakan nama, kode hex, RGB, HSL, dan lainnya.</li>
+    <li>Warna dapat diterapkan ke teks, latar belakang, border, dan bahkan efek visual.</li>
+    <li>Menggunakan warna dengan bijak dapat meningkatkan kenyamanan pengguna dan tampilan profesional website.</li>
+    <li>Transisi dan efek transparansi bisa membuat website terlihat lebih interaktif dan modern.</li>
+  </ul>
+  <br>
+  <h3><span class="highlight">Menggunakan Background di CSS</span></h3>
+  <hr class="mb-4">
+  <h3>Background di CSS</h3>
+  <p>
+    Dalam dunia web desain, latar belakang (background) adalah elemen visual yang sangat penting. Background digunakan untuk menambahkan warna, gambar, atau bahkan gradien agar tampilan elemen HTML menjadi lebih menarik dan mudah dibedakan. CSS menyediakan berbagai properti powerful untuk mengatur latar belakang sesuai kebutuhan desain modern.
+  </p>
+
+  <h4>1. Properti Background Dasar di CSS</h4>
+  <p>Berikut ini properti dasar yang biasa digunakan untuk mengatur background dalam CSS:</p>
+  <ul>
+    <li><code>background-color</code>: Mengatur warna latar belakang.</li>
+    <li><code>background-image</code>: Menentukan gambar latar.</li>
+    <li><code>background-repeat</code>: Mengatur apakah gambar latar diulang.</li>
+    <li><code>background-position</code>: Menentukan posisi gambar latar.</li>
+    <li><code>background-size</code>: Mengatur ukuran gambar latar.</li>
+    <li><code>background-attachment</code>: Menentukan apakah gambar latar ikut menggulir atau tetap di tempat.</li>
+    <li><code>background</code>: Properti singkat (shorthand) untuk menggabungkan semua properti background.</li>
+  </ul>
+
+  <h4>2. Contoh Penggunaan <code>background-color</code></h4>
+  <p>Properti ini mengatur warna latar belakang suatu elemen.</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>div {
+  background-color: lightblue;
+}</code></pre>
+  </div>
+
+  <h4>3. Menggunakan <code>background-image</code></h4>
+  <p>Untuk memberi gambar sebagai latar belakang elemen.</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>body {
+  background-image: url('gambar-latar.jpg');
+}</code></pre>
+  </div>
+  <p>
+    Gambar akan diulang secara default. Untuk mengubahnya, gunakan properti lain seperti <code>background-repeat</code>.
+  </p>
+
+  <h4>4. Mengatur <code>background-repeat</code></h4>
+  <p>Default-nya gambar akan mengulang baik secara horizontal maupun vertikal. Kamu bisa menghentikan itu dengan menuliskan:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>body {
+  background-image: url('gambar.jpg');
+  background-repeat: no-repeat;
+}</code></pre>
+  </div>
+
+  <h4>5. Menentukan <code>background-position</code></h4>
+  <p>Properti ini menentukan posisi gambar latar, contohnya di tengah:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}</code></pre>
+  </div>
+
+  <h4>6. Mengatur Ukuran dengan <code>background-size</code></h4>
+  <p>Kamu bisa menyesuaikan ukuran gambar latar menggunakan properti ini. Contoh:</p>
+  <ul>
+    <li><code>cover</code>: Gambar akan menutupi seluruh elemen (meskipun bisa terpotong).</li>
+    <li><code>contain</code>: Gambar akan sepenuhnya terlihat tapi mungkin tidak menutupi seluruh area.</li>
+  </ul>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>.header {
+  background-image: url('header.jpg');
+  background-size: cover;
+  background-position: center;
+}</code></pre>
+  </div>
+
+  <h4>7. Efek Parallax dengan <code>background-attachment</code></h4>
+  <p>Parallax adalah efek di mana latar tidak bergeser saat pengguna menggulir halaman.</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>.parallax {
+  background-image: url('parallax.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}</code></pre>
+  </div>
+
+  <h4>8. Menggunakan Shorthand <code>background</code></h4>
+  <p>Alih-alih menulis semua properti satu per satu, kamu bisa menggunakan properti <code>background</code> sebagai shorthand:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>.banner {
+  background: url('banner.jpg') no-repeat center center / cover;
+}</code></pre>
+  </div>
+
+  <h4>9. Background Gradient</h4>
+  <p>
+    CSS juga memungkinkan kamu membuat latar warna gradasi (tanpa gambar). Contohnya:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>div {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}</code></pre>
+  </div>
+  <p>
+    Gradient bisa horizontal, vertikal, atau radial. Kamu juga bisa mengatur lebih banyak warna untuk transisi yang kompleks.
+  </p>
+
+  <h4>10. Tips Penggunaan Background</h4>
+  <ul>
+    <li>Gunakan ukuran gambar yang optimal agar tidak memperlambat loading website.</li>
+    <li>Selalu kombinasikan gambar background dengan teks yang kontras agar tetap terbaca.</li>
+    <li>Pakai background warna/gradient untuk efek ringan dan cepat.</li>
+    <li>Gunakan kombinasi <code>background-blend-mode</code> untuk efek campuran warna dan gambar.</li>
+  </ul>
+
+  <h4>Kesimpulan</h4>
+  <ul>
+    <li>CSS menyediakan banyak properti untuk mengatur latar belakang seperti warna, gambar, posisi, ukuran, dan pengulangan.</li>
+    <li>Properti <code>background</code> bisa digunakan secara singkat untuk merangkum semua pengaturan.</li>
+    <li>Gunakan <code>background-size: cover</code> dan <code>background-attachment: fixed</code> untuk efek desain modern.</li>
+    <li>Gradient dan kombinasi warna dapat menciptakan latar yang stylish tanpa gambar.</li>
+  </ul>
+  <br>
+  <h3><span class="highlight"> Text Formatting Di CSS</span></h3>
+  <hr class="mb-4">
+  <h3>Formatting CSS</h3>
+  <p>
+    Dalam desain web, teks merupakan elemen utama dalam menyampaikan informasi. CSS menyediakan berbagai properti untuk mengatur tampilan teks agar lebih menarik, mudah dibaca, dan sesuai dengan desain. Dengan memahami cara memformat teks menggunakan CSS, kamu bisa membuat halaman web yang profesional dan enak dibaca.
+  </p>
+
+  <h4>1. Properti Dasar Text di CSS</h4>
+  <p>Berikut ini beberapa properti penting yang digunakan untuk memformat teks dalam CSS:</p>
+  <ul>
+    <li><code>color</code>: Mengatur warna teks.</li>
+    <li><code>font-size</code>: Mengatur ukuran font.</li>
+    <li><code>font-family</code>: Menentukan jenis font.</li>
+    <li><code>font-weight</code>: Menentukan ketebalan font.</li>
+    <li><code>text-align</code>: Mengatur perataan teks (kiri, kanan, tengah, justify).</li>
+    <li><code>text-decoration</code>: Menambahkan dekorasi seperti garis bawah, coret, atau overline.</li>
+    <li><code>line-height</code>: Mengatur tinggi baris untuk kenyamanan baca.</li>
+  </ul>
+
+  <h4>2. Mengatur Warna Teks dengan <code>color</code></h4>
+  <p>Properti <code>color</code> digunakan untuk mengubah warna teks dalam elemen HTML.</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>p {
+  color: darkblue;
+}</code></pre>
+  </div>
+
+  <h4>3. Mengatur Ukuran Teks dengan <code>font-size</code></h4>
+  <p>Kamu bisa menentukan ukuran font dalam satuan px, em, rem, atau persen.</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>h1 {
+  font-size: 36px;
+}</code></pre>
+  </div>
+
+  <h4>4. Memilih Jenis Font dengan <code>font-family</code></h4>
+  <p>Properti ini menentukan tipe font. Disarankan menyebutkan beberapa alternatif.</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}</code></pre>
+  </div>
+
+  <h4>5. Menentukan Ketebalan dengan <code>font-weight</code></h4>
+  <p>Kamu bisa menggunakan nilai seperti <code>normal</code>, <code>bold</code>, atau angka 100–900.</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>strong {
+  font-weight: bold;
+}</code></pre>
+  </div>
+
+  <h4>6. Mengatur Perataan Teks dengan <code>text-align</code></h4>
+  <p>Gunakan properti ini untuk menyelaraskan teks secara kiri, kanan, tengah, atau justify.</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>p {
+  text-align: justify;
+}</code></pre>
+  </div>
+
+  <h4>7. Memberi Garis Dekorasi dengan <code>text-decoration</code></h4>
+  <p>Kamu bisa menambahkan garis bawah, garis coret, dan lainnya pada teks.</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>a {
+  text-decoration: underline;
+}</code></pre>
+  </div>
+
+  <h4>8. Mengatur Jarak Baris dengan <code>line-height</code></h4>
+  <p>Line-height membantu meningkatkan kenyamanan membaca paragraf panjang.</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>p {
+  line-height: 1.6;
+}</code></pre>
+  </div>
+
+  <h4>9. Shorthand Font</h4>
+  <p>Kamu bisa menggabungkan semua properti font dalam satu baris menggunakan shorthand:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>p {
+  font: italic bold 16px/1.5 "Arial", sans-serif;
+}</code></pre>
+  </div>
+
+  <h4>10. Tips Text Styling</h4>
+  <ul>
+    <li>Gunakan <code>rem</code> atau <code>em</code> untuk ukuran font yang responsif.</li>
+    <li>Pastikan kontras warna teks dan background cukup tinggi untuk keterbacaan.</li>
+    <li>Hindari terlalu banyak jenis font dalam satu halaman web.</li>
+    <li>Gunakan <code>text-transform</code> untuk mengubah huruf menjadi kapital, kecil, atau kapital semua.</li>
+  </ul>
+
+  <h4>Kesimpulan</h4>
+  <ul>
+    <li>CSS memungkinkan kamu mengatur teks secara fleksibel dan estetis.</li>
+    <li>Gunakan kombinasi <code>font-family</code>, <code>font-size</code>, dan <code>color</code> untuk tampilan teks yang menarik.</li>
+    <li>Properti seperti <code>line-height</code> dan <code>text-align</code> membantu meningkatkan kenyamanan baca.</li>
+    <li>Shorthand font bisa digunakan untuk efisiensi kode.</li>
+  </ul>
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</section><!-- /Hero Section -->
+<div class="mt-5 p-4 bg-light rounded shadow-sm text-center">
+  <h3 class="fw-bold mb-2">Beri Dukungan untuk Update Materi Selanjutnya</h3>
+  <p class="mb-3 text-muted">
+    Jika Anda merasa materi ini bermanfaat, bantu kami untuk terus mengembangkan konten pembelajaran yang berkualitas. Dukungan seikhlasnya dari Anda sangat berarti bagi kelangsungan proyek ini.
+  </p>
+  <a href="index.html#donasi" class="btn btn-warning px-4 py-2">
+    <i class="bi bi-cash-coin me-2"></i> Donasi Sekarang
+  </a>
+</div>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+      
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Coding Is Fun</strong>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Desain OLeh <a href="index.html">Coding IS Fun</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="validate.js"></script>
+  <script src="aos.js"></script>
+  <script src="glightbox.min.js"></script>
+  <script src="imagesloaded.pkgd.min.js"></script>
+  <script src="isotope.pkgd.min.js"></script>
+  <script src="swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+
+<script>
+function copyKode(button) {
+  const kode = button.nextElementSibling.innerText;
+  navigator.clipboard.writeText(kode).then(() => {
+    button.innerHTML = '<i class="bi bi-check2-circle"></i> Disalin!';
+    setTimeout(() => {
+      button.innerHTML = '<i class="bi bi-clipboard"></i> Salin';
+    }, 1500);
+  });
+}
+</script>
+
+
+<script>
+  document.getElementById("kirimKomentar").addEventListener("click", function () {
+    const nama = document.querySelector('input[name="nama"]').value.trim();
+    const asal = document.querySelector('select[name="asal"]').value;
+    const komentar = document.querySelector('textarea[name="komentar"]').value.trim();
+    const bintang = document.querySelectorAll('input[name="bintang[]"]:checked');
+
+    if (nama === "" || asal === "" || komentar === "" || bintang.length === 0) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Data belum lengkap!',
+        text: 'Silakan lengkapi semua field termasuk pilih minimal 1 bintang.',
+        confirmButtonColor: '#f39c12',
+        background: '#fffbe6'
+      });
+    } else {
+      Swal.fire({
+        icon: 'success',
+        title: 'Komentar Berhasil Dikirim!',
+        text: 'Terima kasih atas dukungan dan semangat Anda.',
+        confirmButtonColor: '#3085d6'
+      }).then(() => {
+        document.querySelector(".php-email-form").submit(); // submit form jika semua valid
+      });
+    }
+  });
+</script>
+<script>
+  const toggle = document.getElementById("dark-mode-toggle");
+  const icon = document.getElementById("dark-mode-icon");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Ganti ikon
+    if (document.body.classList.contains("dark-mode")) {
+      icon.classList.replace("bi-moon-fill", "bi-sun-fill");
+    } else {
+      icon.classList.replace("bi-sun-fill", "bi-moon-fill");
+    }
+  });
+</script>
+
+
+
+</body>
+
+</html>

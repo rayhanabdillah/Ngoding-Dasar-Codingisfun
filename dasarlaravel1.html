@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Belajar Coding</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="bgg.png">
+  <link rel="icon" href="bgg.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Bootstrap CSS (jika belum ada) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<!-- Vendor CSS Files -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons.css" rel="stylesheet">
+  <link href="aos.css" rel="stylesheet">
+  <link href="glightbox.min.css" rel="stylesheet">
+  <link href="swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Invent
+  * Template URL: https://bootstrapmade.com/invent-bootstrap-business-template/
+  * Updated: May 12 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode .bg-light pre,
+.dark-mode .bg-light code {
+  color: black;
+ /* opsional: buat latar belakang gelap juga */
+}
+/* Navbar & Menu */
+body.dark-mode .navmenu,
+body.dark-mode .mobile-nav,
+.dark-mode .header,
+.dark-mode .navmenu,
+.dark-mode .dropdown ul {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .navmenu ul li a,
+.dark-mode .mobile-nav a {
+  color: #ffffff !important;
+}
+
+.dark-mode .navmenu ul li a.active,
+.dark-mode .navmenu ul li a:hover {
+  color: #ffd700 !important;
+}
+
+.dark-mode .navmenu .dropdown ul {
+  background-color: #2a2a2a !important;
+}
+
+.dark-mode .navmenu .dropdown ul li a {
+  color: #ffffff !important;
+}
+
+/* Icon mode gelap */
+#dark-mode-icon {
+  color: #000;
+  transition: color 0.3s;
+}
+
+body.dark-mode #dark-mode-icon {
+  color: #fff;
+}
+
+/* Hero dan section */
+.dark-mode section#hero h1,
+.dark-mode section#hero p,
+.dark-mode section#materi,
+.dark-mode section#about,
+.dark-mode section#materi h2,
+.dark-mode section#about h3,
+.dark-mode .sitename,
+.dark-mode .hero-title,
+.dark-mode .hero-description,
+.dark-mode .badge-text {
+  color: #ffffff !important;
+}
+
+.dark-mode section#materi,
+.dark-mode section#about {
+  background-color: #1a1a1a;
+}
+
+/* Feature box */
+.dark-mode .feature-box {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444;
+}
+
+.dark-mode .feature-title,
+.dark-mode .feature-text,
+.dark-mode .feature-icon i {
+  color: #ffffff !important;
+}
+
+/* How We Work */
+.dark-mode section#how-we-work {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode #how-we-work .section-title h2,
+.dark-mode #how-we-work .section-title p,
+.dark-mode #how-we-work .step-icon i,
+.dark-mode #how-we-work .step-content h3 {
+  color: #ffffff;
+}
+
+.dark-mode #how-we-work .step-number {
+  color: #ffcc00;
+}
+
+.dark-mode #how-we-work .step-content p {
+  color: #cccccc;
+}
+
+.dark-mode #how-we-work .process-item .content {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/* Call to Action 2 */
+.dark-mode section#call-to-action-2 {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode section#hero h3{
+  color: white;
+}
+.dark-mode section#hero h4{
+  color: white;
+}
+
+.dark-mode #call-to-action-2 h2,
+.dark-mode #call-to-action-2 .lead,
+.dark-mode #call-to-action-2 .feature-item span {
+  color: #ffffff;
+}
+
+.dark-mode #call-to-action-2 .feature-item i {
+  color: #00c853;
+}
+
+/* Footer */
+.dark-mode footer.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-top: 1px solid #333;
+}
+
+.dark-mode .footer .logo span.sitename,
+.dark-mode .footer p,
+.dark-mode .footer a,
+.dark-mode .footer ul li a,
+.dark-mode .footer h4 {
+  color: #dddddd;
+}
+
+.dark-mode .footer a:hover {
+  color: #00bfa5;
+  text-decoration: underline;
+}
+
+.dark-mode .footer .social-links a {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .footer .social-links a:hover {
+  background-color: #00bfa5;
+  color: #ffffff;
+}
+
+.dark-mode .footer .credits a {
+  color: #00bfa5;
+}
+
+.dark-mode .footer .credits a:hover {
+  text-decoration: underline;
+}
+
+.dark-mode .footer .copyright {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 30px;
+  color: #bbbbbb;
+}
+
+/* Badge icon */
+body.dark-mode .badge-wrapper .icon-circle i {
+  color: #ffffff !important;
+}
+
+/* Komentar feedback & alert */
+.dark-mode .loading,
+.dark-mode .sent-message,
+.dark-mode .error-message {
+  color: #ffffff;
+}
+
+/* RCB Button */
+.rcb {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.rcb:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+/* List Group (Materi) */
+.list-group-item {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #eef4fc;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 1.6rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Mode terang */
+body:not(.dark-mode) .list-group-item {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body:not(.dark-mode) .list-group-item:hover {
+  background-color: #e2e6ea;
+  color: #000;
+}
+
+/* Mode gelap */
+body.dark-mode .list-group-item {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  border-color: #333;
+}
+
+body.dark-mode .list-group-item:hover {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+.custom-content {
+  background-color: #ffffff;
+  color: #212529;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+body.dark-mode .custom-content {
+  background-color: #1f1f1f !important;
+  color: #f1f1f1 !important;
+}
+
+  img.zoomable {
+    cursor: zoom-in;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+  }
+
+  img.zoomable:hover {
+    transform: scale(1.02);
+  }
+/* Warna biru saat dark mode */
+body.dark-mode .btn-outline-secondary {
+  color: #0d6efd !important;         /* Warna biru Bootstrap */
+  border-color: #0d6efd !important;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+.highlight {
+  background-color: #ffff99; /* kuning stabilo */
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+</style>
+
+
+<body class="index-page">
+
+  <header id="header"  class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html#materi" class="btn btn-sm btn-outline-secondary d-flex align-items-center logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <i class="bi bi-arrow-left me-1"></i><span>Kembali</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <button id="dark-mode-toggle" class="btn btn-sm btn-outline-dark">
+      <i id="dark-mode-icon" class="bi bi-moon-fill"></i>
+    </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Judul Hero -->
+<div class="row align-items-center mb-4">
+  <div class="col-12 d-flex flex-wrap align-items-center justify-content-between gap-2">
+    <!-- Kiri: Tombol Kembali -->
+  
+    <!-- Kanan: Tombol Mode Gelap -->
+    
+
+    <!-- Judul (diletakkan di bawah jika layar kecil) -->
+    <h1 class="fw-bold mb-0 w-100 mt-2" style="font-size: 2.4rem;">
+      Pengenalan Bahasa Pemrograman php
+    </h1>
+  </div>
+</div>
+    <!-- Kotak Latihan -->
+     <hr class="mb-4">
+
+    <!-- Daftar Materi HTML -->
+<div class="list-group shadow-sm p-4 rounded custom-content">
+ <p>
+    <strong>Laravel</strong> adalah framework PHP open-source yang dirancang untuk memudahkan pengembangan aplikasi web dengan struktur kode yang bersih, elegan, dan terorganisir.
+    Laravel dibangun mengikuti prinsip <strong>MVC (Model-View-Controller)</strong> yang memisahkan logika aplikasi dari tampilan, sehingga memudahkan dalam proses pengembangan dan pemeliharaan.
+  </p>
+
+  <p>
+    Laravel memiliki berbagai fitur bawaan yang sangat membantu developer seperti sistem routing, otentikasi, migrasi database, ORM (Eloquent), template engine (Blade), validasi, session, middleware, dan masih banyak lagi.
+  </p>
+
+  <h5>Kenapa Memilih Laravel?</h5>
+  <ul>
+    <li><strong>Struktur MVC:</strong> Memudahkan pengelolaan kode dan pemisahan logika.</li>
+    <li><strong>Routing yang mudah:</strong> Menentukan URL dan logika dengan sederhana.</li>
+    <li><strong>Eloquent ORM:</strong> Berinteraksi dengan database tanpa query SQL manual.</li>
+    <li><strong>Blade Template:</strong> Menyediakan template engine ringan dan powerful.</li>
+    <li><strong>Keamanan:</strong> Laravel memiliki fitur bawaan untuk menangkal XSS, CSRF, dan SQL Injection.</li>
+    <li><strong>Community & Dokumentasi:</strong> Komunitas besar dan dokumentasi lengkap.</li>
+  </ul>
+
+  <h5>Struktur Folder Laravel</h5>
+  <p>Setelah menginstal Laravel, kamu akan melihat struktur folder seperti:</p>
+  <ul>
+    <li><code>app/</code> – Berisi logika aplikasi (controller, model, dll)</li>
+    <li><code>resources/views</code> – Tempat file tampilan (Blade)</li>
+    <li><code>routes/web.php</code> – Tempat mendefinisikan route aplikasi</li>
+    <li><code>public/</code> – Akses utama ke aplikasi (index.php, asset, dll)</li>
+    <li><code>config/</code> – Pengaturan aplikasi</li>
+  </ul>
+
+  <h5>Contoh Routing Sederhana</h5>
+  <p>Contoh file <code>routes/web.php</code>:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return view('welcome');
+});
+?&gt;</code></pre>
+  </div>
+
+  <h5>Contoh Blade Template</h5>
+  <p>File <code>resources/views/welcome.blade.php</code>:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Selamat Datang&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Halo, Laravel!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Kesimpulan</h5>
+  <ul>
+    <li>Laravel adalah framework PHP modern yang memudahkan pengembangan aplikasi web.</li>
+    <li>Memiliki fitur lengkap mulai dari routing, template, hingga manajemen database.</li>
+    <li>Struktur folder Laravel sangat rapi dan mendukung pola MVC.</li>
+    <li>Sangat cocok digunakan oleh pemula hingga profesional karena dokumentasi dan komunitas yang aktif.</li>
+  </ul>
+  <br>
+  <h3><mark>Cara Jalankan Laravel 11</mark></h3>
+    <p>
+    Setelah menginstal Laravel, langkah selanjutnya adalah menjalankan aplikasinya di browser. Laravel memiliki built-in server bernama Artisan yang sangat berguna untuk pengembangan lokal tanpa harus mengatur server manual seperti Apache atau Nginx.
+    Menjalankan Laravel dapat dilakukan dengan berbagai cara tergantung pada sistem operasi dan lingkungan kerja yang kamu gunakan, seperti XAMPP, Laravel Sail, atau Laravel Valet.
+    Dalam tutorial ini, kita akan fokus pada cara paling umum dan mudah, yaitu menggunakan **Artisan CLI (Command Line Interface)** melalui terminal atau command prompt.
+  </p>
+
+  <h5>1. Menjalankan Laravel dengan Artisan</h5>
+  <p>
+    Setelah masuk ke folder project Laravel kamu melalui terminal, jalankan perintah berikut untuk memulai server:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan serve</code></pre>
+  </div>
+
+  <p>
+    Setelah dijalankan, kamu akan melihat output seperti ini:
+  </p>
+  <div class="bg-dark text-white p-3 rounded mb-4"><code>
+    Starting Laravel development server: http://127.0.0.1:8000
+  </code></div>
+  <p>
+    Buka browser kamu dan akses <code>http://127.0.0.1:8000</code> untuk melihat tampilan awal Laravel.
+  </p>
+
+  <h5>2. Menentukan Port Sendiri</h5>
+  <p>
+    Jika kamu ingin menjalankan Laravel di port yang berbeda (misalnya 8080), kamu bisa menambahkan parameter <code>--port</code> seperti berikut:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan serve --port=8080</code></pre>
+  </div>
+  <p>
+    Lalu buka <code>http://localhost:8080</code> di browser.
+  </p>
+
+  <h5>3. Menjalankan Laravel di XAMPP (opsional)</h5>
+  <p>
+    Jika kamu menggunakan XAMPP, kamu juga bisa menjalankan Laravel secara manual melalui Apache. Caranya:
+  </p>
+  <ol>
+    <li>Pindahkan folder project Laravel ke dalam <code>htdocs</code>.</li>
+    <li>Jalankan Apache dan MySQL dari XAMPP Control Panel.</li>
+    <li>Buka browser dan akses <code>http://localhost/namaproject/public</code>.</li>
+  </ol>
+  <p class="text-danger">
+    Catatan: Jangan lupa mengatur <code>.env</code> dan konfigurasi base URL jika kamu tidak menggunakan Artisan Serve.
+  </p>
+
+  <h5>4. Cek Route dan View</h5>
+  <p>
+    Setelah server berjalan, kamu bisa mencoba mengubah route atau membuat view sendiri:
+  </p>
+  <p>Contoh mengedit file <code>routes/web.php</code>:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>Route::get('/halo', function () {
+    return 'Halo, ini Laravel!';
+});</code></pre>
+  </div>
+  <p>
+    Akses di browser: <code>http://127.0.0.1:8000/halo</code>
+  </p>
+
+  <h5>5. Menampilkan View</h5>
+  <p>
+    Kamu juga bisa menampilkan halaman HTML dari folder <code>resources/views</code>. Buat file <code>home.blade.php</code> seperti ini:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Halaman Home&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Selamat Datang di Laravel&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+
+  <p>Edit route-nya di <code>web.php</code>:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>Route::get('/home', function () {
+    return view('home');
+});</code></pre>
+  </div>
+
+  <br>
+  <h3><mark>Cara Membuat Model</mark></h3>
+  <hr class="mb-4">
+    <p>
+    Dalam arsitektur Laravel, **Model** adalah bagian penting dari konsep <strong>MVC (Model-View-Controller)</strong>. Model bertanggung jawab untuk berinteraksi dengan database, mewakili data dan logika bisnis aplikasi. Laravel menggunakan **Eloquent ORM** (Object Relational Mapper) yang memudahkan pengelolaan database menggunakan sintaks PHP yang bersih tanpa menulis query SQL secara manual.
+  </p>
+
+  <p>
+    Dengan model, kita dapat dengan mudah melakukan operasi CRUD (Create, Read, Update, Delete) terhadap tabel di database. Setiap model biasanya mewakili satu tabel, dan nama model mengikuti format singular (tunggal), sedangkan nama tabel bersifat plural (jamak).
+  </p>
+
+  <h5>1. Membuat Model dengan Artisan</h5>
+  <p>
+    Untuk membuat model, gunakan perintah Artisan berikut di terminal:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan make:model NamaModel</code></pre>
+  </div>
+
+  <p>Contoh membuat model <code>Produk</code>:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan make:model Produk</code></pre>
+  </div>
+
+  <p>
+    Perintah ini akan membuat file <code>app/Models/Produk.php</code> secara otomatis. Model ini secara default akan mengacu ke tabel bernama <code>produks</code> (pakai huruf kecil dan jamak).
+  </p>
+
+  <h5>2. Isi Awal File Model</h5>
+  <p>
+    File model yang dibuat secara default akan berisi seperti berikut:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Produk extends Model
+{
+    //
+}</code></pre>
+  </div>
+
+  <h5>3. Menentukan Tabel Secara Manual (Opsional)</h5>
+  <p>
+    Jika nama tabel berbeda dari aturan default, kita bisa mendefinisikan nama tabel secara eksplisit seperti ini:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>class Produk extends Model
+{
+    protected $table = 'data_produk';
+}</code></pre>
+  </div>
+
+  <h5>4. Mengatur Kolom yang Bisa Diisi (Mass Assignment)</h5>
+  <p>
+    Untuk keamanan, Laravel hanya memperbolehkan kolom yang ditentukan untuk diisi massal. Gunakan <code>$fillable</code> untuk mendefinisikan kolom yang diizinkan:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>class Produk extends Model
+{
+    protected $fillable = ['nama', 'harga', 'stok'];
+}</code></pre>
+  </div>
+
+  <h5>5. Contoh Menggunakan Model</h5>
+  <p>
+    Setelah membuat model, kamu bisa menggunakannya di controller atau langsung di route untuk mengambil data dari database.
+  </p>
+  <p>Contoh: Menampilkan semua data dari tabel produk</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>use App\Models\Produk;
+
+Route::get('/produk', function () {
+    $data = Produk::all();
+    return view('produk.index', ['produk' => $data]);
+});</code></pre>
+  </div>
+
+  <p>Contoh: Menambahkan data baru ke database:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>Produk::create([
+    'nama' => 'Laptop Asus',
+    'harga' => 8500000,
+    'stok' => 10
+]);</code></pre>
+  </div>
+
+  <p>Contoh: Mengupdate data berdasarkan ID:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>$produk = Produk::find(1);
+$produk->stok = 15;
+$produk->save();</code></pre>
+  </div>
+
+  <p>Contoh: Menghapus data berdasarkan ID:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>Produk::destroy(1);</code></pre>
+  </div>
+  <br>
+  <h3><mark>Cara Membuat Migrate</mark></h3>
+  <hr class="mb-4">
+   <p>
+    Migration adalah fitur di Laravel yang digunakan untuk mengelola struktur tabel di database menggunakan kode PHP. Dengan migration, kamu bisa membuat, mengubah, dan menghapus tabel atau kolom tanpa harus menulis SQL secara manual. Migration bekerja seperti sistem versioning untuk struktur database, memudahkan kolaborasi tim dan menjaga konsistensi antar lingkungan (development, staging, production).
+  </p>
+
+  <p>
+    Migration biasanya digunakan bersamaan dengan fitur <strong>Model</strong> dan <strong>Seeder</strong> di Laravel. Setiap kali kamu membuat migration, Laravel akan menghasilkan file PHP dengan fungsi-fungsi khusus yang bisa dijalankan dengan perintah artisan untuk membentuk atau memodifikasi tabel.
+  </p>
+
+  <h5>1. Membuat File Migration</h5>
+  <p>
+    Untuk membuat file migration, gunakan perintah berikut:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan make:migration create_nama_tabel_table</code></pre>
+  </div>
+
+  <p>Contoh membuat migration tabel <code>produk</code>:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan make:migration create_produk_table</code></pre>
+  </div>
+
+  <p>
+    Perintah tersebut akan menghasilkan file di folder <code>database/migrations</code> dengan nama unik berdasarkan timestamp.
+  </p>
+
+  <h5>2. Menulis Struktur Tabel di Migration</h5>
+  <p>
+    Setelah membuat file migration, kamu bisa mengisi metode <code>up()</code> dengan struktur tabel yang diinginkan.
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>public function up()
+{
+    Schema::create('produk', function (Blueprint $table) {
+        $table-&gt;id();
+        $table-&gt;string('nama');
+        $table-&gt;integer('stok');
+        $table-&gt;decimal('harga', 10, 2);
+        $table-&gt;timestamps();
+    });
+}</code></pre>
+  </div>
+
+  <h5>3. Menjalankan Migration</h5>
+  <p>
+    Setelah menulis struktur tabel, jalankan migration menggunakan perintah:
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan migrate</code></pre>
+  </div>
+
+  <p>
+    Laravel akan membaca semua file migration dan menjalankan fungsi <code>up()</code> untuk membuat tabel baru di database sesuai definisi.
+  </p>
+
+  <h5>4. Membatalkan atau Rollback Migration</h5>
+  <p>
+    Jika terjadi kesalahan atau kamu ingin menghapus tabel dari migration, gunakan perintah rollback:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan migrate:rollback</code></pre>
+  </div>
+
+  <p>
+    Perintah ini akan menjalankan fungsi <code>down()</code> yang isinya biasanya adalah <code>Schema::dropIfExists('nama_tabel')</code>.
+  </p>
+
+  <h5>5. Menambahkan Kolom Baru</h5>
+  <p>
+    Jika kamu ingin menambah kolom ke tabel yang sudah ada, kamu bisa membuat migration baru:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan make:migration add_kategori_to_produk_table</code></pre>
+  </div>
+
+  <p>
+    Isi file-nya seperti ini:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>public function up()
+{
+    Schema::table('produk', function (Blueprint $table) {
+        $table-&gt;string('kategori')-&gt;nullable();
+    });
+}</code></pre>
+  </div>
+  <br>
+  <h3><mark>Cara Menampilkan Data Dari Database</mark></h3>
+  <hr class="mb-4">
+    <p>
+    Untuk menampilkan data dari database di Laravel, kita biasanya menggunakan fitur Eloquent ORM (Object-Relational Mapping). Dengan Eloquent, kamu bisa mengakses data dari tabel secara mudah dan bersih menggunakan model. Prosesnya melibatkan beberapa langkah penting: membuat model, membuat controller, mengambil data dari database, dan mengirimkan data ke view untuk ditampilkan.
+  </p>
+
+  <h5>1. Buat Model dan Migration</h5>
+  <p>
+    Misalnya kita ingin menampilkan data dari tabel <code>produk</code>, kita perlu membuat model dan migrasinya:
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan make:model Produk -m</code></pre>
+  </div>
+
+  <p>Lalu isi file migration-nya seperti ini:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>Schema::create('produk', function (Blueprint $table) {
+    $table->id();
+    $table->string('nama');
+    $table->integer('stok');
+    $table->decimal('harga', 10, 2);
+    $table->timestamps();
+});</code></pre>
+  </div>
+
+  <p>Lalu jalankan migration-nya:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan migrate</code></pre>
+  </div>
+
+  <h5>2. Isi Data ke Database (Opsional)</h5>
+  <p>
+    Kamu bisa menggunakan <code>phpMyAdmin</code>, <code>Tinker</code>, atau Seeder untuk menambahkan data. Contoh pakai Tinker:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan tinker
+
+&gt;&gt;&gt; \App\Models\Produk::create([
+    'nama' =&gt; 'Laptop ASUS',
+    'stok' =&gt; 10,
+    'harga' =&gt; 7500000
+]);</code></pre>
+  </div>
+
+  <h5>3. Buat Controller</h5>
+  <p>
+    Buat controller untuk mengambil data dari database dan mengirimkannya ke view:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan make:controller ProdukController</code></pre>
+  </div>
+
+  <p>Isi method index-nya:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>public function index()
+{
+    $data = \App\Models\Produk::all();
+    return view('produk.index', compact('data'));
+}</code></pre>
+  </div>
+
+  <h5>4. Buat Route di <code>web.php</code></h5>
+  <p>
+    Tambahkan route berikut:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>Route::get('/produk', [ProdukController::class, 'index']);</code></pre>
+  </div>
+
+  <h5>5. Buat View untuk Menampilkan Data</h5>
+  <p>
+    Buat file di <code>resources/views/produk/index.blade.php</code>:
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;h2&gt;Daftar Produk&lt;/h2&gt;
+&lt;table border="1" cellpadding="10"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nama&lt;/th&gt;
+    &lt;th&gt;Stok&lt;/th&gt;
+    &lt;th&gt;Harga&lt;/th&gt;
+  &lt;/tr&gt;
+  @foreach ($data as $item)
+  &lt;tr&gt;
+    &lt;td&gt;{{ $item-&gt;nama }}&lt;/td&gt;
+    &lt;td&gt;{{ $item-&gt;stok }}&lt;/td&gt;
+    &lt;td&gt;Rp{{ number_format($item-&gt;harga, 0, ',', '.') }}&lt;/td&gt;
+  @endforeach
+&lt;/table&gt;</code></pre>
+  </div>
+
+  <h5 class="mt-4">Kesimpulan</h5>
+  <ul>
+    <li>Gunakan model untuk berinteraksi dengan database secara otomatis di Laravel.</li>
+    <li>Gunakan controller untuk mengambil data dan mengirimkan ke view.</li>
+    <li>Gunakan view (Blade) untuk menampilkan data dalam format HTML.</li>
+    <li>Laravel memudahkan proses pengambilan dan penampilan data hanya dengan beberapa langkah.</li>
+  </ul>
+  <br>
+  <h3><mark>Insert Data ke Dalam Database</mark></h3>
+   <p>
+    Laravel menyediakan cara yang sangat efisien dan aman untuk memasukkan (insert) data ke dalam database menggunakan Eloquent ORM. Prosesnya melibatkan penggunaan form untuk input data, controller untuk memproses request, dan model untuk menyimpan ke database.
+  </p>
+
+  <h5>1. Buat Model dan Migration</h5>
+  <p>
+    Misalnya kita ingin menambahkan data ke tabel <code>produk</code>, kita bisa buat model dan migration-nya:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan make:model Produk -m</code></pre>
+  </div>
+
+  <p>Lalu isi struktur migration-nya:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>Schema::create('produk', function (Blueprint $table) {
+  $table->id();
+  $table->string('nama');
+  $table->integer('stok');
+  $table->decimal('harga', 10, 2);
+  $table->timestamps();
+});</code></pre>
+  </div>
+
+  <p>Setelah itu, jalankan migrasi:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan migrate</code></pre>
+  </div>
+
+  <h5>2. Buat Form Input di Blade</h5>
+  <p>
+    Buat tampilan form untuk input data di <code>resources/views/produk/create.blade.php</code>:
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;form action="/produk/store" method="POST"&gt;
+  @csrf
+  &lt;label&gt;Nama Produk&lt;/label&gt;&lt;br&gt;
+  &lt;input type="text" name="nama" required&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label&gt;Stok&lt;/label&gt;&lt;br&gt;
+  &lt;input type="number" name="stok" required&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;label&gt;Harga&lt;/label&gt;&lt;br&gt;
+  &lt;input type="text" name="harga" required&gt;&lt;br&gt;&lt;br&gt;
+
+  &lt;button type="submit"&gt;Simpan&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+  <h5>3. Buat Route di <code>web.php</code></h5>
+  <p>
+    Tambahkan route untuk form dan proses penyimpanan data:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>use App\Http\Controllers\ProdukController;
+
+Route::get('/produk/create', [ProdukController::class, 'create']);
+Route::post('/produk/store', [ProdukController::class, 'store']);</code></pre>
+  </div>
+
+  <h5>4. Buat Controller dan Method</h5>
+  <p>
+    Buat controller jika belum:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>php artisan make:controller ProdukController</code></pre>
+  </div>
+
+  <p>Isi method <code>create</code> dan <code>store</code>:</p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>public function create()
+{
+  return view('produk.create');
+}
+
+public function store(Request $request)
+{
+  \App\Models\Produk::create([
+    'nama' => $request->nama,
+    'stok' => $request->stok,
+    'harga' => $request->harga,
+  ]);
+
+  return redirect('/produk/create')->with('success', 'Data berhasil disimpan!');
+}</code></pre>
+  </div>
+
+  <h5>5. Tambahkan <code>fillable</code> di Model</h5>
+  <p>
+    Agar field bisa diisi massal, tambahkan properti <code>$fillable</code> di model <code>Produk.php</code>:
+  </p>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>protected $fillable = ['nama', 'stok', 'harga'];</code></pre>
+  </div>
+
+  <h5 class="mt-4">Kesimpulan</h5>
+  <ul>
+    <li>Gunakan form HTML untuk menginput data dari user.</li>
+    <li>Gunakan method POST untuk mengirim data ke controller.</li>
+    <li>Gunakan Eloquent ORM untuk menyimpan data ke database secara otomatis.</li>
+    <li>Pastikan properti <code>$fillable</code> diisi agar data bisa disimpan dengan <code>create()</code>.</li>
+    <li>Laravel membuat proses insert data jadi mudah, aman, dan efisien.</li>
+  </ul>
+  <br>
+  <h3><mark>Menampilkan Detail Data By ID</mark></h3>
+  <hr class="mb-4">
+    <p>
+    Dalam aplikasi web, kita sering kali perlu menampilkan data secara detail berdasarkan ID, seperti saat melihat informasi lengkap dari suatu produk, pengguna, artikel, dan sebagainya. Di Laravel, kita bisa dengan mudah melakukan ini menggunakan route parameter dan Eloquent ORM.
+  </p>
+
+  <h5>1. Pastikan Tabel dan Model Sudah Ada</h5>
+  <p>
+    Misalnya kita memiliki tabel <code>produk</code> dengan model <code>Produk</code>. Pastikan model dan migrasinya sudah dibuat dan datanya sudah ada di database.
+  </p>
+
+  <h5>2. Tambahkan Route Detail</h5>
+  <p>
+    Buka file <code>routes/web.php</code> dan tambahkan route untuk menampilkan detail berdasarkan ID:
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>use App\Http\Controllers\ProdukController;
+
+Route::get('/produk/{id}', [ProdukController::class, 'detail']);</code></pre>
+  </div>
+
+  <h5>3. Buat Method <code>detail</code> di Controller</h5>
+  <p>
+    Tambahkan method baru di <code>ProdukController</code> untuk mengambil data berdasarkan ID dan menampilkannya ke view.
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>public function detail($id)
+{
+  $produk = \App\Models\Produk::findOrFail($id);
+  return view('produk.detail', compact('produk'));
+}</code></pre>
+  </div>
+
+  <p>
+    Fungsi <code>findOrFail()</code> akan secara otomatis menampilkan halaman 404 jika ID tidak ditemukan di database.
+  </p>
+
+  <h5>4. Buat View <code>detail.blade.php</code></h5>
+  <p>
+    Sekarang buat tampilan detail di <code>resources/views/produk/detail.blade.php</code> untuk menampilkan data produk:
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;h4&gt;Detail Produk&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;Nama:&lt;/strong&gt; {{ $produk-&gt;nama }}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stok:&lt;/strong&gt; {{ $produk-&gt;stok }}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Harga:&lt;/strong&gt; Rp{{ number_format($produk-&gt;harga, 0, ',', '.') }}&lt;/p&gt;
+
+&lt;a href="/produk" class="btn btn-secondary"&gt;Kembali&lt;/a&gt;</code></pre>
+  </div>
+
+  <p>
+    Pastikan field seperti <code>nama</code>, <code>stok</code>, dan <code>harga</code> sesuai dengan kolom tabel pada database kamu.
+  </p>
+
+  <h5>5. Contoh Link ke Halaman Detail</h5>
+  <p>
+    Jika kamu menampilkan daftar produk, kamu bisa menambahkan link untuk menuju halaman detail seperti berikut:
+  </p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>@foreach ($produk as $item)
+  &lt;tr&gt;
+    &lt;td&gt;{{ $item-&gt;nama }}&lt;/td&gt;
+    &lt;td&gt;&lt;a href="/produk/{{ $item-&gt;id }}" class="btn btn-sm btn-info"&gt;Lihat Detail&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+@endforeach</code></pre>
+  </div>
+
+  <h5 class="mt-4">Kesimpulan</h5>
+  <ul>
+    <li>Gunakan parameter ID pada route untuk menampilkan data spesifik.</li>
+    <li>Manfaatkan <code>findOrFail()</code> untuk penanganan otomatis jika data tidak ditemukan.</li>
+    <li>Gunakan <code>compact()</code> atau <code>with()</code> untuk mengirim data ke view.</li>
+    <li>Selalu tampilkan link kembali ke daftar utama.</li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</section><!-- /Hero Section -->
+<div class="mt-5 p-4 bg-light rounded shadow-sm text-center">
+  <h3 class="fw-bold mb-2">Beri Dukungan untuk Update Materi Selanjutnya</h3>
+  <p class="mb-3 text-muted">
+    Jika Anda merasa materi ini bermanfaat, bantu kami untuk terus mengembangkan konten pembelajaran yang berkualitas. Dukungan seikhlasnya dari Anda sangat berarti bagi kelangsungan proyek ini.
+  </p>
+  <a href="index.html#donasi" class="btn btn-warning px-4 py-2">
+    <i class="bi bi-cash-coin me-2"></i> Donasi Sekarang
+  </a>
+</div>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+      
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Coding Is Fun</strong>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Desain OLeh <a href="index.html">Coding IS Fun</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="validate.js"></script>
+  <script src="aos.js"></script>
+  <script src="glightbox.min.js"></script>
+  <script src="imagesloaded.pkgd.min.js"></script>
+  <script src="isotope.pkgd.min.js"></script>
+  <script src="swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+
+<script>
+function copyKode(button) {
+  const kode = button.nextElementSibling.innerText;
+  navigator.clipboard.writeText(kode).then(() => {
+    button.innerHTML = '<i class="bi bi-check2-circle"></i> Disalin!';
+    setTimeout(() => {
+      button.innerHTML = '<i class="bi bi-clipboard"></i> Salin';
+    }, 1500);
+  });
+}
+</script>
+
+
+<script>
+  document.getElementById("kirimKomentar").addEventListener("click", function () {
+    const nama = document.querySelector('input[name="nama"]').value.trim();
+    const asal = document.querySelector('select[name="asal"]').value;
+    const komentar = document.querySelector('textarea[name="komentar"]').value.trim();
+    const bintang = document.querySelectorAll('input[name="bintang[]"]:checked');
+
+    if (nama === "" || asal === "" || komentar === "" || bintang.length === 0) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Data belum lengkap!',
+        text: 'Silakan lengkapi semua field termasuk pilih minimal 1 bintang.',
+        confirmButtonColor: '#f39c12',
+        background: '#fffbe6'
+      });
+    } else {
+      Swal.fire({
+        icon: 'success',
+        title: 'Komentar Berhasil Dikirim!',
+        text: 'Terima kasih atas dukungan dan semangat Anda.',
+        confirmButtonColor: '#3085d6'
+      }).then(() => {
+        document.querySelector(".php-email-form").submit(); // submit form jika semua valid
+      });
+    }
+  });
+</script>
+<script>
+  const toggle = document.getElementById("dark-mode-toggle");
+  const icon = document.getElementById("dark-mode-icon");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Ganti ikon
+    if (document.body.classList.contains("dark-mode")) {
+      icon.classList.replace("bi-moon-fill", "bi-sun-fill");
+    } else {
+      icon.classList.replace("bi-sun-fill", "bi-moon-fill");
+    }
+  });
+</script>
+
+
+
+</body>
+
+</html>

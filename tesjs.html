@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ujian JavaScript Dasar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .soal {
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    .hasil {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .hasil-box, .lanjutan-box {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .hasil-box ol, .lanjutan-box ol {
+      padding-left: 20px;
+    }
+
+    .benar {
+      color: green;
+      margin-bottom: 10px;
+    }
+
+    .salah {
+      color: red;
+      margin-bottom: 10px;
+    }
+
+    .lanjutan-box h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <a href="latihan.html" class="back-button">← Kembali</a>
+  <h1>Ujian JavaScript Dasar</h1>
+  <form id="quizForm">
+    <div class="soal">
+      <p>1. Apa itu JavaScript?</p>
+      <label><input type="radio" name="q1" value="a"> Bahasa markup</label><br>
+      <label><input type="radio" name="q1" value="b"> Bahasa pemrograman</label><br>
+      <label><input type="radio" name="q1" value="c"> Database</label><br>
+    </div>
+
+    <div class="soal">
+      <p>2. Bagaimana cara menampilkan data ke konsol?</p>
+      <label><input type="radio" name="q2" value="a"> print("Hello")</label><br>
+      <label><input type="radio" name="q2" value="b"> echo "Hello";</label><br>
+      <label><input type="radio" name="q2" value="c"> console.log("Hello")</label><br>
+    </div>
+
+    <div class="soal">
+      <p>3. Tipe data mana yang termasuk dalam JavaScript?</p>
+      <label><input type="radio" name="q3" value="a"> int, float, double</label><br>
+      <label><input type="radio" name="q3" value="b"> string, number, boolean</label><br>
+      <label><input type="radio" name="q3" value="c"> integer, real, string</label><br>
+    </div>
+
+    <button type="button" onclick="cekJawaban()">Submit</button>
+  </form>
+
+  <div id="hasil" class="hasil"></div>
+</div>
+
+<div id="lanjutanContainer"></div>
+
+<script>
+  function cekJawaban() {
+    const kunci = { q1: "b", q2: "c", q3: "b" };
+    const pilihanText = {
+      q1: { a: "Bahasa markup", b: "Bahasa pemrograman", c: "Database" },
+      q2: { a: 'print("Hello")', b: 'echo "Hello";', c: 'console.log("Hello")' },
+      q3: { a: "int, float, double", b: "string, number, boolean", c: "integer, real, string" }
+    };
+
+    let benarSemua = true;
+    let hasilHTML = `<div class="hasil-box"><h3>Hasil Jawaban:</h3><ol>`;
+
+    for (let key in kunci) {
+      const jawaban = document.querySelector(`input[name="${key}"]:checked`);
+      const value = jawaban ? jawaban.value : null;
+      if (value === kunci[key]) {
+        hasilHTML += `<li class="benar">✅ <strong>Benar:</strong> ${pilihanText[key][value]}</li>`;
+      } else {
+        benarSemua = false;
+        const userJawab = value ? pilihanText[key][value] : "<em>Tidak menjawab</em>";
+        hasilHTML += `<li class="salah">❌ <strong>Salah</strong><br>Jawaban Anda: ${userJawab}<br>Jawaban Benar: ${pilihanText[key][kunci[key]]}</li>`;
+      }
+    }
+
+    hasilHTML += `</ol></div>`;
+    document.getElementById("hasil").innerHTML = hasilHTML;
+
+    if (benarSemua) {
+      alert("Mantap! Semua jawaban benar 🎉");
+      document.getElementById("lanjutanContainer").innerHTML = `
+        <div class="lanjutan-box">
+          <h3>💡 Lanjut ke soal JavaScript lanjutan:</h3>
+          <form id="soalLanjutanForm">
+            ${generateSoalLanjutan()}
+            <button type="button" onclick="cekSoalLanjutan()">Submit Soal Lanjutan</button>
+          </form>
+        </div>`;
+    } else {
+      alert("Yah ada yang salah, coba periksa lagi ya 😢");
+    }
+  }
+
+  function generateSoalLanjutan() {
+    const soal = [
+      ["Bagaimana cara mendeklarasikan variabel?", ["var x;", "int x;", "let = x;"]],
+      ["Apa kegunaan `===` dalam JavaScript?", ["Perbandingan ketat", "Penambahan", "Penugasan"]],
+      ["Fungsi bawaan untuk mengubah string ke angka?", ["parseInt()", "toNumber()", "convertInt()"]],
+      ["Apa hasil dari 2 + '2'?", ["'22'", "4", "NaN"]],
+      ["Bagaimana cara menulis fungsi?", ["function nama() {}", "def nama():", "function: nama()"]],
+      ["Tipe data array termasuk?", ["object", "array", "list"]],
+      ["Operator logika AND adalah?", ["&&", "||", "=="]],
+      ["Apa yang dilakukan `return`?", ["Mengembalikan nilai", "Keluar dari halaman", "Menampilkan pop-up"]],
+      ["Objek `window` digunakan untuk?", ["Mengakses browser", "Menyimpan data", "Membuat API"]],
+      ["Event untuk klik tombol?", ["onclick", "onhover", "onpress"]],
+      ["DOM adalah singkatan dari?", ["Document Object Model", "Data Object Mode", "Document Oriented Model"]],
+      ["Metode untuk memilih elemen HTML?", ["document.querySelector()", "getElement()", "selectElement()"]],
+      ["Fungsi `setTimeout` digunakan untuk?", ["Menunda eksekusi", "Memulai loop", "Membuat animasi"]],
+      ["Method untuk mengubah isi HTML?", ["innerHTML", "text()", "html()"]],
+      ["Metode array untuk menambah data?", ["push()", "insert()", "append()"]],
+      ["Bagaimana memeriksa panjang array?", ["array.length", "length(array)", "count(array)"]],
+      ["Bagaimana membuat komentar satu baris?", ["// komentar", "<!-- komentar -->", "# komentar"]],
+      ["Apa itu NaN?", ["Not a Number", "New a Number", "No assigned Number"]],
+      ["Event yang dipicu saat halaman selesai dimuat?", ["onload", "onready", "onstart"]],
+      ["Cara mengecek apakah nilai `x` lebih dari 10?", ["if(x > 10)", "if x > 10:", "x > 10 then"]],
+    ];
+
+    let output = "";
+    soal.forEach((s, i) => {
+      const n = i + 4;
+      output += `<div class="soal"><p>${n}. ${s[0]}</p>`;
+      ['a', 'b', 'c'].forEach((val, j) => {
+        output += `<label><input type="radio" name="q${n}" value="${val}"> ${s[1][j]}</label><br>`;
+      });
+      output += `</div>`;
+    });
+
+    return output;
+  }
+
+  function cekSoalLanjutan() {
+    const kunci = {
+      q4: "a", q5: "a", q6: "a", q7: "a", q8: "a",
+      q9: "a", q10: "a", q11: "a", q12: "a", q13: "a",
+      q14: "a", q15: "a", q16: "a", q17: "a", q18: "a",
+      q19: "a", q20: "a", q21: "a", q22: "a", q23: "a"
+    };
+
+    let benar = 0;
+    let hasil = `<div class="hasil-box"><h3>Hasil Jawaban JavaScript Lanjutan:</h3><ol>`;
+
+    for (let key in kunci) {
+      const jwb = document.querySelector(`input[name="${key}"]:checked`);
+      const val = jwb ? jwb.value : null;
+      if (val === kunci[key]) {
+        hasil += `<li class="benar">✅ ${key.toUpperCase()} Benar</li>`;
+        benar++;
+      } else {
+        hasil += `<li class="salah">❌ ${key.toUpperCase()} Salah</li>`;
+      }
+    }
+
+    const total = Object.keys(kunci).length;
+    const skor = ((benar / total) * 100).toFixed(0);
+
+    hasil += `</ol>
+      <p><strong>Benar:</strong> ${benar} / ${total} |
+      <strong>Salah:</strong> ${total - benar} |
+      <strong>Skor:</strong> ${skor}%</p>
+    </div>`;
+
+    document.getElementById("lanjutanContainer").insertAdjacentHTML("beforeend", hasil);
+
+    if (benar === total) {
+      alert("🎉 Hebat! Semua soal JavaScript benar! Skor: 100/100");
+    } else {
+      alert(`Kamu menjawab ${benar} dari ${total} soal JavaScript dengan benar. Skor: ${skor}/100`);
+    }
+  }
+</script>
+
+</body>
+</html>

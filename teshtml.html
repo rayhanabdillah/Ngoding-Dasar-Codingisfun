@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ujian HTML Dasar</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .soal {
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    .hasil {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .hasil-box, .lanjutan-box {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .hasil-box ol, .lanjutan-box ol {
+      padding-left: 20px;
+    }
+
+    .benar {
+      color: green;
+      margin-bottom: 10px;
+    }
+
+    .salah {
+      color: red;
+      margin-bottom: 10px;
+    }
+
+    .lanjutan-box h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+        .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<div class="container">
+     <a href="latihan.html" class="back-button">← Kembali</a>
+  <h1>Ujian HTML Dasar</h1>
+  <form id="quizForm">
+    <!-- Soal 1 -->
+    <div class="soal">
+      <p>1. Tag HTML untuk membuat paragraf adalah?</p>
+      <label><input type="radio" name="q1" value="a"> &lt;h1&gt;</label><br>
+      <label><input type="radio" name="q1" value="b"> &lt;div&gt;</label><br>
+      <label><input type="radio" name="q1" value="c"> &lt;p&gt;</label><br>
+    </div>
+
+    <!-- Soal 2 -->
+    <div class="soal">
+      <p>2. Tag yang digunakan untuk membuat tautan/link adalah?</p>
+      <label><input type="radio" name="q2" value="a"> &lt;link&gt;</label><br>
+      <label><input type="radio" name="q2" value="b"> &lt;a&gt;</label><br>
+      <label><input type="radio" name="q2" value="c"> &lt;href&gt;</label><br>
+    </div>
+
+    <!-- Soal 3 -->
+    <div class="soal">
+      <p>3. Tag &lt;img&gt; digunakan untuk?</p>
+      <label><input type="radio" name="q3" value="a"> Menambahkan video</label><br>
+      <label><input type="radio" name="q3" value="b"> Menambahkan gambar</label><br>
+      <label><input type="radio" name="q3" value="c"> Menambahkan suara</label><br>
+    </div>
+
+    <button type="button" onclick="cekJawaban()">Submit</button>
+  </form>
+
+  <div id="hasil" class="hasil"></div>
+</div>
+
+<div id="lanjutanContainer"></div>
+
+<script>
+  function cekJawaban() {
+    const jawabanBenar = {
+      q1: "c",
+      q2: "b",
+      q3: "b"
+    };
+
+    const teksJawaban = {
+      q1: { a: "&lt;h1&gt;", b: "&lt;div&gt;", c: "&lt;p&gt;" },
+      q2: { a: "&lt;link&gt;", b: "&lt;a&gt;", c: "&lt;href&gt;" },
+      q3: { a: "Menambahkan video", b: "Menambahkan gambar", c: "Menambahkan suara" }
+    };
+
+    let benarSemua = true;
+    let hasilHTML = `<div class="hasil-box"><h3>Hasil Jawaban:</h3><ol>`;
+
+    for (let key in jawabanBenar) {
+      const pilihan = document.querySelector(`input[name="${key}"]:checked`);
+      const jawabanUser = pilihan ? pilihan.value : null;
+      const benar = jawabanBenar[key];
+
+      if (jawabanUser === benar) {
+        hasilHTML += `<li class="benar">✅ <strong>Benar:</strong> ${teksJawaban[key][benar]}</li>`;
+      } else {
+        benarSemua = false;
+        const userJawab = jawabanUser ? teksJawaban[key][jawabanUser] : "<em>Tidak menjawab</em>";
+        hasilHTML += `
+          <li class="salah">
+            ❌ <strong>Salah</strong><br>
+            Jawaban Anda: ${userJawab}<br>
+            Jawaban Benar: ${teksJawaban[key][benar]}
+          </li>`;
+      }
+    }
+
+    hasilHTML += `</ol></div>`;
+    document.getElementById("hasil").innerHTML = hasilHTML;
+
+    if (benarSemua) {
+      alert("Yeah Jawabnya Bensar Semua 🎉");
+      const soalLanjutanHTML = `
+        <div class="lanjutan-box">
+          <h3>🎉 Hebat! Lanjut ke 22 soal HTML berikutnya:</h3>
+          <form id="soalLanjutanForm">
+            ${generateSoalLanjutan()}
+            <button type="button" onclick="cekSoalLanjutan()">Submit Soal Lanjutan</button>
+          </form>
+        </div>`;
+      document.getElementById("lanjutanContainer").innerHTML = soalLanjutanHTML;
+    } else {
+      alert("Yah ada yang salah 😢 Semangat ya!");
+    }
+  }
+
+  function generateSoalLanjutan() {
+    const soal = [
+      ["Tag untuk membuat tabel?", ["&lt;table&gt;", "&lt;div&gt;", "&lt;form&gt;"]],
+      ["Bagaimana menulis komentar di HTML?", ["&lt;!-- komentar --&gt;", "// komentar", "# komentar"]],
+      ["Fungsi atribut 'alt' pada &lt;img&gt;?", ["Alternatif teks saat gambar gagal dimuat", "Menentukan tinggi gambar", "Memberi border"]],
+      ["Tag untuk daftar terurut adalah?", ["&lt;ul&gt;", "&lt;ol&gt;", "&lt;li&gt;"]],
+      ["Tag &lt;br&gt; digunakan untuk?", ["Ganti baris", "Garis horizontal", "Bold teks"]],
+      ["Apa itu tag &lt;form&gt;?", ["Untuk membuat formulir input", "Membuat table", "Menampilkan gambar"]],
+      ["Tag &lt;input&gt; digunakan untuk?", ["Memasukkan data", "Menampilkan video", "Membuat heading"]],
+      ["Apa arti atribut 'href'?", ["Hyperlink reference", "Header refresh", "HTML referensi"]],
+      ["Apa fungsi dari tag &lt;head&gt;?", ["Menyimpan metadata", "Menampilkan judul besar", "Tempatkan isi website"]],
+      ["Atribut untuk menentukan warna latar belakang?", ["bgcolor", "style", "background"]],
+      ["Tag &lt;title&gt; digunakan untuk?", ["Judul halaman di browser", "Judul artikel", "Nama file"]],
+      ["Tag untuk membuat garis horizontal?", ["&lt;hr&gt;", "&lt;br&gt;", "&lt;line&gt;"]],
+      ["Tag untuk menampilkan video?", ["&lt;video&gt;", "&lt;media&gt;", "&lt;vid&gt;"]],
+      ["Tag untuk menampilkan audio?", ["&lt;audio&gt;", "&lt;media&gt;", "&lt;sound&gt;"]],
+      ["Atribut untuk ukuran gambar?", ["width & height", "alt & title", "src & href"]],
+      ["Tag &lt;li&gt; digunakan di dalam?", ["&lt;ul&gt; / &lt;ol&gt;", "&lt;p&gt;", "&lt;form&gt;"]],
+      ["Atribut 'type' pada &lt;input&gt;?", ["Menentukan jenis input", "Memberi nama input", "Warna input"]],
+      ["Tag untuk hyperlink?", ["&lt;a&gt;", "&lt;link&gt;", "&lt;ref&gt;"]],
+      ["Atribut 'src' pada &lt;img&gt;?", ["Sumber gambar", "Judul gambar", "Warna gambar"]],
+      ["Tag HTML yang bukan struktur utama?", ["&lt;span&gt;", "&lt;body&gt;", "&lt;head&gt;"]],
+      ["Tag untuk membuat checkbox?", ["&lt;input type='checkbox'&gt;", "&lt;check&gt;", "&lt;box&gt;"]],
+      ["Tag untuk heading terbesar?", ["&lt;h1&gt;", "&lt;h6&gt;", "&lt;head&gt;"]]
+    ];
+
+    let output = '';
+    soal.forEach((item, index) => {
+      const nomor = index + 4; // lanjutan dimulai dari q4
+      output += `<div class="soal"><p>${nomor}. ${item[0]}</p>`;
+      ['a', 'b', 'c'].forEach((val, i) => {
+        output += `<label><input type="radio" name="q${nomor}" value="${val}"> ${item[1][i]}</label><br>`;
+      });
+      output += '</div>';
+    });
+
+    return output;
+  }
+
+  function cekSoalLanjutan() {
+    const kunci = {
+      q4:"a",q5:"a",q6:"a",q7:"b",q8:"a",q9:"a",q10:"a",q11:"a",q12:"a",
+      q13:"a",q14:"a",q15:"a",q16:"a",q17:"a",q18:"a",q19:"a",q20:"a",
+      q21:"a",q22:"a",q23:"a",q24:"a",q25:"a"
+    };
+
+    let benar = 0, salah = 0;
+    let hasil = `<div class="hasil-box"><h3>Hasil Jawaban Tambahan:</h3><ol>`;
+
+    for (let key in kunci) {
+      const dipilih = document.querySelector(`input[name="${key}"]:checked`);
+      const jawab = dipilih ? dipilih.value : null;
+      if (jawab === kunci[key]) {
+        hasil += `<li class="benar">✅ ${key.toUpperCase()} Benar</li>`;
+        benar++;
+      } else {
+        hasil += `<li class="salah">❌ ${key.toUpperCase()} Salah</li>`;
+        salah++;
+      }
+    }
+
+    hasil += `</ol><p><strong>Benar:</strong> ${benar + 3} / 25 | <strong>Salah:</strong> ${salah} | <strong>Skor:</strong> ${((benar + 3) / 25) * 100}</p></div>`;
+    document.getElementById("lanjutanContainer").insertAdjacentHTML("beforeend", hasil);
+
+    if (benar + 3 === 25) {
+      alert("🎉 Selamat! Kamu menjawab semua 25 soal dengan benar! Skor: 100/100");
+    } else {
+      alert(`Kamu menjawab ${benar + 3} dari 25 soal dengan benar.`);
+    }
+  }
+</script>
+
+</body>
+</html>

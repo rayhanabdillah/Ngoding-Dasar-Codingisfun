@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Belajar Coding</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="bgg.png">
+  <link rel="icon" href="bgg.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Bootstrap CSS (jika belum ada) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<!-- Vendor CSS Files -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons.css" rel="stylesheet">
+  <link href="aos.css" rel="stylesheet">
+  <link href="glightbox.min.css" rel="stylesheet">
+  <link href="swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Invent
+  * Template URL: https://bootstrapmade.com/invent-bootstrap-business-template/
+  * Updated: May 12 2025 with Bootstrap v5.3.6
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode .bg-light pre,
+.dark-mode .bg-light code {
+  color: black;
+ /* opsional: buat latar belakang gelap juga */
+}
+/* Navbar & Menu */
+body.dark-mode .navmenu,
+body.dark-mode .mobile-nav,
+.dark-mode .header,
+.dark-mode .navmenu,
+.dark-mode .dropdown ul {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .navmenu ul li a,
+.dark-mode .mobile-nav a {
+  color: #ffffff !important;
+}
+
+.dark-mode .navmenu ul li a.active,
+.dark-mode .navmenu ul li a:hover {
+  color: #ffd700 !important;
+}
+
+.dark-mode .navmenu .dropdown ul {
+  background-color: #2a2a2a !important;
+}
+
+.dark-mode .navmenu .dropdown ul li a {
+  color: #ffffff !important;
+}
+
+/* Icon mode gelap */
+#dark-mode-icon {
+  color: #000;
+  transition: color 0.3s;
+}
+
+body.dark-mode #dark-mode-icon {
+  color: #fff;
+}
+
+/* Hero dan section */
+.dark-mode section#hero h1,
+.dark-mode section#hero p,
+.dark-mode section#materi,
+.dark-mode section#about,
+.dark-mode section#materi h2,
+.dark-mode section#about h3,
+.dark-mode .sitename,
+.dark-mode .hero-title,
+.dark-mode .hero-description,
+.dark-mode .badge-text {
+  color: #ffffff !important;
+}
+
+.dark-mode section#materi,
+.dark-mode section#about {
+  background-color: #1a1a1a;
+}
+
+/* Feature box */
+.dark-mode .feature-box {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444;
+}
+
+.dark-mode .feature-title,
+.dark-mode .feature-text,
+.dark-mode .feature-icon i {
+  color: #ffffff !important;
+}
+
+/* How We Work */
+.dark-mode section#how-we-work {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode #how-we-work .section-title h2,
+.dark-mode #how-we-work .section-title p,
+.dark-mode #how-we-work .step-icon i,
+.dark-mode #how-we-work .step-content h3 {
+  color: #ffffff;
+}
+
+.dark-mode #how-we-work .step-number {
+  color: #ffcc00;
+}
+
+.dark-mode #how-we-work .step-content p {
+  color: #cccccc;
+}
+
+.dark-mode #how-we-work .process-item .content {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+/* Call to Action 2 */
+.dark-mode section#call-to-action-2 {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode section#hero h3{
+  color: white;
+}
+.dark-mode section#hero h4{
+  color: white;
+}
+
+.dark-mode #call-to-action-2 h2,
+.dark-mode #call-to-action-2 .lead,
+.dark-mode #call-to-action-2 .feature-item span {
+  color: #ffffff;
+}
+
+.dark-mode #call-to-action-2 .feature-item i {
+  color: #00c853;
+}
+
+/* Footer */
+.dark-mode footer.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-top: 1px solid #333;
+}
+
+.dark-mode .footer .logo span.sitename,
+.dark-mode .footer p,
+.dark-mode .footer a,
+.dark-mode .footer ul li a,
+.dark-mode .footer h4 {
+  color: #dddddd;
+}
+
+.dark-mode .footer a:hover {
+  color: #00bfa5;
+  text-decoration: underline;
+}
+
+.dark-mode .footer .social-links a {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .footer .social-links a:hover {
+  background-color: #00bfa5;
+  color: #ffffff;
+}
+
+.dark-mode .footer .credits a {
+  color: #00bfa5;
+}
+
+.dark-mode .footer .credits a:hover {
+  text-decoration: underline;
+}
+
+.dark-mode .footer .copyright {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 30px;
+  color: #bbbbbb;
+}
+
+/* Badge icon */
+body.dark-mode .badge-wrapper .icon-circle i {
+  color: #ffffff !important;
+}
+
+/* Komentar feedback & alert */
+.dark-mode .loading,
+.dark-mode .sent-message,
+.dark-mode .error-message {
+  color: #ffffff;
+}
+
+/* RCB Button */
+.rcb {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.rcb:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+/* List Group (Materi) */
+.list-group-item {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #eef4fc;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 1.6rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Mode terang */
+body:not(.dark-mode) .list-group-item {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body:not(.dark-mode) .list-group-item:hover {
+  background-color: #e2e6ea;
+  color: #000;
+}
+
+/* Mode gelap */
+body.dark-mode .list-group-item {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  border-color: #333;
+}
+
+body.dark-mode .list-group-item:hover {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+.custom-content {
+  background-color: #ffffff;
+  color: #212529;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+body.dark-mode .custom-content {
+  background-color: #1f1f1f !important;
+  color: #f1f1f1 !important;
+}
+
+  img.zoomable {
+    cursor: zoom-in;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+  }
+
+  img.zoomable:hover {
+    transform: scale(1.02);
+  }
+/* Warna biru saat dark mode */
+body.dark-mode .btn-outline-secondary {
+  color: #0d6efd !important;         /* Warna biru Bootstrap */
+  border-color: #0d6efd !important;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+.highlight {
+  background-color: #ffff99; /* kuning stabilo */
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* untuk efek halus di iOS */
+  }
+
+  table {
+    min-width: 600px; /* atau lebih besar agar bisa scroll jika sempit */
+  }
+
+</style>
+
+
+<body class="index-page">
+
+  <header id="header"  class="header d-flex align-items-center fixed-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html#materi" class="btn btn-sm btn-outline-secondary d-flex align-items-center logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <i class="bi bi-arrow-left me-1"></i><span>Kembali</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+         <button id="dark-mode-toggle" class="btn btn-sm btn-outline-dark">
+      <i id="dark-mode-icon" class="bi bi-moon-fill"></i>
+    </button>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Judul Hero -->
+<div class="row align-items-center mb-4">
+  <div class="col-12 d-flex flex-wrap align-items-center justify-content-between gap-2">
+    <!-- Kiri: Tombol Kembali -->
+   
+
+    <!-- Kanan: Tombol Mode Gelap -->
+   
+
+    <!-- Judul (diletakkan di bawah jika layar kecil) -->
+    <h1 class="fw-bold mb-0 w-100 mt-2" style="font-size: 2.4rem;">
+      Pengenalan Dasar HTML untuk Pemula
+    </h1>
+  </div>
+</div>
+
+
+
+
+    <!-- Kotak Latihan -->
+     <hr class="mb-4">
+
+    <!-- Daftar Materi HTML -->
+  <div class="list-group shadow-sm p-4 rounded custom-content">
+    <p class="mb-4">
+      <strong>HTML</strong> memang bahasa yang wajib dipelajari bagi kamu yang ingin menjadi web developer.<br><br>
+      Karena…<br><br>
+      HTML merupakan bahasa dasar untuk membuat web. Saya yakin, kamu sudah pernah mendengar HTML sebelumnya. Tapi tidak ada salahnya membaca kembali artikel ini.<br><br>
+      Pada tutorial ini, kita akan benar-benar membahas dari nol hingga kamu bisa membuat halaman HTML sendiri.<br><br>
+      <strong>Mari kita mulai!</strong>
+    </p>
+
+    <hr class="my-4">
+
+    <!-- Apa itu HTML -->
+    <h3 class="mb-3">Apa itu HTML?</h3>
+    <p>
+      Menurut Wikipedia: <br><br>
+      <strong>HTML</strong> atau <em>HyperText Markup Language</em> merupakan bahasa markah untuk membuat halaman web.<br><br>
+      HTML menggunakan markup/tag sebagai penanda struktur. Ia berfungsi menentukan struktur konten di halaman.<br><br>
+      Ibarat batu bata untuk rumah, HTML adalah fondasi halaman web.
+    </p>
+
+    <!-- Gambar besar kiri -->
+    <div class="clearfix my-4">
+      <a href="dasar.png" target="_blank">
+        <img src="dasar.png" alt="Dasar HTML"  class="img-thumbnail float-start me-3 mb-3"  style="max-width: 100%; width: 300px;">
+      </a>
+      <p>
+        Untuk mempercantik tampilan web, kita membutuhkan <strong>CSS</strong>. Dan untuk membuat web menjadi interaktif, kita gunakan <strong>JavaScript</strong>.
+      </p>
+    </div>
+
+    <hr class="my-4">
+
+    <!-- Peralatan -->
+    <h3 class="mb-3">Peralatan untuk Belajar HTML</h3>
+    <p>Sebelum praktik, siapkan dulu beberapa alat berikut:</p>
+
+    <h4 class="mt-4">1. Teks Editor</h4>
+    <p>
+      Teks editor digunakan untuk menulis kode HTML. Kamu bisa pakai Notepad, Notepad++, atau teks editor lain.
+    </p>
+
+    <div class="mb-4">
+      <a href="dasar1.png" target="_blank">
+        <img src="dasar1.png" alt="Editor HTML" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+      </a>
+      <p>
+        Di tutorial ini, kita menggunakan <a href="https://code.visualstudio.com/">Visual Studio Code</a> karena fitur-fiturnya sangat membantu pemula.
+      </p>
+    </div>
+
+    <h4>2. Web Browser untuk Membuka HTML</h4>
+    <p>Web browser akan kita gunakan untuk membuka HTML. Kamu juga bebas menggunakan web browser apapun.</p>
+
+    <div class="mb-4">
+      <a href="dasar2.png" target="_blank">
+        <img src="dasar2.png" alt="Web Browser" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+      </a>
+      <p>Saran saya sih... gunakan web browser yang terbaru, karena kita juga akan menggunakan HTML versi yang terbaru. Firefox atau Google Chrome, saya kira sudah cukup.</p>
+    </div>
+
+    <hr class="my-4">
+    <h3>Membuat Dokumen HTML Pertama</h3>
+    <p>Kini tiba saatnya, kamu harus mencoba sendiri membuat dokumen HTML. Caranya sangat mudah.</p>
+    <p>Mari kita mulai dengan membuka teks editor, lalu tulislah kode berikut.</p>
+
+    <!-- Kode HTML -->
+    <div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+      <pre class="mb-0"><code>&lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+      &lt;title&gt;Belajar HTML #01&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;p&gt;Hello World!&lt;/p&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+    </div>
+
+    <p>Setelah itu, simpan dengan nama code hello-world.html /code .</p>
+
+    <!-- Gambar tambahan -->
+    <div class="mb-4">
+      <a href="dasar3.png" target="_blank">
+        <img src="dasar3.png" alt="Tampilan HTML" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+      </a>
+      <p>
+        Tips: Untuk pengguna Notepad di Windows, simpan nama file dengan tanda petik: code hello-world.html /code> agar berekstensi .html.
+      </p>
+    </div>
+
+    <p>Atau aktifkan  em File name extensions /em di menu View Windows Explorer.</p>
+
+    <div class="mb-4">
+      <a href="dasar4.png" target="_blank">
+        <img src="dasar4.png" alt="Aktifkan Ekstensi" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+      </a>
+    </div>
+
+    <p>Sekarang coba buka file tersebut di browser, hasilnya akan seperti ini:</p>
+
+    <div class="mb-4">
+      <a href="dasar5.png" target="_blank">
+        <img src="dasar5.png" alt="Hasil Hello World" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+      </a>
+    </div>
+
+    <p>
+      Kita sudah berhasil membuat halaman web pertama dengan HTML.
+    </p>
+
+    <p>Kini giliran saya menjelaskan maksud dari kode di atas, tapi sebelum itu.. saya akan jelaskan dulu tentang nama file untuk HTML.</p>
+
+    <h3>Nama File untuk HTML</h3>
+
+    <p>Ada beberapa hal yang perlu diperhatikan dalam membuat nama file HTML:</p>
+
+    <h3>1. Extensi file HTML</h3>
+
+    <p>Setiap file HTML harus berekstensi .html, .xhtml (untuk XHTML), dan .htm saja. Jika tidak menggunakan ekstensi ini, maka ia tidak akan bisa dibaca oleh web browser.</p>
+
+    <p>Nama filenya adalah hello-world.txt.</p>
+
+      <div class="mb-4">
+      <a href="dasar6.png" target="_blank">
+        <img src="dasar6.png" alt="Hasil Hello World" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+      </a>
+    </div>
+
+    <p>Sedah jelas, ini bukan file HTML, melainkan sebuah file teks biasa. Maka.. browser akan menampilkan isi file tersebut apa adanya.</p>
+
+    <h3>2. Nama Khusus untuk Homepage</h3>
+
+    <p>Jika kamu ingin membuat halaman untuk homepage, maka sebaiknya gunakan nama index.html. Karena ia akan otomatis dibuka saat website dikunjungi.</p>
+
+    <p>Contohnya, saat kamu membuka www.petanikode.com.. maka file HTML yang akan dibuka adalah index.html yang berada di server petanikode.</p>
+
+    <h3>3. Hindari Beberapa Hal ini..</h3>
+
+    <p>Nama file HTML biasanya akan tercantum pada URL, maka sebaiknya hindari menggunakan spasi pada nama file HTML, agar URL yang dibentuk lebih bagus.</p>
+
+    <p>Spasi pada URL, biasanya akan otomatis diubah menjadi %20.</p>
+
+    <div class="mb-4">
+      <a href="dasar9.png" target="_blank">
+        <img src="dasar8.png" alt="Hasil Hello World" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+      </a>
+    </div>
+
+    <p>Sebagai ganti spasi, kamu bisa gunakan tanda min (-) atau underscore (_).</p>
+
+    <p>Berikanlah nama file HTML dengan file yang biasa, hindari menggunakan huruf besar, campuran dari huruf besar dan kecil, dan juga menggunakan simbol.</p>
+
+    <p>Meskipun nama ini bisa valid, tapi kurang bagus untuk dibaca.. baik oleh manusia, maupun mesin.</p>
+
+    <p>berikutnya kita akan pelajari tentang kode-kode HTML.</p>
+
+    <h3>Struktur Dasar HTML</h3>
+
+    <p>Berikut ini adalah kode HTML yang baru saja kita buat:</p>
+
+      <div class="mb-4">
+      <a href="dasar7.png" target="_blank">
+        <img src="dasar7.png" alt="Hasil Hello World" class="img-thumbnail float-start me-3 mb-3" style="max-width: 100%; width: 300px;">
+      </a>
+    </div>
+
+    <p>Penulisan kode HTML selalu dimulai dengan deklarasi DOCTYPE, lalau menuliskan tag html dan di dalamnya terdapat tag head dan body.</p>
+
+    <p>Kalau kita perhatikan.. struktur dasar kode HTML terdiri dari tiga bagian penting:</p>
+    <ul>
+      <li>Bagian Deklarasi</li>
+      <li>Bagian HEAD</li>
+      <li>Bagian BODY</li>
+    </ul>
+  </div>
+
+<br>
+<h3><span class="highlight">Pelajari Apa itu Tag HTML</span></h3>
+ <!-- Kotak Latihan -->
+     <hr class="mb-4">
+
+    <!-- Daftar Materi HTML -->
+  <div class="list-group shadow-sm p-4 rounded custom-content">
+      
+    <h3>1. Apa itu Tag HTML?</h3>
+
+    <p>Tag adalah komponen dasar dalam HTML. Tag digunakan untuk menandai elemen-elemen dalam dokumen HTML. Tag biasanya ditulis di antara tanda kurung sudut seperti p, h1, div, dan sebagainya.</p>
+
+    <div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+      <pre class="mb-0"><code>&lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+      &lt;title&gt;Belajar HTML #01&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;p&gt;Ini Adalah Paragraf!&lt;/p&gt;
+       &lt;h1&gt;Ini adalah heading level 1&lt;/h1&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+    </div>
+
+    <p>Penjelasan:</p>
+
+    <ul>
+      <li> &lt;p&gt;  adalah tag pembuka. </li>
+      <li> &lt;p&gt;   adalah tag penutup.</li>
+      <li>Konten di antara tag tersebut adalah isi elemen.</li>
+    </ul>
+
+<p>Contoh Tag Lain:</p>
+
+      <div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+     <pre class="mb-0"><code>
+&lt;p&gt;Ini adalah paragraf!&lt;/p&gt;
+&lt;h1&gt;Ini adalah heading level 1&lt;/h1&gt;
+&lt;a href="#"&gt;Tautan&lt;/a&gt;
+&lt;img src="gambar.jpg" alt="Gambar"&gt;
+</code></pre>
+</div>
+
+<p>Elemen Tanpa Penutup (Self-Closing):
+Ada beberapa elemen yang tidak memiliki isi dan tidak membutuhkan tag penutup, misalnya:</p>
+
+<div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+     <pre class="mb-0"><code>
+&lt;img src="gambar.jpg" alt="Gambar"&gt;
+&lt;br&gt;
+&lt;hr&gt;
+</code></pre>
+</div>
+
+<h3>2.Atribut HTML</h3>
+
+<p>Atribut adalah informasi tambahan yang disisipkan dalam tag untuk memberikan pengaturan atau nilai spesifik.</p>
+
+<p>Biasanya ditulis di dalam tag pembuka, dengan format:</p>
+<div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+     <pre class="mb-0"><code>
+&lt;tag atribut="nilai"&gt; .... &lt;tag&gt;
+</code></pre>
+</div>
+
+<p>Contoh</p>
+
+<div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+     <pre class="mb-0"><code>
+&lt;a href="https//"&gt;.....&lt;a&gt;
+</code></pre>
+</div>
+
+<p>Pada contoh di atas:</p>
+
+    <ul>
+      <li>&lt;a&gt; adalah tag tautan.</li>
+      <li>href adalah atribut yang menyimpan nilai berupa URL.</li>
+      <li>"https://www.google.com" adalah nilai dari atribut tersebut.</li>
+    </ul>
+
+<p>Fungsi Atribut</p>
+  <ul>
+    <li>
+      Menyediakan informasi tambahan tentang elemen (contoh: URL, id, class, title).
+    </li>
+    <li>
+      Dapat mempengaruhi perilaku atau tampilan dari elemen.
+    </li>
+    <li>
+      Bisa digunakan untuk pengaturan interaksi dengan CSS dan JavaScript.
+    </li>
+  </ul>
+
+  <p>Contoh Gabungan Tag, Elemen, dan Atribut:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+     <pre class="mb-0"><code>
+&lt;a href="https://www.youtube.com/?reload=9" target="_blank"&gt; Buka Youtube &lt;a&gt;
+</code></pre>
+</div>
+
+<p>Penjelasan:</p>
+<ul>
+  <li>&lt;a&gt; adalah tag pembuka.</li>
+  <li>href dan target adalah atribut.</li>
+  <li>"https://www.youtube.com/?reload=9" adalah nilai dari href.</li>
+  <li>"Buka Youtube" adalah isi elemen.</li>
+  <li>&lt;/a&gt; adalah tag penutup.</li>
+</ul>
+
+
+<h4>Ringkasan</h4>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped align-middle">
+    <thead class="table-dark">
+      <tr>
+        <th>Komponen</th>
+        <th>Penjelasan</th>
+        <th>Contoh</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>&lt;tag&gt;</code></td>
+        <td>Tag pembuka untuk menandai awal sebuah elemen HTML.</td>
+        <td><code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;div&gt;</code></td>
+      </tr>
+      <tr>
+        <td><code>&lt;/tag&gt;</code></td>
+        <td>Tag penutup untuk menandai akhir dari elemen.</td>
+        <td><code>&lt;/p&gt;</code>, <code>&lt;/a&gt;</code>, <code>&lt;/div&gt;</code></td>
+      </tr>
+      <tr>
+        <td>Atribut</td>
+        <td>Properti tambahan yang memberikan informasi pada elemen.</td>
+        <td><code>href="..."</code>, <code>src="..."</code>, <code>alt="..."</code></td>
+      </tr>
+      <tr>
+        <td>Nilai Atribut</td>
+        <td>Isi dari atribut yang menentukan detailnya.</td>
+        <td><code>"https://example.com"</code>, <code>"gambar.jpg"</code></td>
+      </tr>
+      <tr>
+        <td>Isi Elemen</td>
+        <td>Konten atau teks yang berada di antara tag pembuka dan penutup.</td>
+        <td><code>Hello World</code>, <code>Buka YouTube</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<h3><span class="highlight">Membuat Paragraf di HTML</span></h3>
+
+ <hr class="mb-4">
+
+    <!-- Daftar Materi HTML -->
+  <div class="list-group shadow-sm p-4 rounded custom-content">
+      
+    <h3>Paragraf di HTML</h3>
+
+    <p>Dalam HTML, paragraf digunakan untuk menampilkan teks dalam bentuk blok yang terpisah, seperti layaknya paragraf pada dokumen biasa. Paragraf sangat penting dalam membuat struktur teks yang rapi dan mudah dibaca.</p>
+
+    <h4>1. Tag Dasar untuk Paragraf</h4>
+    <p>Untuk membuat paragraf di HTML, kita menggunakan tag &lt;p&gt; Ini adalah tag khusus yang menandakan bahwa isi di dalamnya adalah sebuah paragraf.</p>
+
+        <div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+      <pre class="mb-0"><code>&lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+      &lt;title&gt;Belajar HTML #01&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;p&gt; Ini Adalah Paragraf &lt;/p&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+    </div>
+
+<p>Penjelasan</p>
+<ul>
+  <li>&lt;p&gt; adalah tag pembuka paragraf.</li>
+  <li>&lt;/p&gt; adalah tag penutup paragraf.</li>
+  <li>Teks di antara tag tersebut adalah isi paragraf.</li>
+</ul>
+
+<p>Setiap kali kamu membuat tag <p>, browser akan menampilkan teks tersebut dalam blok baru, dengan spasi (jarak) otomatis di atas dan bawahnya.</p>
+
+<h4>2. Menulis Beberapa Paragraf</h4>
+  <p>HTML tidak otomatis membuat baris baru ketika kamu menekan Enter di editor. Jadi, jika kamu ingin membuat dua paragraf, kamu harus menggunakan dua tag &lt;p&gt; yang berbeda.</p>
+
+    <div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+      <pre class="mb-0"><code>&lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+      &lt;title&gt;Belajar HTML #01&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;p&gt; Ini adalah paragraf pertama &lt;/p&gt;
+      &lt;p&gt; Ini adalah paragraf Kedua &lt;/p&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+    </div>
+
+<p>HAsil:</p>
+<p>Browser akan menampilkan kedua paragraf tersebut dalam dua blok teks yang terpisah, dengan spasi di antaranya</p>
+
+<h4>3. Jangan Menulis Paragraf Tanpa Tag</h4>
+<p>Banyak pemula menulis seperti ini</p>
+
+ <div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+      <pre class="mb-0"><code>Paragraf 1 <br>Paragraf 2</code></pre>
+    </div>
+<p>Masalahnya: Browser akan menampilkan semua teks tersebut dalam satu blok yang sama tanpa pemisah. Karena HTML mengabaikan spasi dan baris baru di dalam kode, kamu wajib menggunakan tag &lt;p&gt; untuk setiap paragraf.</p>
+
+<h4>4. Tambahan: Menambahkan Gaya ke Paragraf</h4>
+<p>Kamu bisa menambahkan style (gaya visual) pada paragraf dengan menggunakan CSS.</p>
+<p>Contoh</p>
+    <div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+      <pre class="mb-0"><code>&lt;p style="color: blue; font-size: 18px; text-align: justify;"&gt;Ini adalah paragraf dengan warna biru, ukuran font 18px, dan rata kiri-kanan. &lt;/p&gt;
+</code></pre>
+    </div>
+
+<h4> 5. Baris Baru di Dalam Paragraf</h4>
+<p>Jika kamu ingin menambahkan baris baru di dalam paragraf tanpa membuat paragraf baru, kamu bisa menggunakan tag &lt;br&gt; (break).</p>
+
+ <div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+      <pre class="mb-0"><code>&lt;p&gt;Ini adalah baris pertama.&lt;br&gt; <br>Ini adalah baris kedua dalam paragraf yang sama.&lt;/p&gt;
+</code></pre>
+    </div>
+    <h4>6. Etika Penulisan Paragraf di HTML</h4>
+    <p>Beberapa tips penting:</p>
+    <ul>
+      <li>Jangan membuat paragraf hanya untuk satu kata atau satu kalimat pendek (kecuali memang perlu).</li>
+      <li>Gunakan paragraf untuk memisahkan ide atau gagasan utama.</li>
+      <li>Gunakan heading (&lt;h1&gt;,&lt;h2&gt;,dst) untuk memberi judul tiap bagian, bukan &lt;p&gt;</li>
+    </ul>
+<p>Contoh Lengkap</p>
+    <div class="position-relative border rounded p-3 bg-light mb-4">
+      <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+        <i class="bi bi-clipboard"></i> Salin
+      </button>
+      <pre class="mb-0"><code>&lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+      &lt;title&gt;Contoh Paragraf HTML&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;h1&gt; Belajar HTML: Paragraf &lt;/h1&gt;
+      &lt;p&gt; HTML memungkinkan kita untuk membuat paragraf teks dengan mudah menggunakan tag <code>&lt;p&gt;</code>. Paragraf membantu memecah konten agar lebih mudah dibaca &lt;/p&gt;
+      &lt;p&gt; Setiap paragraf akan otomatis ditampilkan dalam blok terpisah oleh browser. Ini sangat berguna ketika kita ingin membuat struktur tulisan yang jelas dan rapi. &lt;/p&gt;
+       &lt;p&gt; Jika kamu ingin membuat baris baru di dalam paragraf yang sama, gunakan tag <code>&lt;br&gt;</code> &lt;/p&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+    </div>
+    <h4>Kesimpulan</h4>
+<ul>
+  <li>Gunakan &lt;p&gt; untuk membuat paragraf di HTML.</li>
+  <li>Jangan hanya mengandalkan Enter di keyboard — HTML butuh tag &lt;p&gt;.</li>
+  <li>Gunakan &lt;p&gt; untuk baris baru di dalam paragraf.</li>
+  <li>Tambahkan CSS untuk memperindah tampilan paragraf.</li>
+  <li>Paragraf membantu menyusun konten menjadi lebih terstruktur dan mudah dipahami.</li>
+</ul>
+<br>
+<h3><span class="highlight">Membuat Heading di HTML</span></h3>
+
+<!-- Kotak Latihan -->
+     <hr class="mb-4">
+
+
+  <h3>Heading di HTML</h3>
+
+  <p>Heading (judul) di HTML digunakan untuk memberi struktur pada halaman web. Heading membantu pengunjung dan mesin pencari memahami hierarki dan isi dari sebuah halaman.</p>
+
+  <h4>1. Tag Dasar untuk Heading</h4>
+  <p>HTML menyediakan enam level heading, dari <code>&lt;h1&gt;</code> hingga <code>&lt;h6&gt;</code>. Heading level 1 (<code>&lt;h1&gt;</code>) adalah yang paling penting dan biasanya digunakan untuk judul utama halaman, sedangkan <code>&lt;h6&gt;</code> untuk subjudul yang paling rendah.</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;h1&gt;Ini Heading Utama&lt;/h1&gt;
+&lt;h2&gt;Ini Subheading Level 2&lt;/h2&gt;
+&lt;h3&gt;Ini Subheading Level 3&lt;/h3&gt;
+&lt;h4&gt;Ini Subheading Level 4&lt;/h4&gt;
+&lt;h5&gt;Ini Subheading Level 5&lt;/h5&gt;
+&lt;h6&gt;Ini Subheading Level 6&lt;/h6&gt;</code></pre>
+  </div>
+
+  <p>Setiap tag heading secara otomatis ditampilkan dengan ukuran dan ketebalan berbeda sesuai levelnya. Namun, kamu bisa mengatur tampilannya menggunakan CSS.</p>
+
+  <h4>2. Fungsi Heading</h4>
+  <ul>
+    <li><strong>Struktur:</strong> Heading membantu membuat struktur halaman menjadi lebih rapi dan logis.</li>
+    <li><strong>SEO:</strong> Heading penting untuk optimasi mesin pencari (SEO), karena mesin pencari memperhatikan isi dari tag <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, dan seterusnya.</li>
+    <li><strong>Aksesibilitas:</strong> Membantu pembaca layar memahami isi halaman dengan lebih cepat.</li>
+  </ul>
+
+  <h4>3. Jangan Gunakan Heading untuk Teks Biasa</h4>
+  <p>Beberapa pemula sering menggunakan heading hanya untuk memperbesar teks. Hal ini tidak disarankan. Jika kamu hanya ingin memperbesar ukuran teks, gunakan CSS.</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;p style="font-size: 24px;"&gt;Ini paragraf yang diperbesar dengan CSS&lt;/p&gt;</code></pre>
+  </div>
+
+  <h4>4. Contoh Struktur Heading yang Baik</h4>
+  <p>Gunakan heading secara berurutan dan jangan lompat level tanpa alasan. Berikut contoh struktur yang benar:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;h1&gt;Tutorial HTML&lt;/h1&gt;
+&lt;h2&gt;1. Dasar HTML&lt;/h2&gt;
+&lt;h3&gt;1.1 Tag Paragraf&lt;/h3&gt;
+&lt;h3&gt;1.2 Tag Heading&lt;/h3&gt;
+&lt;h2&gt;2. CSS Dasar&lt;/h2&gt;
+&lt;h3&gt;2.1 Selektor CSS&lt;/h3&gt;</code></pre>
+  </div>
+
+  <h4>5. Mengatur Tampilan Heading dengan CSS</h4>
+  <p>Kamu bisa mengatur ukuran, warna, dan gaya teks heading menggunakan CSS. Contohnya:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;style&gt;
+  h1 {
+    color: navy;
+    font-size: 36px;
+    text-align: center;
+  }
+&lt;/style&gt;
+&lt;h1&gt;Judul Utama Halaman&lt;/h1&gt;</code></pre>
+  </div>
+
+  <h4>Kesimpulan</h4>
+  <ul>
+    <li>Gunakan tag <code>&lt;h1&gt;</code> hingga <code>&lt;h6&gt;</code> untuk membuat judul dan subjudul.</li>
+    <li>Jaga struktur heading agar tetap berurutan dan logis.</li>
+    <li>Jangan gunakan heading hanya untuk memperbesar teks, gunakan CSS untuk itu.</li>
+    <li>Heading membantu pembaca dan mesin pencari memahami isi halaman.</li>
+  </ul>
+
+<h3><span class="highlight"> Cara Membuat Komentar</span></h3>
+ <!-- Kotak Latihan -->
+     <hr class="mb-4">
+
+    <!-- Daftar Materi HTML -->
+
+  <h3>Komentar di HTML</h3>
+
+  <p>Komentar dalam HTML digunakan untuk memberi catatan, penjelasan, atau menonaktifkan kode tanpa menghapusnya. Komentar ini tidak akan ditampilkan di browser saat halaman dibuka.</p>
+
+  <h4>1. Cara Menulis Komentar</h4>
+  <p>Komentar di HTML ditulis menggunakan sintaks khusus sebagai berikut:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;!-- Ini adalah komentar --&gt;</code></pre>
+  </div>
+
+  <p>Semua teks di antara <code>&lt;!--</code> dan <code>--&gt;</code> dianggap sebagai komentar dan tidak akan tampil di halaman web.</p>
+
+  <h4>2. Fungsi Komentar</h4>
+  <ul>
+    <li><strong>Penjelasan:</strong> Memberi catatan untuk diri sendiri atau developer lain agar lebih mudah memahami kode.</li>
+    <li><strong>Debugging:</strong> Menonaktifkan bagian tertentu dari kode HTML saat pengujian.</li>
+    <li><strong>Organisasi:</strong> Membagi dan memberi label pada bagian-bagian kode agar lebih terstruktur.</li>
+  </ul>
+
+  <h4>3. Contoh Penggunaan Komentar</h4>
+  <p>Berikut adalah contoh nyata penggunaan komentar dalam kode HTML:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;!-- Bagian Header --&gt;
+&lt;header&gt;
+  &lt;h1&gt;Selamat Datang&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;!-- Konten utama dimulai dari sini --&gt;
+&lt;main&gt;
+  &lt;p&gt;Ini adalah isi utama halaman.&lt;/p&gt;
+&lt;/main&gt;</code></pre>
+  </div>
+
+  <h4>4. Menonaktifkan Kode Sementara</h4>
+  <p>Kamu juga bisa menggunakan komentar untuk "mematikan" kode HTML tanpa menghapusnya:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;!-- &lt;img src="gambar.jpg" alt="Gambar Ini Dinonaktifkan" /&gt; --&gt;</code></pre>
+  </div>
+
+  <p>Browser tidak akan menampilkan gambar tersebut karena kode-nya berada di dalam komentar.</p>
+
+  <h4>5. Tips Menggunakan Komentar</h4>
+  <ul>
+    <li>Gunakan komentar seperlunya, jangan terlalu banyak agar tidak membuat file HTML menjadi berantakan.</li>
+    <li>Pastikan komentar tidak ditempatkan di dalam tag yang tidak mendukungnya seperti dalam atribut.</li>
+    <li>Komentar sebaiknya menjelaskan tujuan atau fungsi dari suatu bagian kode.</li>
+  </ul>
+
+  <h4>Kesimpulan</h4>
+  <ul>
+    <li>Komentar HTML ditulis menggunakan <code>&lt;!-- komentar --&gt;</code>.</li>
+    <li>Tidak terlihat oleh pengguna akhir dan hanya muncul di kode sumber.</li>
+    <li>Digunakan untuk memberi catatan, membantu debugging, dan menonaktifkan sementara bagian kode.</li>
+  </ul>
+  <br>
+  <h3><span class="highlight">Text Formatting HTML</span></h3>
+   <hr class="mb-4">
+<h3>Text Formatting di HTML</h3>
+
+  <p>Text formatting (pemformatan teks) di HTML digunakan untuk mengubah tampilan teks, seperti menebalkan, memiringkan, atau menandai teks penting. Ini membantu menonjolkan informasi penting dalam halaman web.</p>
+
+  <h4>1. Tag Pemformatan Dasar</h4>
+  <p>Berikut adalah beberapa tag pemformatan teks yang sering digunakan:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;b&gt;Teks Tebal&lt;/b&gt;
+&lt;strong&gt;Teks Penting&lt;/strong&gt;
+&lt;i&gt;Teks Miring&lt;/i&gt;
+&lt;em&gt;Teks Penekanan&lt;/em&gt;
+&lt;mark&gt;Teks Sorotan&lt;/mark&gt;
+&lt;small&gt;Teks Kecil&lt;/small&gt;
+&lt;del&gt;Teks Dicoret&lt;/del&gt;
+&lt;ins&gt;Teks Disisipkan&lt;/ins&gt;
+&lt;sub&gt;Teks Subskrip&lt;/sub&gt;
+&lt;sup&gt;Teks Superskrip&lt;/sup&gt;</code></pre>
+  </div>
+
+  <h4>2. Perbedaan Antara <code>&lt;b&gt;</code> dan <code>&lt;strong&gt;</code></h4>
+  <ul>
+    <li><code>&lt;b&gt;</code>: Hanya menampilkan teks dalam bentuk tebal, tanpa makna khusus.</li>
+    <li><code>&lt;strong&gt;</code>: Memberi penekanan penting pada teks (diperhatikan oleh mesin pencari dan pembaca layar).</li>
+  </ul>
+
+  <h4>3. Contoh Penggunaan dalam Paragraf</h4>
+  <p>Tag pemformatan bisa digunakan di dalam paragraf untuk menonjolkan bagian tertentu:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;p&gt;Belajar &lt;strong&gt;HTML&lt;/strong&gt; sangat &lt;em&gt;penting&lt;/em&gt; untuk menjadi web developer.&lt;/p&gt;
+&lt;p&gt;Gunakan &lt;mark&gt;tag mark&lt;/mark&gt; untuk menyorot teks.&lt;/p&gt;</code></pre>
+  </div>
+
+  <h4>4. Format Teks Khusus</h4>
+  <p>HTML juga menyediakan tag untuk menambahkan makna tertentu pada teks, seperti:</p>
+
+  <ul>
+    <li><code>&lt;del&gt;</code>: Menandai teks yang dihapus.</li>
+    <li><code>&lt;ins&gt;</code>: Menandai teks yang disisipkan.</li>
+    <li><code>&lt;sub&gt;</code> dan <code>&lt;sup&gt;</code>: Digunakan untuk rumus kimia atau matematika.</li>
+  </ul>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O adalah air.&lt;/p&gt;
+&lt;p&gt;E = mc&lt;sup&gt;2&lt;/sup&gt; adalah rumus Einstein.&lt;/p&gt;</code></pre>
+  </div>
+
+  <h4>5. Tips Penggunaan</h4>
+  <ul>
+    <li>Gunakan <code>&lt;strong&gt;</code> dan <code>&lt;em&gt;</code> untuk penekanan yang bermakna (semantik).</li>
+    <li>Gunakan CSS jika ingin lebih banyak kontrol atas gaya teks.</li>
+    <li>Hindari penggunaan tag pemformatan hanya untuk estetika, utamakan makna.</li>
+  </ul>
+
+  <h4>Kesimpulan</h4>
+  <ul>
+    <li>HTML menyediakan berbagai tag untuk memformat teks seperti <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;mark&gt;</code>, dan lainnya.</li>
+    <li>Beberapa tag seperti <code>&lt;strong&gt;</code> dan <code>&lt;em&gt;</code> punya makna semantik untuk SEO dan aksesibilitas.</li>
+    <li>Gunakan tag sesuai tujuan, dan kombinasikan dengan CSS untuk tampilan yang lebih menarik.</li>
+  </ul>
+  <br>
+
+  <h3><span class="highlight">Cara Membuat Link di HTML</span></h3>
+  <hr class="mb-4">
+   <h3>Cara Membuat Link di HTML</h3>
+
+  <p>Dalam HTML, <strong>link (tautan)</strong> adalah elemen yang digunakan untuk mengarahkan pengguna ke halaman lain, dokumen, bagian tertentu dalam halaman, atau bahkan aplikasi email. Link dibentuk menggunakan elemen <code>&lt;a&gt;</code> (anchor).</p>
+
+  <h4>Langkah 1: Membuat Link Dasar</h4>
+  <p>Link dasar dibuat dengan elemen <code>&lt;a&gt;</code> dan atribut <code>href</code> sebagai tujuan tautannya:</p>
+  
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;a href="https://www.google.com"&gt;Kunjungi Google&lt;/a&gt;</code></pre>
+  </div>
+
+  <p>Ketika pengguna mengklik "Kunjungi Google", browser akan membuka alamat <code>https://www.google.com</code>.</p>
+
+  <h4>Langkah 2: Menambahkan Atribut Target</h4>
+  <p>Gunakan atribut <code>target</code> untuk menentukan di mana link akan dibuka:</p>
+
+  <ul>
+    <li><code>_self</code> (default): Membuka di tab yang sama.</li>
+    <li><code>_blank</code>: Membuka di tab baru.</li>
+  </ul>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;a href="https://youtube.com" target="_blank"&gt;Buka YouTube di Tab Baru&lt;/a&gt;</code></pre>
+  </div>
+
+  <h4>Langkah 3: Link ke Halaman Internal</h4>
+  <p>Untuk mengarahkan ke halaman lain dalam satu website (internal link), cukup gunakan nama file atau folder tujuannya:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;a href="kontak.html"&gt;Halaman Kontak&lt;/a&gt;</code></pre>
+  </div>
+
+  <h4>Langkah 4: Link ke Bagian Tertentu dalam Halaman</h4>
+  <p>Kamu bisa membuat link yang langsung menuju bagian tertentu dari halaman dengan menggunakan ID:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;a href="#produk"&gt;Lihat Produk&lt;/a&gt;
+
+...
+
+&lt;section id="produk"&gt;
+  &lt;h2&gt;Daftar Produk&lt;/h2&gt;
+&lt;/section&gt;</code></pre>
+  </div>
+
+  <h4>Langkah 5: Membuat Link Email</h4>
+  <p>Kamu bisa membuat link yang membuka aplikasi email dengan format <code>mailto:</code>:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;a href="mailto:admin@example.com"&gt;Kirim Email&lt;/a&gt;</code></pre>
+  </div>
+
+  <h4>Langkah 6: Link untuk Download File</h4>
+  <p>Gunakan atribut <code>download</code> agar browser mendownload file, bukan membukanya:</p>
+
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;a href="dokumen.pdf" download&gt;Download PDF&lt;/a&gt;</code></pre>
+  </div>
+
+  <h4>Langkah 7: Menambahkan Link pada Gambar dan Tombol</h4>
+  <p>Kamu bisa membungkus elemen seperti gambar atau tombol di dalam <code>&lt;a&gt;</code> agar bisa diklik seperti link:</p>
+
+  <strong>Contoh Link Gambar:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;a href="produk.html"&gt;
+  &lt;img src="gambar-produk.jpg" alt="Produk"&gt;
+&lt;/a&gt;</code></pre>
+  </div>
+
+  <strong>Contoh Link Tombol Bootstrap:</strong>
+  <div class="position-relative border rounded p-3 bg-light mb-4">
+    <button class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2" onclick="copyKode(this)">
+      <i class="bi bi-clipboard"></i> Salin
+    </button>
+    <pre class="mb-0"><code>&lt;a href="checkout.html" class="btn btn-primary"&gt;Beli Sekarang&lt;/a&gt;</code></pre>
+  </div>
+
+  <h4>Tips Tambahan</h4>
+  <ul>
+    <li>Gunakan teks link yang jelas, hindari "klik di sini".</li>
+    <li>Pastikan semua link bekerja (hindari broken link).</li>
+    <li>Gunakan <code>rel="noopener noreferrer"</code> jika memakai <code>target="_blank"</code>.</li>
+    <li>Link dapat distyling dengan CSS untuk menyesuaikan warna, hover, dan animasi.</li>
+  </ul>
+
+  <h4>Kesimpulan</h4>
+  <ul>
+    <li>Tag <code>&lt;a&gt;</code> digunakan untuk membuat berbagai jenis link.</li>
+    <li>Link dapat diarahkan ke halaman luar, dalam, bagian tertentu, email, atau file.</li>
+    <li>Kamu bisa menggabungkan <code>&lt;a&gt;</code> dengan gambar, tombol, atau CSS untuk hasil yang lebih menarik.</li>
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+</section><!-- /Hero Section -->
+<div class="mt-5 p-4 bg-light rounded shadow-sm text-center">
+  <h3 class="fw-bold mb-2">Beri Dukungan untuk Update Materi Selanjutnya</h3>
+  <p class="mb-3 text-muted">
+    Jika Anda merasa materi ini bermanfaat, bantu kami untuk terus mengembangkan konten pembelajaran yang berkualitas. Dukungan seikhlasnya dari Anda sangat berarti bagi kelangsungan proyek ini.
+  </p>
+  <a href="index.html#donasi" class="btn btn-warning px-4 py-2">
+    <i class="bi bi-cash-coin me-2"></i> Donasi Sekarang
+  </a>
+</div>
+
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+      
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Coding Is Fun</strong>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Desain OLeh <a href="index.html">Coding IS Fun</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="validate.js"></script>
+  <script src="aos.js"></script>
+  <script src="glightbox.min.js"></script>
+  <script src="imagesloaded.pkgd.min.js"></script>
+  <script src="isotope.pkgd.min.js"></script>
+  <script src="swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Main JS File -->
+  <script src="main.js"></script>
+
+<script>
+function copyKode(button) {
+  const kode = button.nextElementSibling.innerText;
+  navigator.clipboard.writeText(kode).then(() => {
+    button.innerHTML = '<i class="bi bi-check2-circle"></i> Disalin!';
+    setTimeout(() => {
+      button.innerHTML = '<i class="bi bi-clipboard"></i> Salin';
+    }, 1500);
+  });
+}
+</script>
+
+
+<script>
+  document.getElementById("kirimKomentar").addEventListener("click", function () {
+    const nama = document.querySelector('input[name="nama"]').value.trim();
+    const asal = document.querySelector('select[name="asal"]').value;
+    const komentar = document.querySelector('textarea[name="komentar"]').value.trim();
+    const bintang = document.querySelectorAll('input[name="bintang[]"]:checked');
+
+    if (nama === "" || asal === "" || komentar === "" || bintang.length === 0) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Data belum lengkap!',
+        text: 'Silakan lengkapi semua field termasuk pilih minimal 1 bintang.',
+        confirmButtonColor: '#f39c12',
+        background: '#fffbe6'
+      });
+    } else {
+      Swal.fire({
+        icon: 'success',
+        title: 'Komentar Berhasil Dikirim!',
+        text: 'Terima kasih atas dukungan dan semangat Anda.',
+        confirmButtonColor: '#3085d6'
+      }).then(() => {
+        document.querySelector(".php-email-form").submit(); // submit form jika semua valid
+      });
+    }
+  });
+</script>
+<script>
+  const toggle = document.getElementById("dark-mode-toggle");
+  const icon = document.getElementById("dark-mode-icon");
+
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Ganti ikon
+    if (document.body.classList.contains("dark-mode")) {
+      icon.classList.replace("bi-moon-fill", "bi-sun-fill");
+    } else {
+      icon.classList.replace("bi-sun-fill", "bi-moon-fill");
+    }
+  });
+</script>
+
+
+
+</body>
+
+</html>

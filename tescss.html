@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ujian CSS Dasar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .soal {
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    .hasil {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .hasil-box, .lanjutan-box {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .hasil-box ol, .lanjutan-box ol {
+      padding-left: 20px;
+    }
+
+    .benar {
+      color: green;
+      margin-bottom: 10px;
+    }
+
+    .salah {
+      color: red;
+      margin-bottom: 10px;
+    }
+
+    .lanjutan-box h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <a href="latihan.html" class="back-button">← Kembali</a>
+  <h1>Ujian CSS Dasar</h1>
+  <form id="quizForm">
+    <!-- Soal CSS 1 -->
+    <div class="soal">
+      <p>1. Apa kepanjangan dari CSS?</p>
+      <label><input type="radio" name="q1" value="a"> Creative Style Sheet</label><br>
+      <label><input type="radio" name="q1" value="b"> Cascading Style Sheet</label><br>
+      <label><input type="radio" name="q1" value="c"> Computer Style Sheet</label><br>
+    </div>
+
+    <!-- Soal CSS 2 -->
+    <div class="soal">
+      <p>2. Di mana CSS eksternal biasa ditulis?</p>
+      <label><input type="radio" name="q2" value="a"> Di tag &lt;style&gt;</label><br>
+      <label><input type="radio" name="q2" value="b"> Di dalam file .html</label><br>
+      <label><input type="radio" name="q2" value="c"> Di file .css terpisah</label><br>
+    </div>
+
+    <!-- Soal CSS 3 -->
+    <div class="soal">
+      <p>3. Sintaks penulisan CSS yang benar?</p>
+      <label><input type="radio" name="q3" value="a"> selector { properti: nilai; }</label><br>
+      <label><input type="radio" name="q3" value="b"> { selector: nilai; }</label><br>
+      <label><input type="radio" name="q3" value="c"> properti: nilai; selector</label><br>
+    </div>
+
+    <button type="button" onclick="cekJawaban()">Submit</button>
+  </form>
+
+  <div id="hasil" class="hasil"></div>
+</div>
+
+<div id="lanjutanContainer"></div>
+
+<script>
+  function cekJawaban() {
+    const kunci = { q1: "b", q2: "c", q3: "a" };
+    const pilihanText = {
+      q1: { a: "Creative Style Sheet", b: "Cascading Style Sheet", c: "Computer Style Sheet" },
+      q2: { a: "Di tag <style>", b: "Di dalam file .html", c: "Di file .css terpisah" },
+      q3: { a: "selector { properti: nilai; }", b: "{ selector: nilai; }", c: "properti: nilai; selector" }
+    };
+
+    let benarSemua = true;
+    let hasilHTML = `<div class="hasil-box"><h3>Hasil Jawaban:</h3><ol>`;
+
+    for (let key in kunci) {
+      const jawaban = document.querySelector(`input[name="${key}"]:checked`);
+      const value = jawaban ? jawaban.value : null;
+      if (value === kunci[key]) {
+        hasilHTML += `<li class="benar">✅ <strong>Benar:</strong> ${pilihanText[key][value]}</li>`;
+      } else {
+        benarSemua = false;
+        const userJawab = value ? pilihanText[key][value] : "<em>Tidak menjawab</em>";
+        hasilHTML += `<li class="salah">❌ <strong>Salah</strong><br>Jawaban Anda: ${userJawab}<br>Jawaban Benar: ${pilihanText[key][kunci[key]]}</li>`;
+      }
+    }
+
+    hasilHTML += `</ol></div>`;
+    document.getElementById("hasil").innerHTML = hasilHTML;
+
+    if (benarSemua) {
+      alert("Mantap! Semua jawaban CSS awal benar 🎉");
+      document.getElementById("lanjutanContainer").innerHTML = `
+        <div class="lanjutan-box">
+          <h3>💡 Lanjut ke soal CSS tambahan:</h3>
+          <form id="soalLanjutanForm">
+            ${generateSoalCSSLanjutan()}
+            <button type="button" onclick="cekSoalLanjutan()">Submit Soal Lanjutan</button>
+          </form>
+        </div>`;
+    } else {
+      alert("Yah ada yang salah, coba periksa lagi ya 😢");
+    }
+  }
+
+function generateSoalCSSLanjutan() {
+  const soal = [
+    ["Properti CSS untuk memberi warna teks adalah?", ["text-color", "color", "font-color"]],
+    ["Bagaimana cara memberi background warna?", ["background-color: blue;", "bg-color: blue;", "color-background: blue;"]],
+    ["Apa unit ukuran font yang paling umum?", ["px", "%", "pt"]],
+    ["Bagaimana memberi border 1px solid hitam?", ["border: 1px solid black;", "border: solid black 1px;", "border-color: black 1px;"]],
+    ["Bagaimana membuat elemen rata tengah?", ["margin: auto;", "center: true;", "text-align: center;"]],
+    ["Properti untuk mengubah jenis font?", ["font-family", "font-type", "font-name"]],
+    ["Properti untuk mengatur ketebalan teks?", ["font-weight", "font-thick", "text-bold"]],
+    ["Properti untuk membuat teks miring?", ["font-style", "text-slant", "font-italic"]],
+    ["Properti untuk mengatur jarak antar huruf?", ["letter-spacing", "word-spacing", "line-spacing"]],
+    ["Properti untuk memberi bayangan teks?", ["text-shadow", "font-shadow", "shadow-text"]],
+    ["Bagaimana cara mengubah warna border?", ["border-color", "border-style", "outline-color"]],
+    ["Properti untuk mengatur tinggi baris teks?", ["line-height", "text-height", "font-height"]],
+    ["Apa nilai default untuk `position`?", ["static", "relative", "absolute"]],
+    ["Properti untuk menyembunyikan elemen?", ["display: none;", "visibility: hide;", "hide: true;"]],
+    ["Bagaimana cara membuat elemen melayang?", ["float: left;", "position: top;", "align: float;"]],
+    ["Properti CSS untuk memberi jarak dalam elemen?", ["padding", "margin", "spacing"]],
+    ["Properti CSS untuk memberi jarak antar elemen?", ["margin", "padding", "gap"]],
+    ["Properti untuk memberi sudut elemen menjadi bulat?", ["border-radius", "corner-round", "radius"]],
+    ["Properti untuk menambahkan efek transisi?", ["transition", "animation", "duration"]],
+    ["Bagaimana cara menambahkan animasi ke elemen?", ["@keyframes", "@animation", "@motion"]],
+  ];
+
+  let output = "";
+  soal.forEach((s, i) => {
+    const n = i + 4;
+    output += `<div class="soal"><p>${n}. ${s[0]}</p>`;
+    ['a', 'b', 'c'].forEach((val, j) => {
+      output += `<label><input type="radio" name="q${n}" value="${val}"> ${s[1][j]}</label><br>`;
+    });
+    output += `</div>`;
+  });
+
+  return output;
+}
+function cekSoalLanjutan() {
+  const kunci = {
+    q4: "b",  // color
+    q5: "a",  // background-color: blue;
+    q6: "a",  // px
+    q7: "a",  // border: 1px solid black;
+    q8: "a",  // margin: auto;
+    q9: "a",  // font-family
+    q10: "a", // font-weight
+    q11: "a", // font-style
+    q12: "a", // letter-spacing
+    q13: "a", // text-shadow
+    q14: "a", // border-color
+    q15: "a", // line-height
+    q16: "a", // static
+    q17: "a", // display: none;
+    q18: "a", // float: left;
+    q19: "a", // padding
+    q20: "a", // margin
+    q21: "a", // border-radius
+    q22: "a", // transition
+    q23: "a"  // @keyframes
+  };
+
+  let benar = 0;
+  let hasil = `<div class="hasil-box"><h3>Hasil Jawaban CSS Lanjutan:</h3><ol>`;
+
+  for (let key in kunci) {
+    const jwb = document.querySelector(`input[name="${key}"]:checked`);
+    const val = jwb ? jwb.value : null;
+    if (val === kunci[key]) {
+      hasil += `<li class="benar">✅ ${key.toUpperCase()} Benar</li>`;
+      benar++;
+    } else {
+      hasil += `<li class="salah">❌ ${key.toUpperCase()} Salah</li>`;
+    }
+  }
+
+  const total = Object.keys(kunci).length;
+  const skor = ((benar / total) * 100).toFixed(0);
+
+  hasil += `</ol>
+    <p><strong>Benar:</strong> ${benar} / ${total} |
+    <strong>Salah:</strong> ${total - benar} |
+    <strong>Skor:</strong> ${skor}%</p>
+  </div>`;
+
+  document.getElementById("lanjutanContainer").insertAdjacentHTML("beforeend", hasil);
+
+  if (benar === total) {
+    alert("🎉 Hebat! Semua soal CSS benar! Skor: 100/100");
+  } else {
+    alert(`Kamu menjawab ${benar} dari ${total} soal CSS dengan benar. Skor: ${skor}/100`);
+  }
+}
+
+</script>
+
+</body>
+</html>
